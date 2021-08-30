@@ -1,8 +1,11 @@
 import * as api from './api/data.js'
+import { render } from '../node_modules/lit-html/lit-html.js';
 import page from '../node_modules/page/page.mjs';
 import {homePage} from './views/homePage.js'
 
 window.api = api;
+
+const main = document.getElementsByTagName('main')[0];
 
 page('/', decorateContext, homePage);
 // page('/register', decorateContext, registerPage);
@@ -14,20 +17,20 @@ page('/', decorateContext, homePage);
 // page('/myProfile',decorateContext, myProfilePage);
 
 
-setUserNav();
+//setUserNav();
 page.start();
 
 
 function decorateContext(ctx, next) {
     ctx.render = (content) => render(content, main);
-    ctx.setUserNav = setUserNav;
+    //ctx.setUserNav = setUserNav;
     next();
 }
 
-function setUserNav() {
+//function setUserNav() {
     
     
-}
+//}
 
 // document.getElementById('logout').addEventListener('click',async function(){
 
@@ -37,18 +40,18 @@ function setUserNav() {
 //         page.redirect('/');
 //     }
 // });
-let instaVideosElement = document.getElementsByClassName('instaVideos')[0];
-api.getInstaVideos()
-.then(data=>{
-    data.forEach(element => {
-        let currElement = document.createElement('article');
-        currElement.classList.add('instaVideosFetched')
-        let elementPic = document.createElement('img');
-        elementPic.src=element.URL;
-        currElement.appendChild(elementPic);
-        instaVideosElement.appendChild(currElement)
-    });
-});
+// let instaVideosElement = document.getElementsByClassName('instaVideos')[0];
+// api.getInstaVideos()
+// .then(data=>{
+//     data.forEach(element => {
+//         let currElement = document.createElement('article');
+//         currElement.classList.add('instaVideosFetched')
+//         let elementPic = document.createElement('img');
+//         elementPic.src=element.URL;
+//         currElement.appendChild(elementPic);
+//         instaVideosElement.appendChild(currElement)
+//     });
+// });
 
 
 

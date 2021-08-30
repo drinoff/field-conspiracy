@@ -1,20 +1,47 @@
-import {html} from '../../node_modules/lit-html/lit-html.js';
+import { html } from '../../node_modules/lit-html/lit-html.js';
+import { getInstaVideos } from '../api/data.js';
 
-const homeTemplate = ()=> html`
-<section id="welcome">
-    <div id="welcome-container">
-        <h1>Welcome To Meme Lounge</h1>
-        <img src="/images/welcome-meme.jpg" alt="meme">
-        <h2>Login to see our memes right away!</h2>
-        <div id="button-div">
-            <a href="/login" class="button">Login</a>
-            <a href="/register" class="button">Register</a>
-        </div>
-    </div>
+const homeTemplate = (data) => html`
+<video width="1080" height="720" src="/images/landingVideo.webm" autoplay loop muted>
+    Your browser does not support the video tag.
+</video>
+<div class="description">
+    <p>Field Conspiracy is a social experiment & a record label, which nurtures community and creativity. It
+        aims to be a playground of creative space for musicians, where the inspiration and courage to be free in
+        a community are leading the life we want to live – so that we can live the life we want to lead.
+        Together we imagine a reality where the “human management systems” are defined by the interest of
+        communities to live a life that provides them with the security and a space to be free in the creation
+        of their own reality.</p>
+    <p>When we realize that more can be achieved through the force of creative love than destructive fear and
+        fight, then we open the door to collective humanity. The choice lies within all of us, here and now and
+        it is what has brought us together in this experiment of positive radicalism in a form of co-operation
+        over competition.</p>
+
+</div>
+<section class="instaVideos">
+    <!-- instagram video links goes here dynamicaly -->
+    ${data.map(cardTemplate)}
+</section>
+<div class="instaDescription">instagram @fieldconspiracy</div>
+<section class="newstlerWrapper">
+    <article class="newstler">Subscribe to Newstler</article>
+    <p class="newstlerDesc">Subscribe to Our Newstler to recieve occasional news and updates. We do not share your email
+        to any third
+        parties. For more information, please view our Privacy Policy.</p>
 </section>
 `;
 
-export async function homePage(ctx){
-    ctx.render(homeTemplate())
+const cardTemplate = (item) => html`
+<article class='instaVideosFetched'>
+    <img src=${item.URL} alt="" />
+</article>
+`;
+
+document.getElementsByClassName('instaVideos')[0];
+
+export async function homePage(ctx) {
+    let data = await getInstaVideos();
+    console.log(data)
+    ctx.render(homeTemplate(data));
 
 }

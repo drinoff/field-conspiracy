@@ -117,3 +117,67 @@ video{
     color: white;
     margin-top: 10px;
 }
+
+.newstlerWrapper{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.newstler{
+    margin-top: 20px;
+    border: 1px solid white;
+    padding: 5px 50px 10px 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 6px;
+    width: 30%;
+    text-align: center;
+}
+
+
+.newstler:hover{
+    background: white;
+    color: black;
+    
+}
+
+.newstlerDesc{
+    width: 70%;
+    text-align: center;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.soundWeave{
+    margin-top: 50px;
+    height: 30px;
+    width: 300px;
+}
+.social{
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .social .fab{
+    margin-right: 15px;
+    color: white;
+}
+.footer p img{
+    width: 15px;
+    height: 15px;
+}
+.copyright{
+    font-size: 10px;
+    font-weight: 500px;
+    text-transform: uppercase;
+    
+}
+
