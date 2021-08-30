@@ -5,6 +5,7 @@ html{
     box-sizing: border-box;
     color: white;
     font-family: 'Oswald', sans-serif;
+    background: url("/images/wall.jpg");
 }
 
 *,
@@ -20,6 +21,10 @@ html{
     align-items: center;
     margin-top: 30px;
     width: 100%;
+}
+.headerNav h1{
+    font-size: 32px;
+    cursor: default;
 }
 .headerNav .navWrapper{
     display: flex;
