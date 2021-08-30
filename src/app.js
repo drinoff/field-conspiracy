@@ -1,9 +1,10 @@
 import * as api from './api/data.js'
 import page from '../node_modules/page/page.mjs';
+import {homePage} from './views/homePage.js'
 
 window.api = api;
 
-// page('/', decorateContext, homePage);
+page('/', decorateContext, homePage);
 // page('/register', decorateContext, registerPage);
 // page('/catalog', decorateContext, catalogPage);
 // page('/login', decorateContext, loginPage);
