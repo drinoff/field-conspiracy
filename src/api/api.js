@@ -35,6 +35,8 @@ function getOptions(method = 'get',body){
     }
     if(body){
         options.headers['Content-Type'] = 'application/json';
+        options.headers['Access-Control-Allow-Origin'] = '*';
+        options.header[X-Content-Type-Options] = 'nosniff'
         options.body = JSON.stringify(body);
     }
 
@@ -48,6 +50,11 @@ export async function get(url){
 export async function post(url,data){
     return await request(url,getOptions('post',data))
 }
+
+export async function put(url,data){
+    return await request(url,getOptions('put',data));
+}
+
 
 export async function del(url){
     return await request(url,getOptions('delete'));
@@ -64,16 +71,6 @@ export async function login(email,password){
     return result;
     
     
-}
-
-export async function register(email,password,rePass,gender){
-   const result =  await post(settings.host + '/users/register',{email,password,rePass,gender})
-   sessionStorage.setItem('authToken',result.accessToken);
-    sessionStorage.setItem('email',result.email);
-    sessionStorage.setItem('userId',result._id);
-    sessionStorage.setItem('gender',result.gender)
-
-    return result
 }
 
 export async function logout(){

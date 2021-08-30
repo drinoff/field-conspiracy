@@ -4,25 +4,25 @@
             "id": 0,
             "artist": "Rene Wright",
             "track": "Alchemy",
-            "URL": "https://drive.google.com/file/d/16c-5MGfm3llIBnNA83Ynp8_4-3TsNDIt/view?usp=sharing"
+            "URL": "../images/instaPhotos/reneWright-Alchemy.png"
         },
         {
             "id": 1,
             "artist": "Northern Blue",
             "track": "Extrapolate",
-            "URL": "https://drive.google.com/file/d/1ePA9MuvetnI3TyQi-Ml5AkqdzVkHGmio/view?usp=sharing"
+            "URL": "../images/instaPhotos/NorthernBlue-Extrapolate.png"
         },
         {
             "id": 2,
             "artist": "Hyusfall & Phakaja",
             "track": "Recovery",
-            "URL": "https://drive.google.com/file/d/1geOEEsT2yGP1XpBQKqNwVYtSGJq_uNgg/view?usp=sharing"
+            "URL": "../images/instaPhotos/othala-sol.png"
         },
         {
             "id": 3,
             "artist": "Othala",
             "track": "Sol",
-            "URL": "https://drive.google.com/file/d/1pOD_Lt38sOkn2rsQvbjk8Xfanke4Iqum/view?usp=sharing"
+            "URL": "../images/instaPhotos/Hyusfall_Phakaja-recovery.png"
         }
     ],
     "releases": [
