@@ -10,19 +10,19 @@
             "id": 1,
             "artist": "Northern Blue",
             "track": "Extrapolate",
-            "URL": "../images/instaPhotos/NorthernBlue-Extrapolate.png"
+            "URL": "/images/instaPhotos/NorthernBlue-Extrapolate.png"
         },
         {
             "id": 2,
             "artist": "Hyusfall & Phakaja",
             "track": "Recovery",
-            "URL": "../images/instaPhotos/othala-sol.png"
+            "URL": "/images/instaPhotos/othala-sol.png"
         },
         {
             "id": 3,
             "artist": "Othala",
             "track": "Sol",
-            "URL": "../images/instaPhotos/Hyusfall_Phakaja-recovery.png"
+            "URL": "/images/instaPhotos/Hyusfall_Phakaja-recovery.png"
         }
     ],
     "releases": [
