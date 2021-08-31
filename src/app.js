@@ -1,15 +1,18 @@
 import * as api from './api/data.js'
 import {render} from 'https://unpkg.com/lit-html?module';
 import page from "https://unpkg.com/page/page.mjs";
+
 import {homePage} from './views/homePage.js'
+import {releasesPage} from './views/releasesPage.js';
+import {artistsPage} from './views/artistsPage.js';
 
 window.api = api;
 
 const main = document.getElementsByTagName('main')[0];
 
 page('/', decorateContext, homePage);
-// page('/register', decorateContext, registerPage);
-// page('/catalog', decorateContext, catalogPage);
+page('/releases', decorateContext, releasesPage);
+page('/artists', decorateContext, artistsPage);
 // page('/login', decorateContext, loginPage);
 // page('/create',decorateContext, createPage);
 // page('/details/:id', decorateContext, detailsPage);

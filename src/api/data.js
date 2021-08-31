@@ -7,9 +7,6 @@ export const login = api.login;
 export const register = api.register;
 export const logout = api.logout;
 
-export async function getReleases(){
-    return await api.get(host+ 'releases.json')
-}
 
 export async function getNewsById(id){
     return await api.get(host + '/data/memes/' + id);
@@ -28,6 +25,14 @@ export async function deleteNews(id){
 
 }
 
+export async function getReleases(){
+    return await api.get(host+ 'releases.json')
+}
+
 export async function getInstaVideos(){
     return await api.get(host + 'instaVideos.json');
+}
+
+export async function getArtists(){
+    return await api.get(host + 'artists.json');
 }
