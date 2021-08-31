@@ -4,107 +4,84 @@
             "id": 0,
             "artist": "Rene Wright",
             "track": "Alchemy",
-            "URL": "../../images/instaPhotos/reneWright-Alchemy.png"
+            "URL": "../../assets/instaPhotos/reneWright-Alchemy.png"
         },
         {
             "id": 1,
             "artist": "Northern Blue",
             "track": "Extrapolate",
-            "URL": "/images/instaPhotos/NorthernBlue-Extrapolate.png"
+            "URL": "../../assets/instaPhotos/NorthernBlue-Extrapolate.png"
         },
         {
             "id": 2,
             "artist": "Hyusfall & Phakaja",
             "track": "Recovery",
-            "URL": "/images/instaPhotos/othala-sol.png"
+            "URL": "../../assets/instaPhotos/othala-sol.png"
         },
         {
             "id": 3,
             "artist": "Othala",
             "track": "Sol",
-            "URL": "/images/instaPhotos/Hyusfall_Phakaja-recovery.png"
+            "URL": "../../assets/instaPhotos/Hyusfall_Phakaja-recovery.png"
         }
     ],
     "releases": [
         {
             "id": 0,
-            "artist": "Field Conspiracy",
-            "track": "Conspirations 1",
-            "URL": "https://drive.google.com/file/d/1TDjXtro9JwiXBZSG95Lt91tP4I39X6CP/view?usp=sharing",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, perspiciatis incidunt molestiae providentvoluptate quasi aperiam repudiandae quis voluptas ullam?"
+            "artist": "Rene Wright Phakaja Hyusfall",
+            "track": "Conspirations I",
+            "URL": "/assets/releases/conspirations-1.png",
+            "bandCamp": "https://fieldconspiracy.bandcamp.com/album/conspirations-i"
 
         },
         {
             "id": 1,
-            "artist": "Field Conspiracy",
-            "track": "Conspirations 1",
-            "URL": "https://drive.google.com/file/d/1TDjXtro9JwiXBZSG95Lt91tP4I39X6CP/view?usp=sharing",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, perspiciatis incidunt molestiae providentvoluptate quasi aperiam repudiandae quis voluptas ullam?"
+            "artist": "Rene Wright Phakaja Hyusfall",
+            "track": "Conspirations I",
+            "URL": "/assets/releases/conspirations-1.png",
+            "bandCamp": "https://fieldconspiracy.bandcamp.com/album/conspirations-i"
 
         },
         {
             "id": 2,
-            "artist": "Field Conspiracy",
-            "track": "Conspirations 1",
-            "URL": "https://drive.google.com/file/d/1TDjXtro9JwiXBZSG95Lt91tP4I39X6CP/view?usp=sharing",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, perspiciatis incidunt molestiae providentvoluptate quasi aperiam repudiandae quis voluptas ullam?"
+            "artist": "Rene Wright Phakaja Hyusfall",
+            "track": "Conspirations I",
+            "URL": "/assets/releases/conspirations-1.png",
+            "bandCamp": "https://fieldconspiracy.bandcamp.com/album/conspirations-i"
 
         },
         {
             "id": 3,
-            "artist": "Field Conspiracy",
-            "track": "Conspirations 1",
-            "URL": "https://drive.google.com/file/d/1TDjXtro9JwiXBZSG95Lt91tP4I39X6CP/view?usp=sharing",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, perspiciatis incidunt molestiae providentvoluptate quasi aperiam repudiandae quis voluptas ullam?"
+            "artist": "Rene Wright Phakaja Hyusfall",
+            "track": "Conspirations I",
+            "URL": "/assets/releases/conspirations-1.png",
+            "bandCamp": "https://fieldconspiracy.bandcamp.com/album/conspirations-i"
 
         },
         {
             "id": 4,
-            "artist": "Field Conspiracy",
-            "track": "Conspirations 1",
-            "URL": "https://drive.google.com/file/d/1TDjXtro9JwiXBZSG95Lt91tP4I39X6CP/view?usp=sharing",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, perspiciatis incidunt molestiae providentvoluptate quasi aperiam repudiandae quis voluptas ullam?"
+            "artist": "Rene Wright Phakaja Hyusfall",
+            "track": "Conspirations I",
+            "URL": "/assets/releases/conspirations-1.png",
+            "bandCamp": "https://fieldconspiracy.bandcamp.com/album/conspirations-i"
 
         },
         {
             "id": 5,
-            "artist": "Field Conspiracy",
-            "track": "Conspirations 1",
-            "URL": "https://drive.google.com/file/d/1TDjXtro9JwiXBZSG95Lt91tP4I39X6CP/view?usp=sharing",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, perspiciatis incidunt molestiae providentvoluptate quasi aperiam repudiandae quis voluptas ullam?"
+            "artist": "Rene Wright Phakaja Hyusfall",
+            "track": "Conspirations I",
+            "URL": "/assets/releases/conspirations-1.png",
+            "bandCamp": "https://fieldconspiracy.bandcamp.com/album/conspirations-i"
 
         },
         {
             "id": 6,
-            "artist": "Field Conspiracy",
-            "track": "Conspirations 1",
-            "URL": "https://drive.google.com/file/d/1TDjXtro9JwiXBZSG95Lt91tP4I39X6CP/view?usp=sharing",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, perspiciatis incidunt molestiae providentvoluptate quasi aperiam repudiandae quis voluptas ullam?"
-
-        },
-        {
-            "id": 7,
-            "artist": "Field Conspiracy",
-            "track": "Conspirations 1",
-            "URL": "https://drive.google.com/file/d/1TDjXtro9JwiXBZSG95Lt91tP4I39X6CP/view?usp=sharing",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, perspiciatis incidunt molestiae providentvoluptate quasi aperiam repudiandae quis voluptas ullam?"
-
-        },
-        {
-            "id": 8,
-            "artist": "Field Conspiracy",
-            "track": "Conspirations 1",
-            "URL": "https://drive.google.com/file/d/1TDjXtro9JwiXBZSG95Lt91tP4I39X6CP/view?usp=sharing",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, perspiciatis incidunt molestiae providentvoluptate quasi aperiam repudiandae quis voluptas ullam?"
-
-        },
-        {
-            "id": 9,
-            "artist": "Field Conspiracy",
-            "track": "Conspirations 1",
-            "URL": "https://drive.google.com/file/d/1TDjXtro9JwiXBZSG95Lt91tP4I39X6CP/view?usp=sharing",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, perspiciatis incidunt molestiae providentvoluptate quasi aperiam repudiandae quis voluptas ullam?"
+            "artist": "Rene Wright Phakaja Hyusfall",
+            "track": "Conspirations I",
+            "URL": "/assets/releases/conspirations-1.png",
+            "bandCamp": "https://fieldconspiracy.bandcamp.com/album/conspirations-i"
 
         }
+       
     ]
 }

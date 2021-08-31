@@ -7,8 +7,8 @@ export const login = api.login;
 export const register = api.register;
 export const logout = api.logout;
 
-export async function getAllNews(){
-    return await api.get(host+ '/data/memes?sortBy=_createdOn%20desc')
+export async function getReleases(){
+    return await api.get(host+ 'releases.json')
 }
 
 export async function getNewsById(id){

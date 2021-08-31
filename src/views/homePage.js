@@ -1,8 +1,9 @@
-import {html} from 'https://unpkg.com/lit-html?module';
+// import {html} from 'https://unpkg.com/lit-html?module';
+import {html} from '../../node_modules/lit-html/lit-html.js';
 import { getInstaVideos } from '../api/data.js';
 
 const homeTemplate = (data) => html`
-<video width="1080" height="720" src="/images/landingVideo.webm" autoplay loop muted>
+<video width="1080" height="720" src="../../assets/landingVideo.webm" autoplay loop muted>
     Your browser does not support the video tag.
 </video>
 <div class="description">
@@ -41,7 +42,7 @@ document.getElementsByClassName('instaVideos')[0];
 
 export async function homePage(ctx) {
     let data = await getInstaVideos();
-    console.log(data)
+    console.log(data);
     ctx.render(homeTemplate(data));
 
 }

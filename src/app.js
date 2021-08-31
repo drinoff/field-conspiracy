@@ -1,6 +1,6 @@
 import * as api from './api/data.js'
 import {render} from 'https://unpkg.com/lit-html?module';
-import page from "//unpkg.com/page/page.mjs";
+import page from "https://unpkg.com/page/page.mjs";
 import {homePage} from './views/homePage.js'
 
 window.api = api;
@@ -40,18 +40,7 @@ function decorateContext(ctx, next) {
 //         page.redirect('/');
 //     }
 // });
-// let instaVideosElement = document.getElementsByClassName('instaVideos')[0];
-// api.getInstaVideos()
-// .then(data=>{
-//     data.forEach(element => {
-//         let currElement = document.createElement('article');
-//         currElement.classList.add('instaVideosFetched')
-//         let elementPic = document.createElement('img');
-//         elementPic.src=element.URL;
-//         currElement.appendChild(elementPic);
-//         instaVideosElement.appendChild(currElement)
-//     });
-// });
+
 
 
 
