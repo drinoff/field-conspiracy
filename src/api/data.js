@@ -36,3 +36,15 @@ export async function getInstaVideos(){
 export async function getArtists(){
     return await api.get(host + 'artists.json');
 }
+
+export async function getCreatives(){
+    return await api.get(host + 'creatives.json');
+}
+
+export async function getBlogArticles(){
+    return await api.get(host + 'blog.json');
+}
+
+export async function getShows(){
+    return await api.get(host + 'shows.json');
+}

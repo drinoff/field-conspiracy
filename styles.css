@@ -105,6 +105,10 @@ video{
     margin-right: 3px;
 }
 .instaVideosFetched img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 90%;
     height: 90%;
     margin: 10px 0px 0px 0px;
@@ -116,17 +120,42 @@ video{
     transform: scale(1.1);
     cursor: pointer;
     transition: 0.5s;
-    
+    opacity: 0.2;
     
 }
+
+
+
+.instaVideosFetched img:hover + p{
+    display: flex;
+    justify-content: center;
+    transform: translateY(-250px);
+    cursor: pointer;
+
+}
+.instaVideosPlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.instaVideosFetched p{
+    text-align: center;
+    display: none;
+    color: white;
+}
+.instaVideosFetched p:hover{
+    cursor: pointer;
+}
+
 
 .instaDescription{
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
     color: white;
-    margin-top: 0px;
-    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 0px;
 }
 
 .newstlerWrapper{
@@ -135,6 +164,7 @@ video{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 30px;
 }
 
 .newstler{
@@ -159,6 +189,60 @@ video{
 .newstlerDesc{
     width: 70%;
     text-align: center;
+}
+
+.newstlerForm{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background: white;
+    color: black;
+    width: 50%;
+    font-family: inherit;
+    text-transform: uppercase;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+#mc_embed_signup_scroll{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.mc-field-group{
+    display: flex;
+    width: 100%;
+}
+.mc-field-group input{
+    margin-left: 5px;
+}
+form #mc_embed_signup_scroll .clear .button{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px 50px 10px 50px;
+    border-radius: 10px;
+    font-family: inherit;
+    font-weight: 700;
+
+    
+}
+form #mc_embed_signup_scroll .clear .button:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    
+}
+
+#mc_embed_signup_scroll{
+    width: 100%;
+}
+#mce-FNAME{
+    margin-left: 13%;
 }
 
 /* ################# footer ################ */
