@@ -100,13 +100,13 @@ export async function homePage(ctx) {
                 "LASTNAME": ""
             }
         }
-        fetch('https://gmail.us5.list-manage.com/subscribe/post-json?u=6f6f321dea368576caa3c575b&amp;id=ea5c366cbe',
+        fetch('https://gmail.us5.list-manage.com/subscribe/post?u=6f6f321dea368576caa3c575b&amp;id=ea5c366cbe',
         {
             method: 'POST',
             headers: {
                 'Access-Control-Allow-Origin': '*',
                 'Content-Type': 'text/plain',
-                'Authorization': "Basic ZmllbGRjb25zcGlyYWN5OjY2OGFhMDcxMGQxYTYxMmY4MDhmMGE0YzBjOWNkZjJhLXVzNQ==",
+                'Authorization': "",
                 
             },
             credentials: 'same-origin',
