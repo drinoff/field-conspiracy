@@ -1,6 +1,6 @@
 import { html } from 'https://unpkg.com/lit-html?module';
 import { getInstaVideos } from '../api/data.js';
-import Mailer from '../utilities/mailchimp.js';
+
 
 const homeTemplate = (data, onsubmit) => html`
 <video width="1080" height="720" src="../../assets/landingVideo.webm" autoplay loop muted>
