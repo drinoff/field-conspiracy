@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "lit-html": "^1.4.1",
+    "mailchimp": "^1.2.1",
     "mailchimp-api-v3": "^1.15.0",
     "node-fetch": "^2.6.1",
     "page": "^1.11.6"

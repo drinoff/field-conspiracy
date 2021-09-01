@@ -102,7 +102,7 @@ export async function homePage(ctx) {
         }
         fetch('https://gmail.us5.list-manage.com/subscribe/post-json?u=6f6f321dea368576caa3c575b&amp;id=ea5c366cbe',
         {
-            method: 'POST-json',
+            method: 'POST',
             headers: {
                 'Access-Control-Allow-Origin': '*',
                 'Content-Type': 'text/plain',
