@@ -1,7 +1,8 @@
 import { html } from 'https://unpkg.com/lit-html?module';
 import { getInstaVideos } from '../api/data.js';
 
-const homeTemplate = (data) => html`
+
+const homeTemplate = (data, onsubmit) => html`
 <video width="1080" height="720" src="../../assets/landingVideo.webm" autoplay loop muted>
     Your browser does not support the video tag.
 </video>
@@ -29,45 +30,65 @@ const homeTemplate = (data) => html`
         to any third
         parties. For more information, please view our Privacy Policy.</p>
 
-    <!-- newstler form -->
-    <div id="newstlerForm" class="newstlerForm">
+        <form action="https://gmail.us5.list-manage.com/subscribe/post" method="POST">
+    <input type="hidden" name="u" value="6f6f321dea368576caa3c575b">
+    <input type="hidden" name="id" value="ea5c366cbe">
+    
 
-        <form action="https://gmail.us5.list-manage.com/subscribe/post?u=6f6f321dea368576caa3c575b&amp;id=ea5c366cbe"
-            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
-            target="_blank" novalidate>
-            <div id="mc_embed_signup_scroll">
-                <h2>Subscribe</h2>
-                <!-- <div class="indicates-required"><span class="asterisk">*</span> indicates required</div> -->
-                <div class="mc-field-group">
-                    <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
-                    </label>
-                    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-                </div>
-                <div class="mc-field-group">
-                    <label for="mce-FNAME">First Name </label>
-                    <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
-                </div>
-                <div id="mce-responses" class="clear">
-                    <div class="response" id="mce-error-response" style="display:none"></div>
-                    <div class="response" id="mce-success-response" style="display:none"></div>
-                </div>
-                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                    <input type="text" name="b_6f6f321dea368576caa3c575b_ea5c366cbe" tabindex="-1" value="">
-                </div>
-                <div class="clear">
-                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-                </div>
-            </div>
-        </form>
+    <!-- people should not fill these in and expect good things -->
+    <div class="field-shift" aria-label="Please leave the following three fields empty">
+        <label for="b_name">Name: </label>
+        <input type="text" name="b_name" tabindex="-1" value="" placeholder="Freddie" id="b_name">
+
+        <label for="b_email">Email: </label>
+        <input type="email" name="b_email" tabindex="-1" value="" placeholder="youremail@gmail.com" id="b_email">
+
+        <label for="b_comment">Comment: </label>
+        <textarea name="b_comment" tabindex="-1" placeholder="Please comment" id="b_comment"></textarea>
     </div>
-    <!-- end of newstler form -->
 
-    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'>
-    </script>
-    <script type='text/javascript'>
-        (function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);
-    </script>
+    <div id="mergeTable" class="mergeTable">
+        
+        
+        <div class="mergeRow dojoDndItem mergeRow-email" id="mergeRow-0">
+            <label for="MERGE0">Email Address <span class="req asterisk">*</span></label>
+            <div class="field-group">
+                <input type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" value="">
+                
+                
+            </div>
+            
+        </div>
+        
+        
+        
+        <div class="mergeRow dojoDndItem mergeRow-text" id="mergeRow-1">
+            <label for="MERGE1">First Name</label>
+            <div class="field-group">
+                <input type="text" name="MERGE1" id="MERGE1" size="25" value="">
+                
+                
+            </div>
+            
+        </div>
+        
+        
+
+
+        
+
+        
+
+        
+    </div>
+
+    <div class="submit_container clear">
+        <input type="submit" class="formEmailButton" name="submit" value="Subscribe">
+    </div>
+    <input type="hidden" name="ht" value="4a0ffbe8fae9a418dd47f8efa6ead371b41d6cde:MTYzMDUwNTE3MS40OTk5">
+    <input type="hidden" name="mc_signupsource" value="hosted">
+</form>
+
 
     </div>
 
@@ -78,7 +99,7 @@ const cardTemplate = (item) => html`
 <article class='instaVideosFetched'>
     <img src=${item.URL} alt="" />
     <p class="instaVideosPlay">${item.artist} - ${item.track}<i class="fas fa-play"></i></p>
-    
+
 </article>
 `;
 
@@ -86,20 +107,16 @@ const cardTemplate = (item) => html`
 
 export async function homePage(ctx) {
     let data = await getInstaVideos();
-
-    ctx.render(homeTemplate(data));
+    ctx.render(homeTemplate(data, onsubmit));
+    
+           
     const button = document.getElementById('mc-embedded-subscribe');
     const newstler = document.getElementsByClassName('newstler')[0];
     const newstlerWrapper = document.getElementById('newstlerForm');
-    newstler.addEventListener('click', ()=>{
-        newstlerWrapper.style.display='flex';
+    newstler.addEventListener('click', () => {
+        
+        
     })
-    console.log(button)
 
-    button.addEventListener('click', () => {
-        newstlerWrapper.style.display='none'
-        document.getElementById('mce-EMAIL').value='';
-        document.getElementById('mce-FNAME').value='';
-    });
 
 }

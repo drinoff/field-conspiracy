@@ -31,6 +31,8 @@ page('/shows', decorateContext, showsPage);
 
 //setUserNav();
 page.start();
+page('/')
+
 
 
 function decorateContext(ctx, next) {
