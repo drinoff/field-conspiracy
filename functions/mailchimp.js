@@ -1,15 +1,25 @@
+const fetch = require('node-fetch')
 
-async function Mailer(data){
-  var Mailchimp = require('mailchimp-api-v3')
-  
-  
-  var mailchimp = new Mailchimp('668aa0710d1a612f808f0a4c0c9cdf2a-us5');
-  mailchimp.request({
-      method: 'post',
-      path: 'lists/ea5c366cbe/members/',
-      body: data
-  
-  })
+const API_ENDPOINT = 'https://cat-fact.herokuapp.com/facts'
+
+exports.handler = async (event, context) => {
+  let response
+  try {
+    response = await fetch(API_ENDPOINT)
+    // handle response
+  } catch (err) {
+    return {
+      statusCode: err.statusCode || 500,
+      body: JSON.stringify({
+        error: err.message
+      })
+    }
   }
 
-module.exports = { Mailer }
+  return {
+    statusCode: 200,
+    body: JSON.stringify({
+      data: response
+    })
+  }
+}
