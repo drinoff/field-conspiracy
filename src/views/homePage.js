@@ -93,7 +93,9 @@ export async function homePage(ctx) {
         fetch('https://brave-hopper-2768dc.netlify.app/api/subscribe/',{
             method:'POST',
             headers:{
-                cors : 'no-cors'
+                cors : 'no-cors',
+
+                "Content-Type" : "application/json"
             },
             body:data
         })
