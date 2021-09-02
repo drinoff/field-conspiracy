@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "base-64": "^1.0.0",
     "lit-html": "^1.4.1",
     "mailchimp": "^1.2.1",
     "mailchimp-api-v3": "^1.15.0",
@@ -8,6 +9,7 @@
     "node-fetch": "^2.6.1",
     "page": "^1.11.6"
   },
+  "type": "module",
   "name": "field-conspiracy",
   "description": "",
   "version": "1.0.0",

@@ -1,7 +1,6 @@
-//const fetch = require('node-fetch');
-import fetch from 'node-fetch.mjs';
-//const base64 = require('base-64');
-import base64 from 'base-64.mjs'; 
+
+const fetch = require('node-fetch'); 
+const base64 = require('base-64'); 
 exports.handler = async (event, context) => { 
 //   Only allow POST
   if (event.httpMethod !== 'POST') { 
