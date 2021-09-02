@@ -38,10 +38,11 @@ const homeTemplate = (data, onsubmit) => html`
                 <h2>Subscribe</h2>
                 <!-- <div class="indicates-required"><span class="asterisk">*</span> indicates required</div> -->
                 <div class="mc-field-group">
-                    <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
+                    <label for="mce-EMAIL">Email Address 
                     </label>
                     <input type="email" value = '' name="EMAIL" class="required email" id="mce-EMAIL">
                 </div>
+                
                 <div class="clear">
                     <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
                 </div>
@@ -79,7 +80,6 @@ export async function homePage(ctx) {
         
         let email = formData.get("EMAIL");
         
-        let fName = formData.get('FNAME')
         
         if (email === '') {
             window.alert(`The Email field must be filled`)
@@ -88,11 +88,15 @@ export async function homePage(ctx) {
             window.alert('The email is not correct')
         }
         let data = {
-            "email_address": email,
-            "status": "subscribed"
-            
+            "email_address": email, 
         }
-        fetch('localhost:8888/functions/subscribe')
+        fetch('https://brave-hopper-2768dc.netlify.app/api/subscribe',{
+            method:'POST',
+            headers:{
+                cors : 'no-cors'
+            },
+            body:data
+        })
         
         .then(responce=>console.log(responce))
         
