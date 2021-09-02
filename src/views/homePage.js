@@ -92,20 +92,7 @@ export async function homePage(ctx) {
             "status": "subscribed"
             
         }
-        fetch('https://gmail.us5.list-manage.com/subscribe/post?u=6f6f321dea368576caa3c575b&amp;id=ea5c366cbe',
-        {
-            method: 'POST',
-            headers: {
-                'Access-Control-Allow-Origin': '*',
-                'Content-Type': 'text/plain',
-                'Authorization': "",
-                
-            },
-            credentials: 'same-origin',
-            mode:'no-cors',
-            body: data,
-            redirect: 'follow'
-        })
+        fetch('localhost:8888/functions/subscribe')
         
         .then(responce=>console.log(responce))
         

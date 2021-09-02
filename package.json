@@ -9,7 +9,7 @@
     "node-fetch": "^2.6.1",
     "page": "^1.11.6"
   },
-  "type": "module",
+  
   "name": "field-conspiracy",
   "description": "",
   "version": "1.0.0",

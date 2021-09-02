@@ -7,4 +7,5 @@ const contactTemplate = () => html`
 
 export async function contactPage(ctx) {
     ctx.render(contactTemplate());
+    
 }
