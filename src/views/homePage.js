@@ -116,6 +116,9 @@ export async function homePage(ctx) {
     newstler.addEventListener('click', () => {
         newstlerWrapper.style.display = 'flex';
     })
+    button.addEventListener('click', ()=>{
+        newstlerWrapper.style.display = 'none';
+    })
 
 
 }
