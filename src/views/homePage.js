@@ -91,7 +91,7 @@ export async function homePage(ctx) {
             "email_address": email,
             
         }
-        fetch('brave-hopper-2768dc.netlify.app/api/subscribe',{
+        fetch('/api/subscribe',{
             method:'POST',
             mode: 'no-cors',
             redirect: "follow",
