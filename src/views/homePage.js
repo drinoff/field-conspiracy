@@ -97,9 +97,6 @@ export async function homePage(ctx) {
         }
         let data = {
             "email_address": email,
-            "MERGE_FIELDS": {
-                "FNAME": fName
-
             }
             
         }
