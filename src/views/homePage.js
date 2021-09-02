@@ -91,7 +91,7 @@ export async function homePage(ctx) {
             "email_address": email,
             
         }
-        fetch('/api/subscribe',{
+        fetch('/api/subscribe/',{
             method:'POST',
             
             headers:{
