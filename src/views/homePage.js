@@ -88,16 +88,18 @@ export async function homePage(ctx) {
             window.alert('The email is not correct')
         }
         let data = {
-            "email_address": JSON.stringify(email), 
+            "email_address": email,
+            
         }
-        fetch('https://brave-hopper-2768dc.netlify.app/api/subscribe/',{
+        fetch('brave-hopper-2768dc.netlify.app/api/subscribe',{
             method:'POST',
+            mode: 'no-cors',
+            redirect: "follow",
             headers:{
-                cors : 'no-cors',
-
+                'Access-Control-Allow-Origin': '*',
                 "Content-Type" : "application/json"
             },
-            body:data
+            body:JSON.stringify(data)
         })
         
         .then(responce=>console.log(responce))
