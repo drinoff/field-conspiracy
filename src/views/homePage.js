@@ -42,11 +42,6 @@ const homeTemplate = (data, onsubmit) => html`
                     </label>
                     <input type="email" value = '' name="EMAIL" class="required email" id="mce-EMAIL">
                 </div>
-                <div class="mc-field-group">
-                    <label for="mce-FNAME">First Name </label>
-                    <input type="text" value = '' name="FNAME" class="" id="mce-FNAME">
-                </div>
-
                 <div class="clear">
                     <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
                 </div>
@@ -94,11 +89,8 @@ export async function homePage(ctx) {
         }
         let data = {
             "email_address": email,
-            "status": "subscribed",
-            "merge_fields": {
-                "FIRSTNAME": fName,
-                "LASTNAME": ""
-            }
+            "status": "subscribed"
+            
         }
         fetch('https://gmail.us5.list-manage.com/subscribe/post?u=6f6f321dea368576caa3c575b&amp;id=ea5c366cbe',
         {
