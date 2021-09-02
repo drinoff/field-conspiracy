@@ -109,7 +109,8 @@ export async function homePage(ctx) {
             body:JSON.stringify(data)
         })
         
-        .then(responce=>console.log(responce))
+        .then(responce=>responce.json())
+        .then(data=>console.log(data))
         
         
         
