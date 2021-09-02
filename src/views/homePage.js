@@ -43,7 +43,7 @@ const homeTemplate = (data, onsubmit) => html`
                     <input type="email" value = '' name="EMAIL" class="required email" id="mce-EMAIL">
                 </div>
                 <div class="mc-field-group">
-                    <label for="mce-FNAME">Name 
+                    <label for="mce-FNAME">First Name 
                     </label>
                     <input type="text" value = '' name="FNAME"  id="mce-FNAME">
                 </div>
