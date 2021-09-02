@@ -97,7 +97,7 @@ export async function homePage(ctx) {
         }
         let data = {
             "email_address": email,
-            }
+            "name" : fName
             
         }
         fetch('/api/subscribe',{

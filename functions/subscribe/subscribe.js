@@ -10,14 +10,16 @@ exports.handler = async (event, context) => {
     return { statusCode: 500, body: msg }; 
   }; 
   try { 
-    const { email_address } = JSON.parse(event.body);
+    const { email_address, name } = JSON.parse(event.body);
     const email = email_address;
+    const fullName = name;
     if (!email) { 
       return errorGen('Missing Email');
     } 
     const subscriber = { 
       email_address: email, 
       status: 'subscribed', 
+      full_name: fullName
     }; 
     const creds = `any:${process.env.MAILCHIMP_KEY}`;
     const response = await fetch('https://us5.api.mailchimp.com/3.0/lists/ea5c366cbe/members/', { 
