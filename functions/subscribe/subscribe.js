@@ -10,13 +10,17 @@ exports.handler = async (event, context) => {
     return { statusCode: 500, body: msg }; 
   }; 
   try { 
-    const { email_address } = JSON.parse(event.body);
+    const { name,email_address } = JSON.parse(event.body);
     const email = email_address;
+    const fName = name.FNAME;
     if (!email) { 
       return errorGen('Missing Email');
     } 
     const subscriber = { 
       email_address: email, 
+      merge_fields:{
+        "FNAME":fName
+      },
       status: 'subscribed', 
     }; 
     const creds = `any:${process.env.MAILCHIMP_KEY}`;
