@@ -88,9 +88,9 @@ export async function homePage(ctx) {
             window.alert('The email is not correct')
         }
         let data = {
-            "email_address": email, 
+            "email_address": JSON.stringify(email), 
         }
-        fetch('https://brave-hopper-2768dc.netlify.app/api/subscribe',{
+        fetch('https://brave-hopper-2768dc.netlify.app/api/subscribe/',{
             method:'POST',
             headers:{
                 cors : 'no-cors'
