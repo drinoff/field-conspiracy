@@ -38,23 +38,29 @@ const homeTemplate = (data, onsubmit) => html`
                 <h2>Subscribe</h2>
                 <!-- <div class="indicates-required"><span class="asterisk">*</span> indicates required</div> -->
                 <div class="mc-field-group">
-                    <label for="mce-EMAIL">Email Address 
+                    <label for="mce-EMAIL">Email Address <span>*</span>
                     </label>
                     <input type="email" value = '' name="EMAIL" class="required email" id="mce-EMAIL">
                 </div>
-                
+                <div class="mc-field-group">
+                    <label for="mce-FNAME">Name 
+                    </label>
+                    <input type="text" value = '' name="FNAME"  id="mce-FNAME">
+                </div>
                 <div class="clear">
                     <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
                 </div>
             </div>
         </form>
+        <i class="fas fa-times-circle"></i>
     </div>
     <!-- end of newstler form -->
-
-    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'>
-    </script>
-
-
+    <!-- thanks msg -->
+    <div class="newstlerThanks">
+        <p>Thanks for Subscribing</p>
+        <i class="fas fa-times-circle"></i>
+    </div>
+    
     </div>
 
 </section>
@@ -79,6 +85,7 @@ export async function homePage(ctx) {
         let formData = new FormData(form);
         
         let email = formData.get("EMAIL");
+        let fName = formData.get("FNAME");
         
         
         if (email === '') {
@@ -89,6 +96,7 @@ export async function homePage(ctx) {
         }
         let data = {
             "email_address": email,
+            "FNAME": fName
             
         }
         fetch('/api/subscribe',{
@@ -113,12 +121,29 @@ export async function homePage(ctx) {
     const button = document.getElementById('mc-embedded-subscribe');
     const newstler = document.getElementsByClassName('newstler')[0];
     const newstlerWrapper = document.getElementById('newstlerForm');
+    const newstlerThanks = document.getElementsByClassName('newstlerThanks')[0];
+    const closeThanks = document.getElementsByClassName('fa-times-circle')[0];
+
+    closeThanks.addEventListener('click',()=>{
+        if(newstlerThanks.style.display = 'flex'){
+        newstlerThanks.style.display = 'none';
+        }
+        if(newstlerWrapper.style.display = 'flex'){
+            newstlerWrapper.style.display = 'none';
+        }
+    })
+
     newstler.addEventListener('click', () => {
         newstlerWrapper.style.display = 'flex';
     })
+
     button.addEventListener('click', ()=>{
         newstlerWrapper.style.display = 'none';
+        newstlerThanks.style.display = 'flex';
+        setInterval(function(){ newstlerThanks.style.display = 'none'; }, 3000);
     })
+
+    
 
 
 }
