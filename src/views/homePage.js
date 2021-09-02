@@ -88,6 +88,7 @@ export async function homePage(ctx) {
         let fName = formData.get("FNAME");
         
         
+        
         if (email === '') {
             window.alert(`The Email field must be filled`)
         }
@@ -96,7 +97,10 @@ export async function homePage(ctx) {
         }
         let data = {
             "email_address": email,
-            "FNAME": fName
+            "MERGE_FIELDS": {
+                "FNAME": fName
+
+            }
             
         }
         fetch('/api/subscribe',{
