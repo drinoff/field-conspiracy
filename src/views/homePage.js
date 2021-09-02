@@ -93,10 +93,9 @@ export async function homePage(ctx) {
         }
         fetch('/api/subscribe',{
             method:'POST',
-            mode: 'no-cors',
-            redirect: "follow",
+            
             headers:{
-                'Access-Control-Allow-Origin': '*',
+                
                 "Content-Type" : "application/json"
             },
             body:JSON.stringify(data)

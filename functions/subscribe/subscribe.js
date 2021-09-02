@@ -10,7 +10,8 @@ exports.handler = async (event, context) => {
     return { statusCode: 500, body: msg }; 
   }; 
   try { 
-    const { email } = JSON.parse(event.body);
+    const { email_address } = JSON.parse(event.body);
+    const email = email_address;
     if (!email) { 
       return errorGen('Missing Email');
     } 
