@@ -1,3 +1,5 @@
+
+
 export const settings = {
     host : '',
     authHost: ''
@@ -61,12 +63,11 @@ export async function del(url){
     return await request(url,getOptions('delete'));
 }
 
-export async function login(email,password){
-    const creds = `any:${process.env.FIREBASE_AUTH}`;
-    const result = await post(settings.authHost + creds,{email,password,returnSecureToken})
+export async function login(email,password,creds){
+    const result = await post(settings.authHost + creds,{email,password})
 
     sessionStorage.setItem('authToken',result.accessToken);
-    
+
     sessionStorage.setItem('email',result.email);
     return result;
     

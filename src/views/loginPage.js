@@ -32,8 +32,8 @@ export async function loginPage(ctx) {
         if (email === '' || password === '') {
             window.alert(`all fields must be filled`)
         } else {
-            const returnSecureToken = true;
-            await login(email, password, returnSecureToken)
+            
+            await login(email, password)
             //ctx.setUserNav();
             ctx.page.redirect('/');
         }
