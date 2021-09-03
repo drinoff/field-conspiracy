@@ -1,0 +1,32 @@
+
+#login-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.pass{
+    margin-left: 2px;
+}
+.emailWrapper label{
+    margin-right: 25px;
+}
+.loginButtonWrapper input{
+    width: 120px;
+    margin-top: 30px;
+    margin-left: 60px;
+    border: none;
+    border-radius: 12px;
+    padding: 5px 20px 5px 20px;
+    background: white;
+    color: black;
+    font-weight: 700;
+    transition: 0.5s;
+}
+.loginButtonWrapper input:hover{
+    background: blueviolet;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}

@@ -21,11 +21,14 @@
 .contactUS h1,
 .about h1{
     color: white;
+    text-transform: uppercase;
 }
 
 .contactUS p,
 .about p{
     width: 60%;
+    text-transform: uppercase;
+    font-size: 14px;
 }
 .contactUS p a{
     text-decoration: none;

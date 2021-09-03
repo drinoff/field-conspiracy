@@ -2,6 +2,7 @@
 @import '/styles/homePage.css';
 @import '/styles/releasesPage.css';
 @import '/styles/contactPage.css';
+@import '/styles/loginPage.css';
 
 html{
     background-color: black;
@@ -120,5 +121,14 @@ main{
     font-weight: 500px;
     text-transform: uppercase;
     
+}
+.admin{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 10px;
+    color: darkgray;
+}
+.admin:hover{
+    color: white;
 }
 

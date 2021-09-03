@@ -1,5 +1,6 @@
 export const settings = {
     host : '',
+    authHost: ''
 };
 async function request(url,options){
     try {
@@ -61,13 +62,12 @@ export async function del(url){
 }
 
 export async function login(email,password){
-    
-    const result = await post(settings.host + '/users/login',{email,password})
+    const creds = `any:${process.env.FIREBASE_AUTH}`;
+    const result = await post(settings.authHost + creds,{email,password,returnSecureToken})
+
     sessionStorage.setItem('authToken',result.accessToken);
+    
     sessionStorage.setItem('email',result.email);
-    sessionStorage.setItem('userId',result._id);
-    sessionStorage.setItem('username',result.username);
-    sessionStorage.setItem('gender',result.gender);
     return result;
     
     

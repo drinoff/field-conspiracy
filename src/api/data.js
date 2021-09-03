@@ -1,10 +1,12 @@
 import * as api from './api.js';
 
 const host = 'https://fieldconspiracy-1813-default-rtdb.europe-west1.firebasedatabase.app/';
+const authHost = 'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=';
 api.settings.host = host;
+api.settings.authHost = authHost;
 
 export const login = api.login;
-export const register = api.register;
+
 export const logout = api.logout;
 
 

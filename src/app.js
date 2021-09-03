@@ -9,6 +9,7 @@ import { creativesPage } from './views/creativesPage.js';
 import { showsPage } from './views/showsPage.js';
 import { blogPage } from './views/blogPage.js';
 import { contactPage } from './views/contactPage.js';
+import {loginPage} from './views/loginPage.js'
 
 window.api = api;
 
@@ -21,6 +22,7 @@ page('/creatives', decorateContext, creativesPage);
 page('/contact', decorateContext, contactPage);
 page('/blog', decorateContext, blogPage);
 page('/shows', decorateContext, showsPage);
+page('/admin', decorateContext, loginPage);
 
 // page('/login', decorateContext, loginPage);
 // page('/create',decorateContext, createPage);
