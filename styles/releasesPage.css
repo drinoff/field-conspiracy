@@ -1,0 +1,58 @@
+.releasesWrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.singleRelease{
+    width: 30%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+.singleRelease a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.releaseImg{
+    width: 100%;
+    
+}
+.releaseInfo{
+display: none;
+flex-direction: column;
+align-items: center;
+color: white;
+position: absolute;
+top: 300px;
+justify-content: center;
+font-weight: 700;
+z-index: 7;
+
+}
+.releaseImg:hover {
+opacity: 0.2;
+cursor: pointer;
+
+}
+.imgWrapper:hover + .releaseInfo{
+    display: flex;
+    cursor: pointer;
+    transform: translateY(270px);
+    animation: moveUp 0.5s forwards;
+    pointer-events: none;
+
+}
+
+@keyframes moveUp{
+form {top :0px;}
+to {top: -140px;}
+}
+
