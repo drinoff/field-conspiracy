@@ -36,7 +36,7 @@ const homeTemplate = (data, onsubmit) => html`
         <form @submit=${onsubmit} id="newstler-Form">
             <div id="mc_embed_signup_scroll">
                 <h2>Subscribe</h2>
-                <!-- <div class="indicates-required"><span class="asterisk">*</span> indicates required</div> -->
+                
                 <div class="mc-field-group">
                     <label for="mce-EMAIL">Email Address <span>*</span>
                     </label>

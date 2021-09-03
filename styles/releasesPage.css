@@ -52,7 +52,7 @@ cursor: pointer;
 }
 
 @keyframes moveUp{
-form {top :0px;}
+form {top :1px;}
 to {top: -140px;}
 }
 

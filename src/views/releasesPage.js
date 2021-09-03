@@ -5,7 +5,6 @@ import { getReleases } from '../api/data.js'
 const releasesTemplate = (data) => html`
     <section class="releasesWrapper">
         ${data.map(releaseCard)}
-    
     </section>
 `;
 
