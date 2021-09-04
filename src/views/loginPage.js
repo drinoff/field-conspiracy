@@ -1,5 +1,5 @@
 import { html } from 'https://unpkg.com/lit-html?module';
-import { login } from '../api/data.js';
+
 
 const loginTemplate = (onSubmit) => html`
 <section id="login">
@@ -32,8 +32,22 @@ export async function loginPage(ctx) {
         if (email === '' || password === '') {
             window.alert(`all fields must be filled`)
         } else {
+            let data = {
+                "email": email,
+                "password" : password
+            }
+            fetch('/api/auth',{
+                method:'POST',
+                
+                headers:{
+                    
+                    "Content-Type" : "application/json"
+                },
+                body:JSON.stringify(data)
+            })
             
-            await login(email, password)
+            //.then(responce=>responce.json())
+            .then(data=>console.log(data))
             //ctx.setUserNav();
             ctx.page.redirect('/');
         }

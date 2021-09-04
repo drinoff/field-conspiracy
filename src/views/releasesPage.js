@@ -27,8 +27,6 @@ const releaseCard = (item) => html`
 export async function releasesPage(ctx) {
 
     let data = await getReleases();
-    console.log(data[0])
-
     ctx.render(releasesTemplate(data));
 
 }

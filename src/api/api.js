@@ -63,16 +63,6 @@ export async function del(url){
     return await request(url,getOptions('delete'));
 }
 
-export async function login(email,password,creds){
-    const result = await post(settings.authHost + creds,{email,password})
-
-    sessionStorage.setItem('authToken',result.accessToken);
-
-    sessionStorage.setItem('email',result.email);
-    return result;
-    
-    
-}
 
 export async function logout(){
     const result =  await get(settings.host + '/users/logout')
