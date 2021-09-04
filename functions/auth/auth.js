@@ -2,6 +2,7 @@
 const fetch = require('node-fetch');
 const base64 = require('base-64');
 exports.handler = async (event, context) => {
+  console.log(event)
   //   Only allow POST
   if (event.httpMethod !== 'POST') {
     return { statusCode: 405, body: 'Method Not Allowed' };
@@ -11,8 +12,8 @@ exports.handler = async (event, context) => {
   };
   try {
     const { email_address, pass} = JSON.parse(event.body);
-    const email = email_address;
-    const password = pass;
+    //const email = email_address;
+    //const password = pass;
     if (!email) {
       return errorGen('Missing Email');
     }
@@ -20,8 +21,9 @@ exports.handler = async (event, context) => {
       return errorGen('Missing Password');
     }
     const subscriber = {
-      "email": email,
-      "password": password,  
+      email: email_address,
+      password: pass,
+      returnSecureToken: true  
     };
     const API = `any:${process.env.FIREBASE_AUTH}`;
     const response = await fetch(`https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${API}`, {
@@ -47,7 +49,7 @@ exports.handler = async (event, context) => {
     console.log(err); // output to netlify function log 
     return {
       statusCode: 500,
-      body: JSON.stringify({ msg: err.message }),
+      body: JSON.stringify({msg: err.message }),
     };
   }
 };
