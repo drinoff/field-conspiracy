@@ -1,6 +1,5 @@
 
 const fetch = require('node-fetch');
-const base64 = require('base-64');
 exports.handler = async (event, context) => {
   console.log(event)
   //   Only allow POST
@@ -31,15 +30,15 @@ exports.handler = async (event, context) => {
       headers: {
         Accept: '*/*',
         'Content-Type': 'application/json',
-       // Authorization: `Basic ${base64.encode(creds)}`,
+       
       },
       body: JSON.stringify(subscriber),
     });
     const data = await response.json();
-
+    
     if (!response.ok) {
       // NOT res.status >= 200 && res.status < 300 
-      return { statusCode: data.status, body: data.detail };
+      return { statusCode: data.statusCode, body: data.detail };
     }
     return {
       statusCode: 200,

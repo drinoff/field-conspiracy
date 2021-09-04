@@ -49,7 +49,7 @@ export async function loginPage(ctx) {
             //.then(responce=>responce.json())
             .then(data=>console.log(data))
             //ctx.setUserNav();
-            ctx.page.redirect('/');
+            //ctx.page.redirect('/');
         }
     }
 }
