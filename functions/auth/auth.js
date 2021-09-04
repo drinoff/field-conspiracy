@@ -21,8 +21,7 @@ exports.handler = async (event, context) => {
     }
     const subscriber = {
       email: email_address,
-      password: pass,
-      returnSecureToken: true  
+      password: pass, 
     };
     const API = `any:${process.env.FIREBASE_AUTH}`;
     const response = await fetch(`https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${API}`, {
@@ -36,10 +35,10 @@ exports.handler = async (event, context) => {
     });
     const data = await response.text();
     
-    if (!response.ok) {
-      // NOT res.status >= 200 && res.status < 300 
-      return { statusCode: data.statusCode, body: data.detail };
-    }
+    // if (!response.ok) {
+    //   // NOT res.status >= 200 && res.status < 300 
+    //   return { statusCode: data.statusCode, body: data.detail };
+    // }
     return {
       statusCode: 200,
       body: JSON.stringify({ msg: "Authenticated", detail: data, }),

@@ -46,7 +46,7 @@ export async function loginPage(ctx) {
                 body:JSON.stringify(data)
             })
             
-            //.then(responce=>responce.text())
+            .then(responce=>responce.json())
             .then(data=>console.log(data))
             //ctx.setUserNav();
             //ctx.page.redirect('/');
