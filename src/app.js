@@ -24,7 +24,7 @@ page('/creatives', decorateContext, creativesPage);
 page('/contact', decorateContext, contactPage);
 page('/blog', decorateContext, blogPage);
 page('/shows', decorateContext, showsPage);
-page('/admin', decorateContext, loginPage);
+page('/login', decorateContext, loginPage);
 
 // page('/login', decorateContext, loginPage);
 // page('/create',decorateContext, createPage);

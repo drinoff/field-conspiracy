@@ -50,7 +50,7 @@ export async function loginPage(ctx) {
                 .then(data => {
                     if(data.detail.error){
                         window.alert('Wrong Credentials!')
-                        ctx.page.redirect('/admin')
+                        ctx.page.redirect('/login')
                     }else{
                         window.sessionStorage.setItem("email", data.detail.email);
                         window.sessionStorage.setItem("id", data.detail.localId);
