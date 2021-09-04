@@ -14,10 +14,10 @@ exports.handler = async (event, context) => {
     const { email_address, pass} = JSON.parse(event.body);
     //const email = email_address;
     //const password = pass;
-    if (!email) {
+    if (!email_address) {
       return errorGen('Missing Email');
     }
-    if (!password) {
+    if (!pass) {
       return errorGen('Missing Password');
     }
     const subscriber = {
