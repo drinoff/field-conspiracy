@@ -23,6 +23,30 @@ body{
 body::-webkit-scrollbar {
     display: none;
 }
+.authButtons{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+#logout,
+#adminPanel{
+    margin-left: 10px;
+    width: 100px;
+    border-radius: 12px;
+    padding: 5px 5px 5px 5px;
+    font-family: inherit;
+    font-size: 13px;   
+    transition: 0.5s;
+}
+
+#logout:hover,
+#adminPanel:hover{
+   cursor: pointer;
+   background: rgb(95, 21, 79);
+   color: white;
+   transform: scale(1.2);
+   transition: 0.5s;
+}
 
 .headerNav{
     display: flex;
@@ -131,4 +155,6 @@ main{
 .admin:hover{
     color: white;
 }
+
+
 

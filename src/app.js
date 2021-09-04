@@ -9,11 +9,13 @@ import { creativesPage } from './views/creativesPage.js';
 import { showsPage } from './views/showsPage.js';
 import { blogPage } from './views/blogPage.js';
 import { contactPage } from './views/contactPage.js';
-import {loginPage} from './views/loginPage.js'
+import { loginPage } from './views/loginPage.js'
 
 window.api = api;
 
 const main = document.getElementsByTagName('main')[0];
+let adminPanel = document.getElementById('adminPanel');
+let logout = document.getElementById('logout');
 
 page('/', decorateContext, homePage);
 page('/releases', decorateContext, releasesPage);
@@ -31,7 +33,7 @@ page('/admin', decorateContext, loginPage);
 // page('/myProfile',decorateContext, myProfilePage);
 
 
-//setUserNav();
+setUserNav();
 page.start();
 page('/')
 
@@ -39,14 +41,20 @@ page('/')
 
 function decorateContext(ctx, next) {
     ctx.render = (content) => render(content, main);
-    //ctx.setUserNav = setUserNav;
+    ctx.setUserNav = setUserNav;
     next();
 }
 
-//function setUserNav() {
-
-
-//}
+function setUserNav() {
+    console.log(window.sessionStorage.length)
+    if (window.sessionStorage.length !== 0) {
+        adminPanel.style.display = 'block';
+        logout.style.display='block'
+    } else {
+        adminPanel.style.display = 'none';
+        logout.style.display='none'
+    }
+}
 
 // document.getElementById('logout').addEventListener('click',async function(){
 
