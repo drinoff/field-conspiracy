@@ -100,7 +100,7 @@ export async function homePage(ctx) {
             "name" : fName
             
         }
-        fetch('/api/subscribe',{
+        fetch('/.netlify/functions/subscribe',{
             method:'POST',
             
             headers:{
@@ -110,7 +110,7 @@ export async function homePage(ctx) {
             body:JSON.stringify(data)
         })
         
-        .then(responce=>responce.json())
+        .then(responce=>responce)
         .then(data=>console.log(data))
         
         
