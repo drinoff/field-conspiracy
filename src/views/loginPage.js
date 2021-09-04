@@ -33,10 +33,10 @@ export async function loginPage(ctx) {
             window.alert(`all fields must be filled`)
         } else {
             let data = {
-                "email": email,
-                "password" : password
+                email: email,
+                password : password
             }
-            fetch('/api/auth',{
+            fetch('/.netlify/functions/auth',{
                 method:'POST',
                 
                 headers:{
