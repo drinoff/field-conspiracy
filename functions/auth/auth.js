@@ -34,7 +34,7 @@ exports.handler = async (event, context) => {
       },
       body: JSON.stringify(subscriber),
     });
-    const data = await response.json();
+    const data = await response.text();
     
     if (!response.ok) {
       // NOT res.status >= 200 && res.status < 300 
