@@ -35,7 +35,7 @@ page('/login', decorateContext, loginPage);
 
 setUserNav();
 page.start();
-page('/')
+page(window.location.pathname)
 
 
 
