@@ -67,11 +67,12 @@ const homeTemplate = (data, onsubmit) => html`
 `;
 
 const cardTemplate = (item) => html`
-<article class='instaVideosFetched'>
+<a class = 'instaLink' href="http://abv.bg">
+<article  class='instaVideosFetched'>
     <img src=${item.URL} alt="" />
     <p class="instaVideosPlay">${item.artist} - ${item.track}<i class="fas fa-play"></i></p>
 
-</article>
+</article></a>
 `;
 
 

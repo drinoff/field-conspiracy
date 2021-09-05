@@ -4,25 +4,36 @@
             "id": 0,
             "artist": "Rene Wright",
             "track": "Alchemy",
-            "URL": "../../assets/instaPhotos/reneWright-Alchemy.png"
+            "URL": "../../assets/instaPhotos/reneWright-Alchemy.png",
+            "instaLink": "https://www.instagram.com/p/CCbSuKpqsq8/"
         },
         {
             "id": 1,
             "artist": "Northern Blue",
             "track": "Extrapolate",
-            "URL": "../../assets/instaPhotos/NorthernBlue-Extrapolate.png"
+            "URL": "../../assets/instaPhotos/NorthernBlue-Extrapolate.png",
+            "instaLink": "https://www.instagram.com/p/CBkzOLOKey7/"
         },
         {
             "id": 2,
             "artist": "Hyusfall & Phakaja",
             "track": "Recovery",
-            "URL": "../../assets/instaPhotos/othala-sol.png"
+            "URL": "../../assets/instaPhotos/Hyusfall_Phakaja-recovery.png",
+            "instaLink": "https://www.instagram.com/p/CA2sFiJjWWB/"
         },
         {
             "id": 3,
+            "artist": "Hyusfall",
+            "track": "Dual",
+            "URL": "../../assets/instaPhotos/Hyusfall-Dual.png",
+            "instaLink": "https://www.instagram.com/p/B_phscpoD2j/"
+        },
+        {
+            "id": 4,
             "artist": "Othala",
             "track": "Sol",
-            "URL": "../../assets/instaPhotos/Hyusfall_Phakaja-recovery.png"
+            "URL": "../../assets/instaPhotos/othala-sol.png",
+            "instaLink": "https://www.instagram.com/p/CAiEVPEjgBP/"
         }
     ],
     "releases": [
