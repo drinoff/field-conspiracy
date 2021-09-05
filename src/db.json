@@ -1,35 +1,35 @@
 {
     "instaVideos": [
         {
-            "id": 0,
+            "id": "0",
             "artist": "Rene Wright",
             "track": "Alchemy",
             "URL": "../../assets/instaPhotos/reneWright-Alchemy.png",
             "instaLink": "https://www.instagram.com/p/CCbSuKpqsq8/"
         },
         {
-            "id": 1,
+            "id": "1",
             "artist": "Northern Blue",
             "track": "Extrapolate",
             "URL": "../../assets/instaPhotos/NorthernBlue-Extrapolate.png",
             "instaLink": "https://www.instagram.com/p/CBkzOLOKey7/"
         },
         {
-            "id": 2,
+            "id": "2",
             "artist": "Hyusfall & Phakaja",
             "track": "Recovery",
             "URL": "../../assets/instaPhotos/Hyusfall_Phakaja-recovery.png",
             "instaLink": "https://www.instagram.com/p/CA2sFiJjWWB/"
         },
         {
-            "id": 3,
+            "id":"3",
             "artist": "Hyusfall",
             "track": "Dual",
             "URL": "../../assets/instaPhotos/Hyusfall-Dual.png",
             "instaLink": "https://www.instagram.com/p/B_phscpoD2j/"
         },
         {
-            "id": 4,
+            "id": "4",
             "artist": "Othala",
             "track": "Sol",
             "URL": "../../assets/instaPhotos/othala-sol.png",
@@ -38,61 +38,133 @@
     ],
     "releases": [
         {
-            "id": 0,
+            "id": "0",
             "artist": "Rene Wright Phakaja Hyusfall",
             "track": "Conspirations I",
             "URL": "/assets/releases/conspirations-1.png",
             "bandCamp": "https://fieldconspiracy.bandcamp.com/album/conspirations-i"
-
         },
         {
-            "id": 1,
+            "id": "1",
             "artist": "Rene Wright Phakaja Hyusfall",
             "track": "Conspirations I",
             "URL": "/assets/releases/conspirations-1.png",
             "bandCamp": "https://fieldconspiracy.bandcamp.com/album/conspirations-i"
-
         },
         {
-            "id": 2,
+            "id": "2",
             "artist": "Rene Wright Phakaja Hyusfall",
             "track": "Conspirations I",
             "URL": "/assets/releases/conspirations-1.png",
             "bandCamp": "https://fieldconspiracy.bandcamp.com/album/conspirations-i"
-
         },
         {
-            "id": 3,
+            "id": "3",
             "artist": "Rene Wright Phakaja Hyusfall",
             "track": "Conspirations I",
             "URL": "/assets/releases/conspirations-1.png",
             "bandCamp": "https://fieldconspiracy.bandcamp.com/album/conspirations-i"
-
         },
         {
-            "id": 4,
+            "id": "4",
             "artist": "Rene Wright Phakaja Hyusfall",
             "track": "Conspirations I",
             "URL": "/assets/releases/conspirations-1.png",
             "bandCamp": "https://fieldconspiracy.bandcamp.com/album/conspirations-i"
-
         },
         {
-            "id": 5,
+            "id": "5",
             "artist": "Rene Wright Phakaja Hyusfall",
             "track": "Conspirations I",
             "URL": "/assets/releases/conspirations-1.png",
             "bandCamp": "https://fieldconspiracy.bandcamp.com/album/conspirations-i"
-
         },
         {
-            "id": 6,
+            "id": "6",
             "artist": "Rene Wright Phakaja Hyusfall",
             "track": "Conspirations I",
             "URL": "/assets/releases/conspirations-1.png",
             "bandCamp": "https://fieldconspiracy.bandcamp.com/album/conspirations-i"
-
         }
-       
+    ],
+    "artists": [
+        {
+            "id":"0",
+            "name": "Freya Algiz",
+            "img": "/assets/artists/FreyaAlgiz.jpg",
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, omnis nemo labore possimus illumnecessitatibus ducimus provident reiciendis delectus! Quibusdam veniam facilis accusantium distinctionesciunt ut totam aut quae doloribus",
+            "bandcamp" : "",
+            "soundcloud" : "https://soundcloud.com/freya_algiz",
+            "spotify" : "",
+            "youtube" : "",
+            "facebook" : "",
+            "instagram" : "https://www.instagram.com/freya_algiz/",
+            "resident" : ""
+        },
+        {
+            "id":"1",
+            "name": "Freya Algiz",
+            "img": "/assets/artists/FreyaAlgiz.jpg",
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, omnis nemo labore possimus illumnecessitatibus ducimus provident reiciendis delectus! Quibusdam veniam facilis accusantium distinctionesciunt ut totam aut quae doloribus",
+            "bandcamp" : "",
+            "soundcloud" : "https://soundcloud.com/freya_algiz",
+            "spotify" : "",
+            "youtube" : "",
+            "facebook" : "",
+            "instagram" : "https://www.instagram.com/freya_algiz/",
+            "resident" : ""
+        },
+        {
+            "id":"2",
+            "name": "Freya Algiz",
+            "img": "/assets/artists/FreyaAlgiz.jpg",
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, omnis nemo labore possimus illumnecessitatibus ducimus provident reiciendis delectus! Quibusdam veniam facilis accusantium distinctionesciunt ut totam aut quae doloribus",
+            "bandcamp" : "",
+            "soundcloud" : "https://soundcloud.com/freya_algiz",
+            "spotify" : "",
+            "youtube" : "",
+            "facebook" : "",
+            "instagram" : "https://www.instagram.com/freya_algiz/",
+            "resident" : ""
+        },
+        {
+            "id":"3",
+            "name": "Freya Algiz",
+            "img": "/assets/artists/FreyaAlgiz.jpg",
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, omnis nemo labore possimus illumnecessitatibus ducimus provident reiciendis delectus! Quibusdam veniam facilis accusantium distinctionesciunt ut totam aut quae doloribus",
+            "bandcamp" : "",
+            "soundcloud" : "https://soundcloud.com/freya_algiz",
+            "spotify" : "",
+            "youtube" : "",
+            "facebook" : "",
+            "instagram" : "https://www.instagram.com/freya_algiz/",
+            "resident" : ""
+        },
+        {
+            "id":"4",
+            "name": "Freya Algiz",
+            "img": "/assets/artists/FreyaAlgiz.jpg",
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, omnis nemo labore possimus illumnecessitatibus ducimus provident reiciendis delectus! Quibusdam veniam facilis accusantium distinctionesciunt ut totam aut quae doloribus",
+            "bandcamp" : "",
+            "soundcloud" : "https://soundcloud.com/freya_algiz",
+            "spotify" : "",
+            "youtube" : "",
+            "facebook" : "",
+            "instagram" : "https://www.instagram.com/freya_algiz/",
+            "resident" : ""
+        },
+        {
+            "id":"5",
+            "name": "Freya Algiz",
+            "img": "/assets/artists/FreyaAlgiz.jpg",
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, omnis nemo labore possimus illumnecessitatibus ducimus provident reiciendis delectus! Quibusdam veniam facilis accusantium distinctionesciunt ut totam aut quae doloribus",
+            "bandcamp" : "",
+            "soundcloud" : "https://soundcloud.com/freya_algiz",
+            "spotify" : "",
+            "youtube" : "",
+            "facebook" : "",
+            "instagram" : "https://www.instagram.com/freya_algiz/",
+            "resident" : ""
+        }
     ]
 }

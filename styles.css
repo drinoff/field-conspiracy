@@ -3,6 +3,7 @@
 @import '/styles/releasesPage.css';
 @import '/styles/contactPage.css';
 @import '/styles/loginPage.css';
+@import '/styles/artists.css';
 
 html{
     background-color: black;

@@ -1,11 +1,11 @@
-.releasesWrapper{
+.artistsWrapper{
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
     flex-wrap: wrap;
 }
-.singleRelease{
+.singleArtist{
     width: 30%;
     margin-top: 50px;
     display: flex;
@@ -14,34 +14,37 @@
     justify-content: center;
     position: relative;
 }
-.singleRelease a{
+.singleArtist a{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.releaseImg{
+.singleArtist a div p{
+    font-size: 32px;
+    font-family: inherit;
+}
+.artistImg{
     width: 100%;
+}
+.artistInfo{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    position: absolute;
+    top: 300px;
+    justify-content: center;
+    font-weight: 700;
+    z-index: 7;
     
-}
-.releaseInfo{
-display: none;
-flex-direction: column;
-align-items: center;
-color: white;
-position: absolute;
-top: 300px;
-justify-content: center;
-font-weight: 700;
-z-index: 7;
-
-}
-.releaseImg:hover {
-opacity: 0.2;
-cursor: pointer;
-
-}
-.imgWrapper:hover + .releaseInfo{
+    }
+.artistImg:hover {
+    opacity: 0.2;
+    cursor: pointer;
+    
+    }
+.imgWrapper:hover + .artistInfo{
     display: flex;
     cursor: pointer;
     transform: translateY(270px);
@@ -49,9 +52,7 @@ cursor: pointer;
     pointer-events: none;
 
 }
-
 @keyframes moveUp{
-form {top :1px;}
-to {top: -140px;}
-}
-
+    form {top :1px;}
+    to {top: -140px;}
+    }

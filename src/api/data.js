@@ -7,8 +7,8 @@ api.settings.host = host;
 
 
 
-export async function getNewsById(id){
-    return await api.get(host + '/data/memes/' + id);
+export async function getArtistById(id){
+    return await api.get(host + 'artists/'+`${id}.json`);
 }
 
 export async function createNews(data){

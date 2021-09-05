@@ -10,6 +10,7 @@ import { showsPage } from './views/showsPage.js';
 import { blogPage } from './views/blogPage.js';
 import { contactPage } from './views/contactPage.js';
 import { loginPage } from './views/loginPage.js'
+import { detailsPage } from './views/detailsPage.js'
 
 window.api = api;
 
@@ -25,10 +26,10 @@ page('/contact', decorateContext, contactPage);
 page('/blog', decorateContext, blogPage);
 page('/shows', decorateContext, showsPage);
 page('/login', decorateContext, loginPage);
+page('/details/:id', decorateContext, detailsPage);
 
 // page('/login', decorateContext, loginPage);
 // page('/create',decorateContext, createPage);
-// page('/details/:id', decorateContext, detailsPage);
 // page('/edit/:id', decorateContext, editPage);
 // page('/myProfile',decorateContext, myProfilePage);
 

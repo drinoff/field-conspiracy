@@ -29,7 +29,7 @@ function getOptions(method = 'get',body){
 
     const options = {
         method,
-        headers: {}
+        headers: {},
     };
 
     const token = sessionStorage.getItem('authToken');
@@ -39,7 +39,7 @@ function getOptions(method = 'get',body){
     if(body){
         options.headers['Content-Type'] = 'application/json';
         options.headers['Access-Control-Allow-Origin'] = '*';
-        options.header[X-Content-Type-Options] = 'nosniff'
+        options.headers[X-Content-Type-Options] = 'nosniff'
         options.body = JSON.stringify(body);
     }
 
