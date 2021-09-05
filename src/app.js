@@ -56,14 +56,14 @@ function setUserNav() {
     }
 }
 
-// document.getElementById('logout').addEventListener('click',async function(){
+logout.addEventListener('click',function(){
 
-//     if (sessionStorage.length !== 0) {
-//         await logout();
-//         setUserNav();
-//         page.redirect('/');
-//     }
-// });
+    if (sessionStorage.length !== 0) {
+        sessionStorage.clear();
+        setUserNav();
+        page.redirect('/');
+    }
+});
 
 
 

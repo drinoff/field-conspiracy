@@ -7,9 +7,6 @@ api.settings.host = host;
 
 
 
-export const logout = api.logout;
-
-
 export async function getNewsById(id){
     return await api.get(host + '/data/memes/' + id);
 }

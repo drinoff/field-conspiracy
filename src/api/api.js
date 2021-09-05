@@ -64,9 +64,3 @@ export async function del(url){
 }
 
 
-export async function logout(){
-    const result =  await get(settings.host + '/users/logout')
-     sessionStorage.clear();
- 
-     return result
- }
