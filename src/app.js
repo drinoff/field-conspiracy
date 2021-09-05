@@ -46,7 +46,6 @@ function decorateContext(ctx, next) {
 }
 
 function setUserNav() {
-    console.log(window.sessionStorage.length)
     if (window.sessionStorage.length !== 0) {
         adminPanel.style.display = 'block';
         logout.style.display='block'
