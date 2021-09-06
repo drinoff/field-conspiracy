@@ -1,0 +1,75 @@
+#artistDetails{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+.imgAndName{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    width: 40%;
+}
+.imgAndName h1{
+    text-align: center;
+    color: white;
+}
+.imgAndName img{
+    width: 60%;
+    border-radius: 6px;
+}
+.artistDescription{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.artistSocial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.artistSocial img{
+    width: 14px;
+    height: 14px;
+    
+}
+.artistSocial .fab{
+    margin-right: 5px;
+    color: white;
+    transition: 0.5s;
+}
+.artistSocial .fab:hover{
+    cursor: pointer;
+    transform: scale(1.3);
+    transition: 0.5s;
+    
+}
+.adminButtons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.editButton,
+.deleteButton{
+margin-left: 10px;
+margin-right: 10px;
+border: none;
+width: 100px;
+padding: 5px 10px 5px 10px;
+text-decoration: none;
+background-color: white;
+color: black;
+font-size: 14px;
+text-align: center;
+font-family: inherit;
+cursor: pointer;
+}
+
+.editButton:hover,
+.deleteButton:hover{
+background: rgb(141, 132, 132);
+}

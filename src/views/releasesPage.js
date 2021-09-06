@@ -16,7 +16,7 @@ const releaseCard = (item) => html`
             </div>
             <div class="releaseInfo">
                 <p>${item.artist}</p>
-                <p>${item.track}</p>
+                <p class="beforeElement">${item.track}</p>
             </div>
         </a>
     </article>
