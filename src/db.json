@@ -22,7 +22,7 @@
             "instaLink": "https://www.instagram.com/p/CA2sFiJjWWB/"
         },
         {
-            "id":"3",
+            "id": "3",
             "artist": "Hyusfall",
             "track": "Dual",
             "URL": "../../assets/instaPhotos/Hyusfall-Dual.png",
@@ -87,84 +87,78 @@
             "bandCamp": "https://fieldconspiracy.bandcamp.com/album/conspirations-i"
         }
     ],
-    "artists": [
-        {
-            "id":"0",
+    "artists": {
+        "2jf9567kwj": {
             "name": "Freya Algiz",
             "img": "/assets/artists/FreyaAlgiz.jpg",
             "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, omnis nemo labore possimus illumnecessitatibus ducimus provident reiciendis delectus! Quibusdam veniam facilis accusantium distinctionesciunt ut totam aut quae doloribus",
-            "bandcamp" : "",
-            "soundcloud" : "https://soundcloud.com/freya_algiz",
-            "spotify" : "",
-            "youtube" : "",
-            "facebook" : "",
-            "instagram" : "https://www.instagram.com/freya_algiz/",
-            "resident" : ""
+            "bandcamp": "",
+            "soundcloud": "https://soundcloud.com/freya_algiz",
+            "spotify": "",
+            "youtube": "",
+            "facebook": "",
+            "instagram": "https://www.instagram.com/freya_algiz/",
+            "resident": ""
         },
-        {
-            "id":"1",
+        "vrkj1brzur": {
             "name": "Freya Algiz",
             "img": "/assets/artists/FreyaAlgiz.jpg",
             "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, omnis nemo labore possimus illumnecessitatibus ducimus provident reiciendis delectus! Quibusdam veniam facilis accusantium distinctionesciunt ut totam aut quae doloribus",
-            "bandcamp" : "",
-            "soundcloud" : "https://soundcloud.com/freya_algiz",
-            "spotify" : "",
-            "youtube" : "",
-            "facebook" : "",
-            "instagram" : "https://www.instagram.com/freya_algiz/",
-            "resident" : ""
+            "bandcamp": "",
+            "soundcloud": "https://soundcloud.com/freya_algiz",
+            "spotify": "",
+            "youtube": "",
+            "facebook": "",
+            "instagram": "https://www.instagram.com/freya_algiz/",
+            "resident": ""
         },
-        {
-            "id":"2",
+        "fus9j9uu8yj": {
             "name": "Freya Algiz",
             "img": "/assets/artists/FreyaAlgiz.jpg",
             "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, omnis nemo labore possimus illumnecessitatibus ducimus provident reiciendis delectus! Quibusdam veniam facilis accusantium distinctionesciunt ut totam aut quae doloribus",
-            "bandcamp" : "",
-            "soundcloud" : "https://soundcloud.com/freya_algiz",
-            "spotify" : "",
-            "youtube" : "",
-            "facebook" : "",
-            "instagram" : "https://www.instagram.com/freya_algiz/",
-            "resident" : ""
+            "bandcamp": "",
+            "soundcloud": "https://soundcloud.com/freya_algiz",
+            "spotify": "",
+            "youtube": "",
+            "facebook": "",
+            "instagram": "https://www.instagram.com/freya_algiz/",
+            "resident": ""
         },
-        {
-            "id":"3",
+        "0fusfdwuft": {
             "name": "Freya Algiz",
             "img": "/assets/artists/FreyaAlgiz.jpg",
             "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, omnis nemo labore possimus illumnecessitatibus ducimus provident reiciendis delectus! Quibusdam veniam facilis accusantium distinctionesciunt ut totam aut quae doloribus",
-            "bandcamp" : "",
-            "soundcloud" : "https://soundcloud.com/freya_algiz",
-            "spotify" : "",
-            "youtube" : "",
-            "facebook" : "",
-            "instagram" : "https://www.instagram.com/freya_algiz/",
-            "resident" : ""
+            "bandcamp": "",
+            "soundcloud": "https://soundcloud.com/freya_algiz",
+            "spotify": "",
+            "youtube": "",
+            "facebook": "",
+            "instagram": "https://www.instagram.com/freya_algiz/",
+            "resident": ""
         },
-        {
-            "id":"4",
+        "fvfe7uomzp": {
             "name": "Freya Algiz",
             "img": "/assets/artists/FreyaAlgiz.jpg",
             "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, omnis nemo labore possimus illumnecessitatibus ducimus provident reiciendis delectus! Quibusdam veniam facilis accusantium distinctionesciunt ut totam aut quae doloribus",
-            "bandcamp" : "",
-            "soundcloud" : "https://soundcloud.com/freya_algiz",
-            "spotify" : "",
-            "youtube" : "",
-            "facebook" : "",
-            "instagram" : "https://www.instagram.com/freya_algiz/",
-            "resident" : ""
+            "bandcamp": "",
+            "soundcloud": "https://soundcloud.com/freya_algiz",
+            "spotify": "",
+            "youtube": "",
+            "facebook": "",
+            "instagram": "https://www.instagram.com/freya_algiz/",
+            "resident": ""
         },
-        {
-            "id":"5",
+        "72toq0rpe6": {
             "name": "Freya Algiz",
             "img": "/assets/artists/FreyaAlgiz.jpg",
             "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, omnis nemo labore possimus illumnecessitatibus ducimus provident reiciendis delectus! Quibusdam veniam facilis accusantium distinctionesciunt ut totam aut quae doloribus",
-            "bandcamp" : "",
-            "soundcloud" : "https://soundcloud.com/freya_algiz",
-            "spotify" : "",
-            "youtube" : "",
-            "facebook" : "",
-            "instagram" : "https://www.instagram.com/freya_algiz/",
-            "resident" : ""
+            "bandcamp": "",
+            "soundcloud": "https://soundcloud.com/freya_algiz",
+            "spotify": "",
+            "youtube": "",
+            "facebook": "",
+            "instagram": "https://www.instagram.com/freya_algiz/",
+            "resident": ""
         }
-    ]
+    }
 }

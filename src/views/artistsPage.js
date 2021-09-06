@@ -11,12 +11,12 @@ const artistsTemplate = (data) =>html`
 
 const artistCard = (item)=>html`
  <article class="singleArtist">
-        <a href="/details/${item.id}">
+        <a href="/details/${item[0]}">
             <div class="imgWrapper">
-                <img class="artistImg" src=${item.img} alt="artistImage" />
+                <img class="artistImg" src=${item[1].img} alt="artistImage" />
             </div>
             <div class="artistInfo">
-                <p>${item.name}</p>
+                <p>${item[1].name}</p>
             </div>
         </a>
     </article>
@@ -24,6 +24,7 @@ const artistCard = (item)=>html`
 `;
 
 export async function artistsPage(ctx){
-    let data = await getArtists();
+    let dataObj = await getArtists();
+    let data = Object.entries(dataObj)
     ctx.render(artistsTemplate(data));
 }

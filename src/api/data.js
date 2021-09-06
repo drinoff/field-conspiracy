@@ -8,7 +8,7 @@ api.settings.host = host;
 
 
 export async function getArtistById(id){
-    return await api.get(host + 'artists/'+`${id}.json`);
+    return await api.get(`${host}/artists/${id}.json`); 
 }
 
 export async function createNews(data){
@@ -19,8 +19,8 @@ export async function editNews(id,data){
     return await api.put(host + '/data/memes/' + id,data);
 }
 
-export async function deleteNews(id){
-    return api.del(host + '/data/memes/' + id);
+export async function deleteArtist(id){
+    return api.del(host + 'artists/'+`${id}.json`);
 
 }
 

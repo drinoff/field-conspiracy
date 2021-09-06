@@ -1,6 +1,6 @@
 import { html } from 'https://unpkg.com/lit-html?module';
 import { getArtistById } from '../api/data.js';
-//import { deleteMeme } from '../api/data.js';
+import { deleteArtist } from '../api/data.js';
 
 const detailsTemplate = (data, onDelete) => html`
 <section id="artistDetails">
@@ -46,8 +46,8 @@ export async function detailsPage(ctx) {
     async function onDelete() {
         const confirmed = confirm('Are you sure you want to delete the item?');
         if (confirmed) {
-            await deleteMeme(ctx.params.id);
-            ctx.page.redirect('/catalog');
+            await deleteArtist(ctx.params.id);
+            ctx.page.redirect('/artists');
         }
     }
 }
