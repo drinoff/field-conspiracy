@@ -62,7 +62,7 @@ export async function editPage(ctx) {
 
         let name = formData.get('name');
         let description = formData.get('description');
-        let imageUrl = formData.get('imageUrl');
+        let image = formData.get('imageUrl');
         let bandcamp = formData.get('bandcamp');
         let soundcloud = formData.get('soundcloud');
         let spotify = formData.get('spotify');
@@ -74,7 +74,7 @@ export async function editPage(ctx) {
             const body = {
                 name,
                 description,
-                imageUrl,
+                image,
                 bandcamp,
                 soundcloud,
                 spotify,
