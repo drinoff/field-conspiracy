@@ -1,0 +1,46 @@
+#edit-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.editContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.editContainer div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.editContainer div input,
+.editContainer div textarea{
+    margin-bottom: 20px;
+    width: 300px;
+}
+.editContainer div textarea{
+    height: 20em;
+}
+
+.editArtistButton{
+margin-left: 10px;
+margin-right: 10px;
+border: none;
+width: 100px;
+padding: 5px 10px 5px 10px;
+text-decoration: none;
+background-color: white;
+color: black;
+font-size: 14px;
+text-align: center;
+font-family: inherit;
+cursor: pointer;
+}
+
+.editArtistButton:hover{
+background: rgb(141, 132, 132);
+}

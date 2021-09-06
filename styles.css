@@ -4,7 +4,8 @@
 @import '/styles/contactPage.css';
 @import '/styles/loginPage.css';
 @import '/styles/artists.css';
-@import '/styles/artistDetails.css';
+@import '/styles/detailsPage.css';
+@import '/styles/editPage.css';
 
 html{
     background-color: black;

@@ -2,7 +2,7 @@ import { html } from 'https://unpkg.com/lit-html?module';
 import { getArtistById } from '../api/data.js';
 import { deleteArtist } from '../api/data.js';
 
-const detailsTemplate = (data, onDelete) => html`
+const detailsTemplate = (data, onDelete,ctx) => html`
 <section id="artistDetails">
     <div class="imgAndName">
         <h1>${data.name}</h1>
@@ -14,7 +14,7 @@ const detailsTemplate = (data, onDelete) => html`
         </p>
 
         <div class="artistSocial">
-            ${data.bandCamp ? html`<a href=${data.bandCamp} target="_blank"><i class="fab fa-bandcamp"></i></a>` : html``}
+            ${data.bandcamp ? html`<a href=${data.bandcamp} target="_blank"><i class="fab fa-bandcamp"></i></a>` : html``}
             ${data.soundcloud ? html`<a href=${data.soundcloud} target="_blank"><i
                     class="fab fa-soundcloud"></i></a>` : html``}
             ${data.spotify ? html`<a href=${data.spotify} target="_blank"><i class="fab fa-spotify"></i></a>` : html``}
@@ -30,7 +30,7 @@ const detailsTemplate = (data, onDelete) => html`
         <div class="adminButtons">
             ${(sessionStorage.getItem("email") === 'fieldconspiracy@gmail.com')
             ?
-            html`<a class="editButton" href="/edit/${data.id}">Edit</a>
+            html`<a class="editButton" href="/edit/${ctx.params.id}">Edit</a>
             <button @click=${onDelete} href='javascript:void(0)' class="deleteButton">Delete</button>`
             : 
             html``}
@@ -40,8 +40,9 @@ const detailsTemplate = (data, onDelete) => html`
 `;
 
 export async function detailsPage(ctx) {
+    
     const data = await getArtistById(ctx.params.id);
-    ctx.render(detailsTemplate(data, onDelete));
+    ctx.render(detailsTemplate(data, onDelete,ctx));
 
     async function onDelete() {
         const confirmed = confirm('Are you sure you want to delete the item?');

@@ -11,6 +11,7 @@ import { blogPage } from './views/blogPage.js';
 import { contactPage } from './views/contactPage.js';
 import { loginPage } from './views/loginPage.js'
 import { detailsPage } from './views/detailsPage.js'
+import { editPage } from './views/editPage.js'
 
 window.api = api;
 
@@ -27,10 +28,10 @@ page('/blog', decorateContext, blogPage);
 page('/shows', decorateContext, showsPage);
 page('/login', decorateContext, loginPage);
 page('/details/:id', decorateContext, detailsPage);
+page('/edit/:id', decorateContext, editPage);
 
 // page('/login', decorateContext, loginPage);
 // page('/create',decorateContext, createPage);
-// page('/edit/:id', decorateContext, editPage);
 // page('/myProfile',decorateContext, myProfilePage);
 
 

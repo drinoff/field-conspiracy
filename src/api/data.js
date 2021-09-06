@@ -15,8 +15,8 @@ export async function createNews(data){
     return await api.post(host + '/data/memes',data);
 }
 
-export async function editNews(id,data){
-    return await api.put(host + '/data/memes/' + id,data);
+export async function editArtist(id,data){
+    return await api.put(host + `/artists/${id}.json`,data);
 }
 
 export async function deleteArtist(id){
