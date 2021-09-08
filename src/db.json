@@ -160,5 +160,72 @@
             "instagram": "https://www.instagram.com/freya_algiz/",
             "resident": ""
         }
+    },
+    "creatives": {
+        "sjd7r64jr5": {
+            "name": "Stojne Petkov",
+            "img": "/assets/artists/tunnel.png",
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, omnis nemo labore possimus illumnecessitatibus ducimus provident reiciendis delectus! Quibusdam veniam facilis accusantium distinctionesciunt ut totam aut quae doloribus",
+            "creatorImgs":["/assets/artists/foundry.png","/assets/artists/molten.png","/assets/artists/moon.png","/assets/artists/noReturn.png","/assets/artists/scCapture.png"],
+            "bandcamp": "",
+            "soundcloud": "https://soundcloud.com/freya_algiz",
+            "spotify": "",
+            "youtube": "",
+            "facebook": "https://facebook.com/drinoff",
+            "instagram": "https://www.instagram.com/freya_algiz/",
+            "resident": ""
+        },
+        "g32sntal44g": {
+            "name": "Stojne Petkov",
+            "img": "/assets/artists/tunnel.png",
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, omnis nemo labore possimus illumnecessitatibus ducimus provident reiciendis delectus! Quibusdam veniam facilis accusantium distinctionesciunt ut totam aut quae doloribus",
+            "creatorImgs":["/assets/artists/foundry.png","/assets/artists/molten.png","/assets/artists/moon.png","/assets/artists/noReturn.png","/assets/artists/scCapture.png"],
+            "bandcamp": "",
+            "soundcloud": "https://soundcloud.com/freya_algiz",
+            "spotify": "",
+            "youtube": "",
+            "facebook": "https://facebook.com/drinoff",
+            "instagram": "https://www.instagram.com/freya_algiz/",
+            "resident": ""
+        },
+        "07me76gcyq": {
+            "name": "Stojne Petkov",
+            "img": "/assets/artists/tunnel.png",
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, omnis nemo labore possimus illumnecessitatibus ducimus provident reiciendis delectus! Quibusdam veniam facilis accusantium distinctionesciunt ut totam aut quae doloribus",
+            "creatorImgs":["/assets/artists/foundry.png","/assets/artists/molten.png","/assets/artists/moon.png","/assets/artists/noReturn.png","/assets/artists/scCapture.png"],
+            "bandcamp": "",
+            "soundcloud": "https://soundcloud.com/freya_algiz",
+            "spotify": "",
+            "youtube": "",
+            "facebook": "https://facebook.com/drinoff",
+            "instagram": "https://www.instagram.com/freya_algiz/",
+            "resident": ""
+        },
+        "zdutxseak8f": {
+            "name": "Stojne Petkov",
+            "img": "/assets/artists/tunnel.png",
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, omnis nemo labore possimus illumnecessitatibus ducimus provident reiciendis delectus! Quibusdam veniam facilis accusantium distinctionesciunt ut totam aut quae doloribus",
+            "creatorImgs":["/assets/artists/foundry.png","/assets/artists/molten.png","/assets/artists/moon.png","/assets/artists/noReturn.png","/assets/artists/scCapture.png"],
+            "bandcamp": "",
+            "soundcloud": "https://soundcloud.com/freya_algiz",
+            "spotify": "",
+            "youtube": "",
+            "facebook": "https://facebook.com/drinoff",
+            "instagram": "https://www.instagram.com/freya_algiz/",
+            "resident": ""
+        },
+        "u1vg1iwzh3": {
+            "name": "Stojne Petkov",
+            "img": "/assets/artists/tunnel.png",
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, omnis nemo labore possimus illumnecessitatibus ducimus provident reiciendis delectus! Quibusdam veniam facilis accusantium distinctionesciunt ut totam aut quae doloribus",
+            "creatorImgs":["/assets/artists/foundry.png","/assets/artists/molten.png","/assets/artists/moon.png","/assets/artists/noReturn.png","/assets/artists/scCapture.png"],
+            "bandcamp": "",
+            "soundcloud": "https://soundcloud.com/freya_algiz",
+            "spotify": "",
+            "youtube": "",
+            "facebook": "https://facebook.com/drinoff",
+            "instagram": "https://www.instagram.com/freya_algiz/",
+            "resident": ""
+        }
     }
 }
