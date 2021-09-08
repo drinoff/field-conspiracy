@@ -163,10 +163,11 @@
     },
     "creatives": {
         "sjd7r64jr5": {
-            "name": "Stojne Petkov",
-            "img": "/assets/artists/tunnel.png",
+            "name": "Jack Sparrow",
+            "creativeName": "Weekend Vibes",
+            "img": "/assets/creatives/molten.png",
             "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, omnis nemo labore possimus illumnecessitatibus ducimus provident reiciendis delectus! Quibusdam veniam facilis accusantium distinctionesciunt ut totam aut quae doloribus",
-            "creatorImgs":["/assets/artists/foundry.png","/assets/artists/molten.png","/assets/artists/moon.png","/assets/artists/noReturn.png","/assets/artists/scCapture.png"],
+            "creatorImgs":["/assets/creatives/foundry.png","/assets/creatives/molten.png","/assets/creatives/moon.png","/assets/creatives/noReturn.png","/assets/creatives/scCapture.png"],
             "bandcamp": "",
             "soundcloud": "https://soundcloud.com/freya_algiz",
             "spotify": "",
@@ -176,10 +177,11 @@
             "resident": ""
         },
         "g32sntal44g": {
-            "name": "Stojne Petkov",
-            "img": "/assets/artists/tunnel.png",
+            "name": "Palpatin",
+            "creativeName": "Electro City",
+            "img": "/assets/creatives/tunnel.png",
             "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, omnis nemo labore possimus illumnecessitatibus ducimus provident reiciendis delectus! Quibusdam veniam facilis accusantium distinctionesciunt ut totam aut quae doloribus",
-            "creatorImgs":["/assets/artists/foundry.png","/assets/artists/molten.png","/assets/artists/moon.png","/assets/artists/noReturn.png","/assets/artists/scCapture.png"],
+            "creatorImgs":["/assets/creatives/foundry.png","/assets/creatives/molten.png","/assets/creatives/moon.png","/assets/creatives/noReturn.png","/assets/creatives/scCapture.png"],
             "bandcamp": "",
             "soundcloud": "https://soundcloud.com/freya_algiz",
             "spotify": "",
@@ -189,10 +191,11 @@
             "resident": ""
         },
         "07me76gcyq": {
-            "name": "Stojne Petkov",
-            "img": "/assets/artists/tunnel.png",
+            "name": "Kylo Ren",
+            "creativeName": "To the moon and Back",
+            "img": "/assets/creatives/noReturn.png",
             "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, omnis nemo labore possimus illumnecessitatibus ducimus provident reiciendis delectus! Quibusdam veniam facilis accusantium distinctionesciunt ut totam aut quae doloribus",
-            "creatorImgs":["/assets/artists/foundry.png","/assets/artists/molten.png","/assets/artists/moon.png","/assets/artists/noReturn.png","/assets/artists/scCapture.png"],
+            "creatorImgs":["/assets/creatives/foundry.png","/assets/creatives/molten.png","/assets/creatives/moon.png","/assets/creatives/noReturn.png","/assets/creatives/scCapture.png"],
             "bandcamp": "",
             "soundcloud": "https://soundcloud.com/freya_algiz",
             "spotify": "",
@@ -203,9 +206,10 @@
         },
         "zdutxseak8f": {
             "name": "Stojne Petkov",
-            "img": "/assets/artists/tunnel.png",
+            "creativeName": "Relentless",
+            "img": "/assets/creatives/foundry.png",
             "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, omnis nemo labore possimus illumnecessitatibus ducimus provident reiciendis delectus! Quibusdam veniam facilis accusantium distinctionesciunt ut totam aut quae doloribus",
-            "creatorImgs":["/assets/artists/foundry.png","/assets/artists/molten.png","/assets/artists/moon.png","/assets/artists/noReturn.png","/assets/artists/scCapture.png"],
+            "creatorImgs":["/assets/creatives/foundry.png","/assets/creatives/molten.png","/assets/creatives/moon.png","/assets/creatives/noReturn.png","/assets/creatives/scCapture.png"],
             "bandcamp": "",
             "soundcloud": "https://soundcloud.com/freya_algiz",
             "spotify": "",
@@ -215,10 +219,11 @@
             "resident": ""
         },
         "u1vg1iwzh3": {
-            "name": "Stojne Petkov",
-            "img": "/assets/artists/tunnel.png",
+            "name": "Obi-One Kenobi",
+            "creativeName": "I got the power",
+            "img": "/assets/creatives/moon.png",
             "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, omnis nemo labore possimus illumnecessitatibus ducimus provident reiciendis delectus! Quibusdam veniam facilis accusantium distinctionesciunt ut totam aut quae doloribus",
-            "creatorImgs":["/assets/artists/foundry.png","/assets/artists/molten.png","/assets/artists/moon.png","/assets/artists/noReturn.png","/assets/artists/scCapture.png"],
+            "creatorImgs":["/assets/creatives/foundry.png","/assets/creatives/molten.png","/assets/creatives/moon.png","/assets/creatives/noReturn.png","/assets/creatives/scCapture.png"],
             "bandcamp": "",
             "soundcloud": "https://soundcloud.com/freya_algiz",
             "spotify": "",

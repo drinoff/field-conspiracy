@@ -1,0 +1,94 @@
+.creativeWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+.singleCreative{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.creativeImgWrapper{
+    width: 50%;
+}
+.creativeArtistrtistInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+}
+.creativeArtistDesc{
+    margin-top: 0px;
+}
+.creativeImgWrapper{
+    width: 40%;
+}
+.creativeArtistImg{
+    width: 100%;
+}
+
+.creativeArtistName,
+.creativeArtistArtwork{
+color: white;
+margin-bottom:0px;
+}
+
+
+.artworkContainer{
+    display: flex;
+    flex-direction: column;
+}
+.creatorImagesContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    
+}
+.creatorImgsWrapper{
+    width: 70%;
+    height: 100%;
+    
+}
+.creatorImg{
+    width: inherit;
+    height: inherit;
+    transition: 0.5s;
+}
+.creatorImg:hover{
+    transform: scale(8);
+    transition: 0.5s;
+}
+.creativesAdminButtons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+.creativesEditButton,
+.creativesDeleteButton{
+margin-left: 10px;
+margin-right: 10px;
+border: none;
+width: 100px;
+padding: 5px 10px 5px 10px;
+text-decoration: none;
+background-color: white;
+color: black;
+font-size: 14px;
+text-align: center;
+font-family: inherit;
+cursor: pointer;
+}
+
+.creativesEditButton:hover,
+.creativesDeleteButton:hover{
+background: rgb(141, 132, 132);
+}
+

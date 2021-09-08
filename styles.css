@@ -6,6 +6,7 @@
 @import '/styles/artists.css';
 @import '/styles/detailsPage.css';
 @import '/styles/editPage.css';
+@import '/styles/creativesPage.css';
 
 html{
     background-color: black;

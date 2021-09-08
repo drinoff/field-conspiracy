@@ -12,6 +12,7 @@ import { contactPage } from './views/contactPage.js';
 import { loginPage } from './views/loginPage.js'
 import { detailsPage } from './views/detailsPage.js'
 import { editPage } from './views/editPage.js'
+import { editCreativePage } from './views/editCreativePage.js'
 
 window.api = api;
 
@@ -29,10 +30,10 @@ page('/shows', decorateContext, showsPage);
 page('/login', decorateContext, loginPage);
 page('/details/:id', decorateContext, detailsPage);
 page('/edit/:id', decorateContext, editPage);
+page('/edit/creatives/:id', decorateContext, editCreativePage);
 
-// page('/login', decorateContext, loginPage);
 // page('/create',decorateContext, createPage);
-// page('/myProfile',decorateContext, myProfilePage);
+
 
 
 setUserNav();
