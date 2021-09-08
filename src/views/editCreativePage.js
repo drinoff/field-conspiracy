@@ -17,6 +17,10 @@ const editCreativeTemplate = (data, onSubmit) => html`
                 <label for="creativeName"> Creative Name:</label>
                 <input id="creativeName" type="text" value=${data.creativeName} name="creativeName">
             </div>
+            <div>
+                <label for="embed"> Embed URL:</label>
+                <input id="embed" type="text" value=${data.embed} name="embed">
+            </div>
 
             <div>
                 <label for="description">Description:</label>
@@ -80,6 +84,7 @@ export async function editCreativePage(ctx) {
 
         let name = formData.get('name');
         let creativeName = formData.get('creativeName');
+        let embed = formData.get('embed');
         let description = formData.get('description');
         let img = formData.get('imageUrl');
         let creatorImgs = Array.from(document.getElementById('artWork').children).map(x => x.value);
@@ -94,6 +99,7 @@ export async function editCreativePage(ctx) {
         const body = {
             name,
             creativeName,
+            embed,
             description,
             img,
             creatorImgs,

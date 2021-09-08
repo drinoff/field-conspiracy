@@ -14,8 +14,10 @@ const creativeCard = (item) => html`
 <article class="singleCreative">
 
     <div class="creativeImgWrapper">
-        <img class="creativeArtistImg" src=${item[1].img} alt="creativeArtistImage" />
-        
+        <img class="creativeArtistImg" src=${item[1].img} alt="creativeArtistImage" />  
+        <iframe width="100%" height="66" scrolling="no" frameborder="no" allow="autoplay"
+        src=${item[1].embed}>
+    </iframe> 
     </div>
     <div class="creativeArtistrtistInfo">
         <p class="creativeArtistName">${item[1].name}</p>
@@ -24,6 +26,7 @@ const creativeCard = (item) => html`
             <p class="creativeArtistArtwork">Artwork</p>
             <p class="creatorImagesContainer">${item[1].creatorImgs.map(artworkCard)}</p>
         </div>
+        
         <div class="artistSocial">
             ${item[1].bandcamp ? html`<a href=${item[1].bandcamp} target="_blank"><i class="fab fa-bandcamp"></i></a>` : html``}
             ${item[1].soundcloud ? html`<a href=${item[1].soundcloud} target="_blank"><i
@@ -46,6 +49,7 @@ const creativeCard = (item) => html`
         </div>
         
     </div>
+    
     
 
 </article>
