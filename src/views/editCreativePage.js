@@ -10,7 +10,7 @@ const editCreativeTemplate = (data, onSubmit) => html`
         <div class="editContainer">
             <div>
                 <label for="name"> Artist Name:</label>
-                <input id="name" type="text" value=${data.name} name="title">
+                <input id="name" type="text" value=${data.name} name="name">
             </div>
 
             <div>
