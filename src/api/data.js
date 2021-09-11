@@ -59,6 +59,11 @@ export async function getBlogArticles(){
     return await api.get(host + 'blog.json');
 }
 
-export async function getShows(){
-    return await api.get(host + 'shows.json');
+export async function getBlog(){
+    return await api.get(host + 'blog.json');
+}
+
+export async function deleteBlogArticle(id){
+    return api.del(host + 'blog/'+`${id}.json`);
+
 }

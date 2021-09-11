@@ -31,6 +31,8 @@ page('/login', decorateContext, loginPage);
 page('/details/:id', decorateContext, detailsPage);
 page('/edit/:id', decorateContext, editPage);
 page('/edit/creatives/:id', decorateContext, editCreativePage);
+page('/blog', decorateContext,blogPage);
+
 
 // page('/create',decorateContext, createPage);
 

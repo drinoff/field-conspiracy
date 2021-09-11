@@ -1,0 +1,34 @@
+.blogWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+}
+.singleArticle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.blogImgWrapper{
+    width: 50%;
+}
+.blogImgWrapper img{
+    width: 50%;
+}
+.blogDescWrapper{
+    width: 100%;
+    height: 190px;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+    
+}
+.articleDescription{
+    text-overflow: ellipsis;
+}
+.readMore{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

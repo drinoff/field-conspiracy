@@ -1,5 +1,5 @@
 import { html } from 'https://unpkg.com/lit-html?module';
-import { getShows } from '../api/data.js'
+//import { getShows } from '../api/data.js'
 
 
 const showsTemplate = (data) => html`
@@ -14,7 +14,9 @@ const showsCard = (item) => html`
 
 export async function showsPage(ctx) {
 
-    let data = await getShows();
+    let dataObj = await getShows();
+    let data = Object.entries(dataObj);
+    console.log(data);
 
     ctx.render(showsTemplate(data));
 
