@@ -31,4 +31,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+}
+.readMore a{
+    width: 100px;
+    cursor: pointer;
+    padding: 5px 10px 5px 10px;
+    border: solid 1px rgb(152, 32, 231);
+    background: rgb(0, 0, 0);
+    color: white;
+    transition: 0.5s;
+    font-family: inherit;
+    text-decoration: none;
+    text-align: center;
+}
+.readMore a:hover{
+    background: rgb(152, 32, 231);
+    transition: 0.5s;
 }

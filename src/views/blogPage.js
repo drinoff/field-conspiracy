@@ -1,6 +1,5 @@
 import { html } from 'https://unpkg.com/lit-html?module';
 import { getBlog } from '../api/data.js'
-import { deleteBlogArticle } from '../api/data.js'
 
 
 const blogTemplate = (data) => html`
@@ -12,32 +11,32 @@ const blogTemplate = (data) => html`
 const blogCard = (item) => html`
 <article id="singleArticle" class="singleArticle">
     ${item[1].link ? html`
-    
-        <div class="blogImgWrapper">
-            <a href=${item[1].link}><img src=${item[1].img} alt="" /></a>
+
+    <div class="blogImgWrapper">
+        <a href=${item[1].link}><img src=${item[1].img} alt="" /></a>
+    </div>
+
+    <div class="blogDescWrapper">
+        <div class="readMore">
+            <h1>${item[1].title}</h1>
+            <a href="/blog/${item[0]}" id="readMoreBtn">Read More</a>
         </div>
-    
-        <div class="blogDescWrapper">
-            <div class="readMore">
-                <h1>${item[1].title}</h1>
-                <button id="readMoreBtn">Read More</button>
-            </div>
-            <p>${item[1].description}</p>
-            <p>${item[1].author}</p>
-            <p>${item[1].date}</p>
-            
-        </div>
-    
+        <p>${item[1].description}</p>
+        <p>${item[1].author}</p>
+        <p>${item[1].date}</p>
+
+    </div>
+
     `
-        :
-         html`
-    <div  class="blogImgWrapper">
+    :
+   html`
+    <div class="blogImgWrapper">
         <img src=${item[1].img} alt="" />
     </div>
     <div class="blogDescWrapper">
         <div class="readMore">
             <h1>${item[1].title}</h1>
-            <button id="readMoreBtn">Read More</button>
+            <a href="/blog/${item[0]}" id=${item[0]}>Read More</a>
         </div>
         <p class="articleDescription">${item[1].description}</p>
         <p>${item[1].author}</p>
@@ -45,17 +44,7 @@ const blogCard = (item) => html`
     </div>
     `
     }
-        <div class="creativesAdminButtons">
-            ${(sessionStorage.getItem("email") === 'fieldconspiracy@gmail.com')
-            ?
-            html`<a class="creativesEditButton" id ='${item[0]}' href="/edit/creative/${item[0]}">Edit</a>
-            <button  @click=${onDelete} href='javascript:void(0)' class="creativesDeleteButton">Delete</button>`
-            : 
-            html``}
-        </div>
 </article>
-
-
 
 `;
 
@@ -63,19 +52,15 @@ export async function blogPage(ctx) {
 
     let dataObj = await getBlog();
     let data = Object.entries(dataObj);
+    console.log(data)
+    ctx.render(blogTemplate(data));
 
-    ctx.render(blogTemplate(data,onDelete));
+    document.getElementById('readMoreBtn').addEventListener('click',(e)=>{
+        let itemId = e.target.id;
+        console.log(itemId)
+        ctx.page.redirect(`/blog/${itemId}`)
+    })
 
-    async function onDelete(id) {
-        const confirmed = confirm('Are you sure you want to delete the item?');
-        if (confirmed) {
-            await deleteBlogArticle(id);
-            ctx.page.redirect('/blog');
-        }
-    }
-    const readMoreButton = document.getElementById('readMoreBtn')
-    
-            
-            
-    
+
+
 }

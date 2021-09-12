@@ -8,52 +8,55 @@
 @import '/styles/editPage.css';
 @import '/styles/creativesPage.css';
 @import '/styles/blogPage.css';
-
-html{
+@import '/styles/detailsBlogPage.css';
+html {
     background-color: black;
     box-sizing: border-box;
     color: rgb(156, 153, 153);
     font-family: 'Oswald', sans-serif;
-    
 }
 
 *,
 *:after,
-*:before{
+*:before {
     box-sizing: inherit;
 }
-body{
-    overflow-y: scroll;       
+
+body {
+    overflow-y: scroll;
 }
+
 body::-webkit-scrollbar {
     display: none;
 }
-.authButtons{
+
+.authButtons {
     display: flex;
     justify-content: flex-end;
     margin-bottom: 10px;
 }
+
 #logout,
-#adminPanel{
+#adminPanel {
     margin-left: 10px;
     width: 100px;
     border-radius: 12px;
     padding: 5px 5px 5px 5px;
     font-family: inherit;
-    font-size: 13px;   
+    font-size: 13px;
     transition: 0.5s;
 }
 
 #logout:hover,
-#adminPanel:hover{
-   cursor: pointer;
-   background: rgb(95, 21, 79);
-   color: white;
-   transform: scale(1.2);
-   transition: 0.5s;
+#adminPanel:hover {
+    cursor: pointer;
+    background: rgb(95, 21, 79);
+    color: white;
+    transform: scale(1.2);
+    transition: 0.5s;
 }
 
-.headerNav{
+.headerNav {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -61,23 +64,25 @@ body::-webkit-scrollbar {
     margin-top: 30px;
     width: 100%;
 }
-.headerNav div a{
+
+.headerNav div a {
     text-decoration: none;
 }
-.headerNav h1{
+
+.headerNav h1 {
     font-size: 32px;
     cursor: default;
     margin-left: 30px;
 }
-.headerNav .navWrapper{
+
+.headerNav .navWrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 80%;
-    
 }
 
-.headerNav div li{
+.headerNav div li {
     list-style-type: none;
     padding: 0px 15px 0px 15px;
     text-transform: uppercase;
@@ -86,80 +91,86 @@ body::-webkit-scrollbar {
     font-weight: 800;
     transition: 0.6s;
 }
-.headerNav div li:hover{
+
+.headerNav div li:hover {
     transform: scale(1.1);
     transition: 0.6s;
     cursor: pointer;
     color: white;
 }
 
-
-
-.headerNav .logo{
+.headerNav .logo {
     width: 100px;
     height: 120px;
     transition: 0.6s;
 }
 
-.headerNav .logo:hover{
+.headerNav .logo:hover {
     transform: scale(1.2);
     transition: 0.6s;
     cursor: pointer;
 }
+
+
 /* ########################## header end ######################### */
 
-main{
+main {
     height: auto;
 }
 
+
 /* ################# footer ################ */
-.footer{
+
+.footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.soundWeave{
+
+.soundWeave {
     margin-top: 50px;
     height: 30px;
     width: 300px;
 }
-.social{
+
+.social {
     margin-top: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.footer .social .fab{
+
+.footer .social .fab {
     margin-right: 15px;
     color: white;
     transition: 0.5s;
 }
-.footer .social .fab:hover{
+
+.footer .social .fab:hover {
     cursor: pointer;
     transform: scale(1.3);
     transition: 0.5s;
-    
 }
-.footer p img{
+
+.footer p img {
     width: 15px;
     height: 15px;
 }
-.copyright{
+
+.copyright {
     font-size: 10px;
     font-weight: 500px;
     text-transform: uppercase;
-    
 }
-.admin{
+
+.admin {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 10px;
     color: darkgray;
 }
-.admin:hover{
+
+.admin:hover {
     color: white;
 }
-
-
-
