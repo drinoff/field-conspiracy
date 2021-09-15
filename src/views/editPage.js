@@ -3,7 +3,7 @@ import { getArtistById } from '../api/data.js';
 import { editArtist } from '../api/data.js'
 
 
-const editTemplate = (data, onSubmit) => html`
+const editTemplate = (data, onSubmit) => html `
 <section id="editArtistSection">
     <form @submit=${onSubmit} id="edit-form">
         <h1>Edit Artist</h1>
@@ -69,23 +69,23 @@ export async function editPage(ctx) {
         let youtube = formData.get('youtube');
         let facebook = formData.get('facebook');
         let instagram = formData.get('instagram');
-        let resident = formData.get('imageUrl');
-        
-            const body = {
-                name,
-                description,
-                img,
-                bandcamp,
-                soundcloud,
-                spotify,
-                youtube,
-                facebook,
-                instagram,
-                resident,
-            }
-            await editArtist(ctx.params.id, body)
-            ctx.setUserNav();
-            ctx.page.redirect('/details/' + ctx.params.id);
-        
+        let resident = formData.get('ra');
+
+        const body = {
+            name,
+            description,
+            img,
+            bandcamp,
+            soundcloud,
+            spotify,
+            youtube,
+            facebook,
+            instagram,
+            resident,
+        }
+        await editArtist(ctx.params.id, body)
+        ctx.setUserNav();
+        ctx.page.redirect('/details/' + ctx.params.id);
+
     }
 }
