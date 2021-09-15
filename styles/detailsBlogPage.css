@@ -1,0 +1,15 @@
+#blogArticleDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+.detailsImgWrapper {
+    width: 40%;
+}
+
+.detailsImgWrapper a img {
+    width: 100%;
+}
