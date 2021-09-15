@@ -10,7 +10,7 @@ const editTemplate = (data, onSubmit) => html `
         <div class="editContainer">
             <div>
                 <label for="name">Name:</label>
-                <input id="name" type="text" value=${data.name} name="title">
+                <input id="name" type="text" value=${data.name} name="name">
             </div>
 
             <div>
