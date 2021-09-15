@@ -60,6 +60,10 @@ export async function getArticleById(id) {
     return await api.get(host + "blog/" + `${id}.json`);
 }
 
+export async function editBlogArticle(id, data) {
+    return await api.put(host + `/blog/${id}.json`, data);
+}
+
 export async function deleteBlogArticle(id) {
     return api.del(host + "blog/" + `${id}.json`);
 }

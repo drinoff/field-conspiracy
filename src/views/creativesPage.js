@@ -66,7 +66,6 @@ export async function creativesPage(ctx) {
     
     let dataObj = await getCreatives();
     let data = Object.entries(dataObj)
-    console.log(data)
     ctx.render(creativesTemplate(data, onDelete));
 
    const delButton = document.getElementsByClassName('creativesAdminButtons')[0];

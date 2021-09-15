@@ -1,0 +1,20 @@
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+textarea {
+    margin-bottom: 20px;
+    width: 300px;
+    height: 20em;
+}

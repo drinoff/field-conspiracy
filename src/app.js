@@ -14,6 +14,7 @@ import { detailsPage } from "./views/detailsPage.js";
 import { editPage } from "./views/editPage.js";
 import { editCreativePage } from "./views/editCreativePage.js";
 import { detailsBlogPage } from "./views/detailsBlogPage.js";
+import { editBlogPage } from "./views/editBlogPage.js";
 
 window.api = api;
 
@@ -34,6 +35,7 @@ page("/edit/:id", decorateContext, editPage);
 page("/edit/creatives/:id", decorateContext, editCreativePage);
 page("/blog", decorateContext, blogPage);
 page("/blog/:id", decorateContext, detailsBlogPage);
+page("/blog/edit/:id", decorateContext, editBlogPage);
 
 // page('/create',decorateContext, createPage);
 

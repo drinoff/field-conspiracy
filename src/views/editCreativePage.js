@@ -75,7 +75,7 @@ const picCard = (item) => html `
 
 export async function editCreativePage(ctx) {
     const data = await getCreativeById(ctx.params.id)
-    console.log(data);
+
     ctx.render(editCreativeTemplate(data, onSubmit))
 
     async function onSubmit(e) {

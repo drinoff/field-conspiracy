@@ -2,7 +2,7 @@ import { html } from 'https://unpkg.com/lit-html?module';
 import { getArtistById } from '../api/data.js';
 import { deleteArtist } from '../api/data.js';
 
-const detailsTemplate = (data, onDelete,ctx) => html`
+const detailsTemplate = (data, onDelete, ctx) => html `
 <section id="artistDetails">
     <div class="imgAndName">
         <h1>${data.name}</h1>

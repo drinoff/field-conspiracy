@@ -9,6 +9,7 @@
 @import '/styles/creativesPage.css';
 @import '/styles/blogPage.css';
 @import '/styles/detailsBlogPage.css';
+@import '/styles/editBlogPage.css';
 html {
     background-color: black;
     box-sizing: border-box;
