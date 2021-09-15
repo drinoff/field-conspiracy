@@ -3,7 +3,7 @@ import { getCreativeById } from '../api/data.js';
 import { editCreative } from '../api/data.js'
 
 
-const editCreativeTemplate = (data, onSubmit) => html`
+const editCreativeTemplate = (data, onSubmit) => html `
 <section id="editArtistSection">
     <form @submit=${onSubmit} id="edit-form">
         <h1>Edit Creative</h1>
@@ -68,13 +68,14 @@ const editCreativeTemplate = (data, onSubmit) => html`
     </form>
 </section>
 `;
-const picCard = (item) => html`
+const picCard = (item) => html `
 
 <input type="pics" name="pics" id="pics" value=${item} />
 `;
 
 export async function editCreativePage(ctx) {
     const data = await getCreativeById(ctx.params.id)
+    console.log(data);
     ctx.render(editCreativeTemplate(data, onSubmit))
 
     async function onSubmit(e) {
@@ -94,7 +95,7 @@ export async function editCreativePage(ctx) {
         let youtube = formData.get('youtube');
         let facebook = formData.get('facebook');
         let instagram = formData.get('instagram');
-        let resident = formData.get('imageUrl');
+        let resident = formData.get('ra');
 
         const body = {
             name,

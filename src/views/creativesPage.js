@@ -2,7 +2,7 @@ import { html } from 'https://unpkg.com/lit-html?module';
 import { getCreatives } from '../api/data.js';
 import { deleteCreative } from '../api/data.js';
 
-const creativesTemplate = (data) => html`
+const creativesTemplate = (data) => html `
 
 <section class="creativeWrapper">
     ${data.map(creativeCard)}
@@ -10,7 +10,7 @@ const creativesTemplate = (data) => html`
 
 `;
 
-const creativeCard = (item) => html`
+const creativeCard = (item) => html `
 <article class="singleCreative">
 
     <div class="creativeImgWrapper">
@@ -28,7 +28,7 @@ const creativeCard = (item) => html`
         </div>
         
         <div class="artistSocial">
-            ${item[1].bandcamp ? html`<a href=${item[1].bandcamp} target="_blank"><i class="fab fa-bandcamp"></i></a>` : html``}
+            ${item[1].bandcamp ? html`<a href="${item[1].bandcamp}" target="_blank"><i class="fab fa-bandcamp"></i></a>` : html``}
             ${item[1].soundcloud ? html`<a href=${item[1].soundcloud} target="_blank"><i
                     class="fab fa-soundcloud"></i></a>` : html``}
             ${item[1].spotify ? html`<a href=${item[1].spotify} target="_blank"><i class="fab fa-spotify"></i></a>` : html``}
@@ -66,9 +66,10 @@ export async function creativesPage(ctx) {
     
     let dataObj = await getCreatives();
     let data = Object.entries(dataObj)
+    console.log(data)
     ctx.render(creativesTemplate(data, onDelete));
 
-   const delButton = document.getElementsByClassName('creativeWrapper')[0];
+   const delButton = document.getElementsByClassName('creativesAdminButtons')[0];
     delButton.addEventListener('click',(e)=>{
         e.preventDefault();
         if(e.target.textContent === 'Delete'){
