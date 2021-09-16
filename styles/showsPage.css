@@ -1,0 +1,21 @@
+.allShowsWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+.imgAndDesc {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imgAndDesc div {
+    width: 30%;
+}
+
+.imgAndDesc div img {
+    width: 100%;
+}

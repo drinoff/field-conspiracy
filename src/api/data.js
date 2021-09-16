@@ -67,3 +67,7 @@ export async function editBlogArticle(id, data) {
 export async function deleteBlogArticle(id) {
     return api.del(host + "blog/" + `${id}.json`);
 }
+
+export async function getShows() {
+    return await api.get(host + "shows.json");
+}

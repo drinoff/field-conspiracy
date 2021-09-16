@@ -1,6 +1,5 @@
 {
-    "instaVideos": [
-        {
+    "instaVideos": [{
             "id": "0",
             "artist": "Rene Wright",
             "track": "Alchemy",
@@ -36,8 +35,7 @@
             "instaLink": "https://www.instagram.com/p/CAiEVPEjgBP/"
         }
     ],
-    "releases": [
-        {
+    "releases": [{
             "id": "0",
             "artist": "Rene Wright Phakaja Hyusfall",
             "track": "Conspirations I",
@@ -168,7 +166,7 @@
             "creativeName": "Weekend Vibes",
             "img": "/assets/creatives/molten.png",
             "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, omnis nemo labore possimus illumnecessitatibus ducimus provident reiciendis delectus! Quibusdam veniam facilis accusantium distinctionesciunt ut totam aut quae doloribus",
-            "creatorImgs":["/assets/creatives/foundry.png","/assets/creatives/molten.png","/assets/creatives/moon.png","/assets/creatives/noReturn.png","/assets/creatives/scCapture.png"],
+            "creatorImgs": ["/assets/creatives/foundry.png", "/assets/creatives/molten.png", "/assets/creatives/moon.png", "/assets/creatives/noReturn.png", "/assets/creatives/scCapture.png"],
             "bandcamp": "",
             "soundcloud": "https://soundcloud.com/freya_algiz",
             "spotify": "",
@@ -183,7 +181,7 @@
             "creativeName": "Electro City",
             "img": "/assets/creatives/tunnel.png",
             "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, omnis nemo labore possimus illumnecessitatibus ducimus provident reiciendis delectus! Quibusdam veniam facilis accusantium distinctionesciunt ut totam aut quae doloribus",
-            "creatorImgs":["/assets/creatives/foundry.png","/assets/creatives/molten.png","/assets/creatives/moon.png","/assets/creatives/noReturn.png","/assets/creatives/scCapture.png"],
+            "creatorImgs": ["/assets/creatives/foundry.png", "/assets/creatives/molten.png", "/assets/creatives/moon.png", "/assets/creatives/noReturn.png", "/assets/creatives/scCapture.png"],
             "bandcamp": "",
             "soundcloud": "https://soundcloud.com/freya_algiz",
             "spotify": "",
@@ -198,7 +196,7 @@
             "creativeName": "To the moon and Back",
             "img": "/assets/creatives/noReturn.png",
             "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, omnis nemo labore possimus illumnecessitatibus ducimus provident reiciendis delectus! Quibusdam veniam facilis accusantium distinctionesciunt ut totam aut quae doloribus",
-            "creatorImgs":["/assets/creatives/foundry.png","/assets/creatives/molten.png","/assets/creatives/moon.png","/assets/creatives/noReturn.png","/assets/creatives/scCapture.png"],
+            "creatorImgs": ["/assets/creatives/foundry.png", "/assets/creatives/molten.png", "/assets/creatives/moon.png", "/assets/creatives/noReturn.png", "/assets/creatives/scCapture.png"],
             "bandcamp": "",
             "soundcloud": "https://soundcloud.com/freya_algiz",
             "spotify": "",
@@ -213,7 +211,7 @@
             "creativeName": "Relentless",
             "img": "/assets/creatives/foundry.png",
             "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, omnis nemo labore possimus illumnecessitatibus ducimus provident reiciendis delectus! Quibusdam veniam facilis accusantium distinctionesciunt ut totam aut quae doloribus",
-            "creatorImgs":["/assets/creatives/foundry.png","/assets/creatives/molten.png","/assets/creatives/moon.png","/assets/creatives/noReturn.png","/assets/creatives/scCapture.png"],
+            "creatorImgs": ["/assets/creatives/foundry.png", "/assets/creatives/molten.png", "/assets/creatives/moon.png", "/assets/creatives/noReturn.png", "/assets/creatives/scCapture.png"],
             "bandcamp": "",
             "soundcloud": "https://soundcloud.com/freya_algiz",
             "spotify": "",
@@ -228,7 +226,7 @@
             "creativeName": "I got the power",
             "img": "/assets/creatives/moon.png",
             "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, omnis nemo labore possimus illumnecessitatibus ducimus provident reiciendis delectus! Quibusdam veniam facilis accusantium distinctionesciunt ut totam aut quae doloribus",
-            "creatorImgs":["/assets/creatives/foundry.png","/assets/creatives/molten.png","/assets/creatives/moon.png","/assets/creatives/noReturn.png","/assets/creatives/scCapture.png"],
+            "creatorImgs": ["/assets/creatives/foundry.png", "/assets/creatives/molten.png", "/assets/creatives/moon.png", "/assets/creatives/noReturn.png", "/assets/creatives/scCapture.png"],
             "bandcamp": "",
             "soundcloud": "https://soundcloud.com/freya_algiz",
             "spotify": "",
@@ -241,7 +239,7 @@
     "blog": {
         "tll2wpzihmf": {
             "title": "The eye of providence",
-            "date":"",
+            "date": "",
             "link": "https://drinoff.eu",
             "author": "Field Conspiracy",
             "img": "/assets/blog/eyeOfProvidence.png",
@@ -249,7 +247,7 @@
         },
         "t0waslruidl": {
             "title": "The moon harvester",
-            "date":"",
+            "date": "",
             "link": "https://drinoff.github.io",
             "author": "Master Joda",
             "img": "/assets/blog/eyeOfProvidence.png",
@@ -257,7 +255,7 @@
         },
         "xpdtaieihk": {
             "title": "Santiago chronicles",
-            "date":"",
+            "date": "",
             "link": "",
             "author": "Jack Sparrow",
             "img": "/assets/blog/eyeOfProvidence.png",
@@ -265,7 +263,7 @@
         },
         "orvtvftw0m": {
             "title": "Shadow and Bone",
-            "date":"",
+            "date": "",
             "link": "",
             "author": "Field Conspiracy",
             "img": "/assets/blog/eyeOfProvidence.png",
@@ -273,7 +271,7 @@
         },
         "3p8no1du77": {
             "title": "Mortal instruments",
-            "date":"",
+            "date": "",
             "link": "",
             "author": "Jack Sparrow",
             "img": "/assets/blog/eyeOfProvidence.png",
@@ -281,7 +279,7 @@
         },
         "ayfdhu41rjf": {
             "title": "Danbury Trashers",
-            "date":"",
+            "date": "",
             "link": "",
             "author": "Pesho Peshev",
             "img": "/assets/blog/eyeOfProvidence.png",
@@ -289,11 +287,48 @@
         },
         "vg6yxgqyng": {
             "title": "Where is your light now",
-            "date":"",
+            "date": "",
             "link": "",
             "author": "Ken",
             "img": "/assets/blog/eyeOfProvidence.png",
             "description": "The Eye of Providence, also known as the all-seeing eye of God, is a well-known symbol dating back to the age of Renaissance – an age of “rebirth” of a new human after thousand years of darkness in consciousness. Historically, it first appeared as a Christian symbol representing the omnipresence, omnipotence, and omniscience of God. However, since the use of the Eye by Freemasons and US dollar bills, it has become one of the world's most conspired symbols. The conspiracy theories around the Eye of Providence, in essence, all relate to being “watched” by the “Big Brother”. Whether the structures to conform to are institutionalized religion, or socially constructed “morals”, or the governance of the big data – it always comes down to the fear of “being watched” by some supreme authority, which we inflict on ourselves.One Eye of Providence being watched back upon by multiple eyes of its own reflection has become our symbol to remind us that the eye that watches over us and the eyes which look back at it are ONE. Power only feeds from empowerment and by the collective transformation of our conscience to become aware of non-duality we can transcend into “becoming” the Eye of Providence ourselves. Now is the second Renaissance because now is the chance to break free from the prisons, which we have created for ourselves – living in fear will no longer serve us with the salvation we are looking for. To stop the war around us means to stop the war within – for this love is the only way! But let's not forget that Dark Ages lasted for 1000 years and that evolution doesn’t happen overnight.We are the “field” in Field Conspiracy."
+        }
+    },
+    "shows": {
+        "gp8bsbz0ma": {
+            "title": "The Path to Perceptions w/ Djackulate - Threads Radio - (19th-Aug-2021)",
+            "img": "/assets/shows/djackulate.jpg",
+            "description": "Jack Mc Mahon (aka Djackulate) is a Dublin based turntablist, multi instrumentalist and sample artist that has dedicated the majority of his musical life to mastering the turntable as a musical instrument. Currently the world freestyle scratching champion for the 2nd time, his technical ability and virtuosity using a turntable is world renowned, but musical focus is to marry simplicity and technical virtuosity to create dynamic live musical performances using a turntable as the main instrument.The first hour of the show will bring you Jack's unconventional journey as an artist, followed by an hour of an extraordinary mix, which will certainly knock your socks off with his mastery of wit and scratch skills.PS! Make sure to eye-witness his artistry on his Youtube page: https://www.youtube.com/djackulate",
+            "embed": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1113029824&color=%23363832&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true",
+            "date": "19.08.2021"
+        },
+        "7rz16jagtvl": {
+            "title": "The Path to Perceptions w/ Djackulate - Threads Radio - (19th-Aug-2021)",
+            "img": "/assets/shows/djackulate.jpg",
+            "description": "Jack Mc Mahon (aka Djackulate) is a Dublin based turntablist, multi instrumentalist and sample artist that has dedicated the majority of his musical life to mastering the turntable as a musical instrument. Currently the world freestyle scratching champion for the 2nd time, his technical ability and virtuosity using a turntable is world renowned, but musical focus is to marry simplicity and technical virtuosity to create dynamic live musical performances using a turntable as the main instrument.The first hour of the show will bring you Jack's unconventional journey as an artist, followed by an hour of an extraordinary mix, which will certainly knock your socks off with his mastery of wit and scratch skills.PS! Make sure to eye-witness his artistry on his Youtube page: https://www.youtube.com/djackulate",
+            "embed": "https://www.youtube.com/embed/Cutg8Ke3OhY",
+            "date": "19.08.2021"
+        },
+        "vprzxg23v2": {
+            "title": "The Path to Perceptions w/ Djackulate - Threads Radio - (19th-Aug-2021)",
+            "img": "/assets/shows/djackulate.jpg",
+            "description": "Jack Mc Mahon (aka Djackulate) is a Dublin based turntablist, multi instrumentalist and sample artist that has dedicated the majority of his musical life to mastering the turntable as a musical instrument. Currently the world freestyle scratching champion for the 2nd time, his technical ability and virtuosity using a turntable is world renowned, but musical focus is to marry simplicity and technical virtuosity to create dynamic live musical performances using a turntable as the main instrument.The first hour of the show will bring you Jack's unconventional journey as an artist, followed by an hour of an extraordinary mix, which will certainly knock your socks off with his mastery of wit and scratch skills.PS! Make sure to eye-witness his artistry on his Youtube page: https://www.youtube.com/djackulate",
+            "embed": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1113029824&color=%23363832&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true",
+            "date": "19.08.2021"
+        },
+        "h5frzyaksxi": {
+            "title": "The Path to Perceptions w/ Djackulate - Threads Radio - (19th-Aug-2021)",
+            "img": "/assets/shows/djackulate.jpg",
+            "description": "Jack Mc Mahon (aka Djackulate) is a Dublin based turntablist, multi instrumentalist and sample artist that has dedicated the majority of his musical life to mastering the turntable as a musical instrument. Currently the world freestyle scratching champion for the 2nd time, his technical ability and virtuosity using a turntable is world renowned, but musical focus is to marry simplicity and technical virtuosity to create dynamic live musical performances using a turntable as the main instrument.The first hour of the show will bring you Jack's unconventional journey as an artist, followed by an hour of an extraordinary mix, which will certainly knock your socks off with his mastery of wit and scratch skills.PS! Make sure to eye-witness his artistry on his Youtube page: https://www.youtube.com/djackulate",
+            "embed": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1113029824&color=%23363832&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true",
+            "date": "19.08.2021"
+        },
+        "bvw223nrpr": {
+            "title": "The Path to Perceptions w/ Djackulate - Threads Radio - (19th-Aug-2021)",
+            "img": "/assets/shows/djackulate.jpg",
+            "description": "Jack Mc Mahon (aka Djackulate) is a Dublin based turntablist, multi instrumentalist and sample artist that has dedicated the majority of his musical life to mastering the turntable as a musical instrument. Currently the world freestyle scratching champion for the 2nd time, his technical ability and virtuosity using a turntable is world renowned, but musical focus is to marry simplicity and technical virtuosity to create dynamic live musical performances using a turntable as the main instrument.The first hour of the show will bring you Jack's unconventional journey as an artist, followed by an hour of an extraordinary mix, which will certainly knock your socks off with his mastery of wit and scratch skills.PS! Make sure to eye-witness his artistry on his Youtube page: https://www.youtube.com/djackulate",
+            "embed": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1113029824&color=%23363832&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true",
+            "date": "19.08.2021"
         }
     }
 }
