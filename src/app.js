@@ -15,11 +15,13 @@ import { editPage } from "./views/editPage.js";
 import { editCreativePage } from "./views/editCreativePage.js";
 import { detailsBlogPage } from "./views/detailsBlogPage.js";
 import { editBlogPage } from "./views/editBlogPage.js";
+import { editShowPage } from "./views/editShowPage.js";
+import { createReleasePage } from "./views/createReleasePage.js"
 
 window.api = api;
 
 const main = document.getElementsByTagName("main")[0];
-let adminPanel = document.getElementById("adminPanel");
+let authButtons = document.getElementsByClassName("authButtons")[0];
 let logout = document.getElementById("logout");
 
 page("/", decorateContext, homePage);
@@ -36,8 +38,8 @@ page("/edit/creatives/:id", decorateContext, editCreativePage);
 page("/blog", decorateContext, blogPage);
 page("/blog/:id", decorateContext, detailsBlogPage);
 page("/blog/edit/:id", decorateContext, editBlogPage);
-
-// page('/create',decorateContext, createPage);
+page("/shows/:id", decorateContext, editShowPage);
+page('/createRelease', decorateContext, createReleasePage);
 
 setUserNav();
 page.start();
@@ -51,11 +53,9 @@ function decorateContext(ctx, next) {
 
 function setUserNav() {
     if (window.sessionStorage.length !== 0) {
-        adminPanel.style.display = "block";
-        logout.style.display = "block";
+        authButtons.style.display = "flex";
     } else {
-        adminPanel.style.display = "none";
-        logout.style.display = "none";
+        authButtons.style.display = "none";
     }
 }
 

@@ -6,6 +6,10 @@
     width: 70%;
 }
 
+.showWrapper {
+    margin-bottom: 50px;
+}
+
 .imgAndDesc {
     display: flex;
     justify-content: space-around;
@@ -18,4 +22,8 @@
 
 .imgAndDesc div img {
     width: 100%;
+}
+
+.imgAndDesc .showDesc {
+    width: 60%;
 }

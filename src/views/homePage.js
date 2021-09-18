@@ -2,7 +2,7 @@ import { html } from 'https://unpkg.com/lit-html?module';
 import { getInstaVideos } from '../api/data.js';
 
 
-const homeTemplate = (data, onsubmit) => html`
+const homeTemplate = (data, onsubmit) => html `
 <video width="1080" height="720" src="../../assets/landingVideo.webm" autoplay loop muted>
     Your browser does not support the video tag.
 </video>
@@ -66,7 +66,7 @@ const homeTemplate = (data, onsubmit) => html`
 </section>
 `;
 
-const cardTemplate = (item) => html`
+const cardTemplate = (item) => html `
 <a class = 'instaLink' href=${item.instaLink} target="blank">
 <article  class='instaVideosFetched'>
     <img src=${item.URL} alt="" />
@@ -84,12 +84,12 @@ export async function homePage(ctx) {
         e.preventDefault();
         const form = document.getElementById('newstler-Form');
         let formData = new FormData(form);
-        
+
         let email = formData.get("EMAIL");
         let fName = formData.get("FNAME");
-        
-        
-        
+
+
+
         if (email === '') {
             window.alert(`The Email field must be filled`)
         }
@@ -98,40 +98,40 @@ export async function homePage(ctx) {
         }
         let data = {
             "email_address": email,
-            "name" : fName
-            
+            "name": fName
+
         }
-        fetch('/.netlify/functions/subscribe',{
-            method:'POST',
-            
-            headers:{
-                
-                "Content-Type" : "application/json"
+        fetch('/.netlify/functions/subscribe', {
+            method: 'POST',
+
+            headers: {
+
+                "Content-Type": "application/json"
             },
-            body:JSON.stringify(data)
+            body: JSON.stringify(data)
         })
-        
-        .then(responce=>responce.json())
-        .then(data=>console.log(data))
-        
-        
-        
+
+        .then(responce => responce.json())
+            .then(data => console.log(data))
+
+
+
 
         form.reset();
-        
+
     }
-    
+
     const button = document.getElementById('mc-embedded-subscribe');
     const newstler = document.getElementsByClassName('newstler')[0];
     const newstlerWrapper = document.getElementById('newstlerForm');
     const newstlerThanks = document.getElementsByClassName('newstlerThanks')[0];
     const closeThanks = document.getElementsByClassName('fa-times-circle')[0];
 
-    closeThanks.addEventListener('click',()=>{
-        if(newstlerThanks.style.display = 'flex'){
-        newstlerThanks.style.display = 'none';
+    closeThanks.addEventListener('click', () => {
+        if (newstlerThanks.style.display = 'flex') {
+            newstlerThanks.style.display = 'none';
         }
-        if(newstlerWrapper.style.display = 'flex'){
+        if (newstlerWrapper.style.display = 'flex') {
             newstlerWrapper.style.display = 'none';
         }
     })
@@ -140,13 +140,13 @@ export async function homePage(ctx) {
         newstlerWrapper.style.display = 'flex';
     })
 
-    button.addEventListener('click', ()=>{
+    button.addEventListener('click', () => {
         newstlerWrapper.style.display = 'none';
         newstlerThanks.style.display = 'flex';
-        setInterval(function(){ newstlerThanks.style.display = 'none'; }, 3000);
+        setInterval(function() { newstlerThanks.style.display = 'none'; }, 3000);
     })
 
-    
+
 
 
 }

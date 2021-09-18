@@ -5,11 +5,15 @@ const host =
 
 api.settings.host = host;
 
-// export async function createNews(data){
-//     return await api.post(host + '/data/memes',data);
-// }
+export async function createRelease(data) {
+    return await api.post(host + 'releases.json', data);
+}
 export async function getReleases() {
     return await api.get(host + "releases.json");
+}
+
+export async function deleteRelease(id) {
+    return api.del(host + "releases/" + `${id}.json`);
 }
 
 export async function getArtists() {
@@ -70,4 +74,16 @@ export async function deleteBlogArticle(id) {
 
 export async function getShows() {
     return await api.get(host + "shows.json");
+}
+
+export async function deleteShow(id) {
+    return api.del(host + "shows/" + `${id}.json`);
+}
+
+export async function getShowById(id) {
+    return await api.get(host + "shows/" + `${id}.json`);
+}
+
+export async function editShow(id, data) {
+    return await api.put(host + `/shows/${id}.json`, data);
 }

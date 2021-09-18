@@ -35,27 +35,31 @@ body::-webkit-scrollbar {
 .authButtons {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     margin-bottom: 10px;
 }
 
-#logout,
-#adminPanel {
-    margin-left: 10px;
+.authButtons #logout,
+.authButtons #adminPanel {
     width: 100px;
-    border-radius: 12px;
-    padding: 5px 5px 5px 5px;
+    margin-top: 5px;
+    padding: 5px 0px 5px 0px;
     font-family: inherit;
-    font-size: 13px;
-    transition: 0.5s;
+    font-size: 10px;
+    background: transparent;
+    border: none;
+    color: white;
+    font-weight: 700;
+}
+
+.authButtons a {
+    text-decoration: none;
 }
 
 #logout:hover,
 #adminPanel:hover {
     cursor: pointer;
-    background: rgb(95, 21, 79);
-    color: white;
-    transform: scale(1.2);
-    transition: 0.5s;
+    color: rgb(100, 23, 100);
 }
 
 .headerNav {
