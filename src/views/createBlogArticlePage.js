@@ -1,49 +1,47 @@
 import { html } from "https://unpkg.com/lit-html?module";
-import { getArticleById } from "../api/data.js";
-import { editBlogArticle } from "../api/data.js";
+import { createBlogArticle } from '../api/data.js';
 
-const editBlogTemplate = (data, onSubmit) => html `
+
+const createBlogArticleTemplate = (onSubmit) => html `
   <div className="formWrapper">
     <form @submit=${onSubmit} id="edit-form">
       <div>
         <label for="author">Author</label>
-        <input type="text" name="author" value=${data.author} />
+        <input type="text" name="author" value='' />
       </div>
 
       <div>
         <label for="title">Title</label>
-        <input type="text" name="title" value=${data.title} />
+        <input type="text" name="title" value='' />
       </div>
 
       <div>
         <label for="description">Description:</label>
         <textarea id="description" name="description">
-            ${data.description} 
+             
         </textarea>
       </div>
 
       <div>
         <label for="img">Image</label>
-        <input type="text" name="img" value=${data.img} />
+        <input type="text" name="img" value='' />
       </div>
 
       <div>
         <label for="link">Link</label>
-        <input type="text" name="link" value=${data.link} />
+        <input type="text" name="link" value='' />
       </div>
 
       <div>
-        <input type="submit" class="editArtistButton" value="Edit Article" />
+        <input type="submit" class="editArtistButton" value="Create Article" />
       </div>
 
     </form>
   </div>
 `;
 
-export async function editBlogPage(ctx) {
-    const data = await getArticleById(ctx.params.id);
-    let createDate = data.createDate;
-    ctx.render(editBlogTemplate(data, onSubmit));
+export async function createBlogArticlePage(ctx) {
+    ctx.render(createBlogArticleTemplate(onSubmit));
 
     async function onSubmit(e) {
         e.preventDefault();
@@ -56,7 +54,10 @@ export async function editBlogPage(ctx) {
         let description = formData.get('description');
         let img = formData.get('img');
         let link = formData.get('link');
-        let date = data.date;
+        let time = new Date();
+        const [day, month, year] = [time.getDate(), time.getMonth(), time.getFullYear()]
+        let date = `${day}.${month}.${year}`;
+        let createDate = Date.now();
 
         const body = {
             author,
@@ -67,7 +68,7 @@ export async function editBlogPage(ctx) {
             date,
             createDate
         }
-        await editBlogArticle(ctx.params.id, body)
+        await createBlogArticle(body)
         ctx.setUserNav();
         ctx.page.redirect('/blog');
     }

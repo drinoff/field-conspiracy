@@ -46,8 +46,7 @@ const showsCard = (item) => html `
 
 export async function showsPage(ctx) {
     let dataObj = await getShows();
-    let data = Object.entries(dataObj);
-    console.log(data);
+    let data = Object.entries(dataObj).reverse();
 
     ctx.render(showsTemplate(data, showsCard));
 

@@ -16,7 +16,11 @@ import { editCreativePage } from "./views/editCreativePage.js";
 import { detailsBlogPage } from "./views/detailsBlogPage.js";
 import { editBlogPage } from "./views/editBlogPage.js";
 import { editShowPage } from "./views/editShowPage.js";
-import { createReleasePage } from "./views/createReleasePage.js"
+import { createReleasePage } from "./views/createReleasePage.js";
+import { createArtistPage } from "./views/createArtistPage.js";
+import { createCreativePage } from './views/createCreativePage.js';
+import { createBlogArticlePage } from './views/createBlogArticlePage.js';
+import { createShowPage } from "./views/createShowPage.js";
 
 window.api = api;
 
@@ -40,6 +44,10 @@ page("/blog/:id", decorateContext, detailsBlogPage);
 page("/blog/edit/:id", decorateContext, editBlogPage);
 page("/shows/:id", decorateContext, editShowPage);
 page('/createRelease', decorateContext, createReleasePage);
+page('/createArtist', decorateContext, createArtistPage);
+page('/createCreative', decorateContext, createCreativePage);
+page('/createBlogArticle', decorateContext, createBlogArticlePage);
+page('/createShow', decorateContext, createShowPage)
 
 setUserNav();
 page.start();

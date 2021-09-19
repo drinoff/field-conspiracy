@@ -46,7 +46,7 @@ const blogCard = (item) => html `
 
 export async function blogPage(ctx) {
   let dataObj = await getBlog();
-  let data = Object.entries(dataObj);
+  let data = Object.entries(dataObj).reverse();
   ctx.render(blogTemplate(data));
   document
     .getElementsByClassName("blogWrapper")[0]

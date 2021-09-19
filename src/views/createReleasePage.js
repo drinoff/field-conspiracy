@@ -26,7 +26,7 @@ const createReleaseTemplate = (onSubmit) => html `
                 <label for="bandCamp">Bandcamp:</label>
                 <input type="text" name="bandCamp" value='' id="bandcampEdit" />
             </div>
-            <input type="submit" class="editArtistButton" value="Create">
+            <input type="submit" class="editArtistButton" value="Create Release">
         </div>
     </form>
 </section>

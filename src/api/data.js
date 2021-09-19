@@ -8,6 +8,23 @@ api.settings.host = host;
 export async function createRelease(data) {
     return await api.post(host + 'releases.json', data);
 }
+
+export async function createArtist(data) {
+    return await api.post(host + 'artists.json', data);
+}
+
+export async function createCreative(data) {
+    return await api.post(host + 'creatives.json', data);
+}
+
+export async function createBlogArticle(data) {
+    return await api.post(host + 'blog.json', data);
+}
+
+export async function createShow(data) {
+    return await api.post(host + 'shows.json', data);
+}
+
 export async function getReleases() {
     return await api.get(host + "releases.json");
 }
@@ -53,7 +70,7 @@ export async function getInstaVideos() {
 }
 
 export async function getBlogArticles() {
-    return await api.get(host + "blog.json");
+    return await api.get(host + "blog.json?orderBy=\"createDate\"");
 }
 
 export async function getBlog() {
