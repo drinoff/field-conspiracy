@@ -5,7 +5,7 @@ import { deleteCreative } from '../api/data.js';
 const creativesTemplate = (data) => html `
 
 <section class="creativeWrapper">
-    ${data.map(creativeCard)}
+    ${data.length!==0 ? data.map(creativeCard):'No Creatives Currently'}
 </section>
 
 `;
@@ -24,7 +24,7 @@ const creativeCard = (item) => html `
         <p class="creativeArtistDesc">${item[1].description}</p>
         <div class="artworkContainer">
             <p class="creativeArtistArtwork">Artwork</p>
-            <p class="creatorImagesContainer">${item[1].creatorImgs.map(artworkCard)}</p>
+            <p class="creatorImagesContainer">${item[1].creatorImgs.filter(x=>x!=='').map(artworkCard)}</p>
         </div>
         
         <div class="artistSocial">
@@ -65,10 +65,15 @@ const artworkCard = (art) => html`
 export async function creativesPage(ctx) {
     
     let dataObj = await getCreatives();
-    let data = Object.entries(dataObj)
+    let data;
+  if(dataObj===null){
+    data = [];
+  }else{
+    data = Object.entries(dataObj);
+  }
     ctx.render(creativesTemplate(data, onDelete));
 
-   const delButton = document.getElementsByClassName('creativesAdminButtons')[0];
+    const delButton = document.getElementsByClassName('creativeWrapper')[0];
     delButton.addEventListener('click',(e)=>{
         e.preventDefault();
         if(e.target.textContent === 'Delete'){
@@ -84,8 +89,8 @@ export async function creativesPage(ctx) {
             const confirmed = confirm('Are you sure you want to delete the item?');
         if (confirmed) {
             await deleteCreative(id);
-            ctx.page.redirect('/creatives');
         }
+        ctx.page.redirect('/creatives');
         
         
     }

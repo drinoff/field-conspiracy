@@ -3,7 +3,7 @@ import { getShows } from "../api/data.js";
 import { deleteShow } from "../api/data.js";
 
 const showsTemplate = (data) => html `
-  <div class="allShowsWrapper">${data.map(showsCard)}</div>
+  <div class="allShowsWrapper">${data.length !==0 ? data.map(showsCard):'No Shows Currently'}</div>
 `;
 
 const showsCard = (item) => html `
@@ -46,11 +46,15 @@ const showsCard = (item) => html `
 
 export async function showsPage(ctx) {
     let dataObj = await getShows();
-    let data = Object.entries(dataObj).reverse();
-
+    let data;
+  if(dataObj===null){
+    data = [];
+  }else{
+    data = Object.entries(dataObj).reverse();
+  }
     ctx.render(showsTemplate(data, showsCard));
 
-    const delButton = document.getElementsByClassName('creativesAdminButtons')[0];
+    const delButton = document.getElementsByClassName('allShowsWrapper')[0];
     delButton.addEventListener('click',(e)=>{
         e.preventDefault();
         if(e.target.textContent === 'Delete'){

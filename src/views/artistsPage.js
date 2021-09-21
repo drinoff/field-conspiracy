@@ -1,15 +1,15 @@
 import { html } from 'https://unpkg.com/lit-html?module';
 import { getArtists } from '../api/data.js';
 
-const artistsTemplate = (data) =>html`
+const artistsTemplate = (data) => html `
 
 <section class="artistsWrapper">
-        ${data.map(artistCard)}
+        ${data.length !==0 ? data.map(artistCard): 'Currently no Artists'}
     </section>
 
 `;
 
-const artistCard = (item)=>html`
+const artistCard = (item) => html `
  <article class="singleArtist">
         <a href="/details/${item[0]}">
             <div class="imgWrapper">
@@ -23,8 +23,13 @@ const artistCard = (item)=>html`
 
 `;
 
-export async function artistsPage(ctx){
+export async function artistsPage(ctx) {
     let dataObj = await getArtists();
-    let data = Object.entries(dataObj)
+    let data;
+    if (dataObj === null) {
+        data = [];
+    } else {
+        data = Object.entries(dataObj)
+    }
     ctx.render(artistsTemplate(data));
 }

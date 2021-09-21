@@ -37,7 +37,7 @@ const editCreativeTemplate = (data, onSubmit) => html `
             <div>
                 <label for="pics">Art Work</label>
                 <div id="artWork">
-                    ${data.creatorImgs.map(picCard)}
+                    ${data.creatorImgs?.map(picCard)}
                 </div>
             </div>
 

@@ -3,7 +3,7 @@ import { getReleases } from "../api/data.js";
 import { deleteRelease } from "../api/data.js";
 
 const releasesTemplate = (data) => html `
-  <section class="releasesWrapper">${data.map(releaseCard)}</section>
+  <section class="releasesWrapper">${data.length !==0? data.map(releaseCard): 'No Releases Currently'}</section>
 `;
 
 const releaseCard = (item) => html `
@@ -30,10 +30,16 @@ const releaseCard = (item) => html `
 
 export async function releasesPage(ctx) {
   let dataObj = await getReleases();
-  let data = Object.entries(dataObj);
+  let data;
+  if(dataObj===null){
+    data = [];
+  }else{
+    data = Object.entries(dataObj);
+  }
+  
   ctx.render(releasesTemplate(data, releaseCard));
 
-  const delButton = document.getElementsByClassName("creativesAdminButtons")[0];
+  const delButton = document.getElementsByClassName("releasesWrapper")[0];
   delButton.addEventListener("click", (e) => {
     e.preventDefault();
     if (e.target.textContent === "Delete") {

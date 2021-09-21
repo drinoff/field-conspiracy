@@ -1,4 +1,4 @@
-.creativeWrapper{
+.creativeWrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -6,17 +6,19 @@
     width: 70%;
 }
 
-.singleCreative{
+.singleCreative {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
     margin-top: 30px;
     margin-bottom: 30px;
 }
-.creativeImgWrapper{
+
+.creativeImgWrapper {
     width: 50%;
 }
-.creativeArtistrtistInfo{
+
+.creativeArtistrtistInfo {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -24,71 +26,76 @@
     text-align: center;
     font-size: 18px;
 }
-.creativeArtistDesc{
+
+.creativeArtistDesc {
     margin-top: 0px;
 }
-.creativeImgWrapper{
+
+.creativeImgWrapper {
     width: 40%;
 }
-.creativeArtistImg{
+
+.creativeArtistImg {
     width: 100%;
 }
 
 .creativeArtistName,
-.creativeArtistArtwork{
-color: white;
-margin-bottom:0px;
+.creativeArtistArtwork {
+    color: white;
+    margin-bottom: 0px;
 }
 
-
-.artworkContainer{
+.artworkContainer {
     display: flex;
     flex-direction: column;
 }
-.creatorImagesContainer{
+
+.creatorImagesContainer {
     display: flex;
     justify-content: center;
     margin-top: 0px;
-    
 }
-.creatorImgsWrapper{
+
+.creatorImgsWrapper {
     width: 70%;
     height: 100%;
-    
 }
-.creatorImg{
-    width: inherit;
+
+.creatorImg {
+    width: 70px;
     height: inherit;
     transition: 0.5s;
 }
-.creatorImg:hover{
-    transform: scale(8);
+
+.creatorImg:hover {
+    transform: scale(4);
     transition: 0.5s;
 }
-.creativesAdminButtons{
+
+.creativesAdminButtons {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 5px;
 }
+
 .creativesEditButton,
-.creativesDeleteButton{
-margin-left: 10px;
-margin-right: 10px;
-border: none;
-width: 100px;
-padding: 5px 10px 5px 10px;
-text-decoration: none;
-background-color: white;
-color: black;
-font-size: 14px;
-text-align: center;
-font-family: inherit;
-cursor: pointer;
+.creativesDeleteButton {
+    margin-left: 10px;
+    margin-right: 10px;
+    border: none;
+    width: 100px;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    text-align: center;
+    font-family: inherit;
+    cursor: pointer;
 }
 
 .creativesEditButton:hover,
-.creativesDeleteButton:hover{
-background: rgb(141, 132, 132);
+.creativesDeleteButton:hover {
+    background: rgb(141, 132, 132);
 }
-

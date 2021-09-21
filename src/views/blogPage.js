@@ -2,7 +2,7 @@ import { html } from "https://unpkg.com/lit-html?module";
 import { getBlog } from "../api/data.js";
 
 const blogTemplate = (data) => html `
-  <div class="blogWrapper">${data.map(blogCard)}</div>
+  <div class="blogWrapper">${data.length!==0? data.map(blogCard): 'Currently No Articles'}</div>
 `;
 
 const blogCard = (item) => html `
@@ -46,7 +46,13 @@ const blogCard = (item) => html `
 
 export async function blogPage(ctx) {
   let dataObj = await getBlog();
-  let data = Object.entries(dataObj).reverse();
+  let data;
+  if(dataObj===null){
+    data = [];
+  }else{
+    data = Object.entries(dataObj).reverse();
+  }
+ 
   ctx.render(blogTemplate(data));
   document
     .getElementsByClassName("blogWrapper")[0]

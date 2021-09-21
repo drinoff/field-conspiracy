@@ -69,12 +69,12 @@ export async function getInstaVideos() {
     return await api.get(host + "instaVideos.json");
 }
 
-export async function getBlogArticles() {
-    return await api.get(host + "blog.json?orderBy=\"createDate\"");
-}
+// export async function getBlogArticles() {
+//     return await api.get(host + "blog.json?orderBy=createDate");
+// }
 
 export async function getBlog() {
-    return await api.get(host + "blog.json");
+    return await api.get(host + "blog.json?orderBy=\"createDate\"");
 }
 
 export async function getArticleById(id) {
@@ -90,7 +90,7 @@ export async function deleteBlogArticle(id) {
 }
 
 export async function getShows() {
-    return await api.get(host + "shows.json");
+    return await api.get(host + "shows.json?orderBy=\"createDate\"");
 }
 
 export async function deleteShow(id) {
