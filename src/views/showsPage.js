@@ -24,7 +24,7 @@ const showsCard = (item) => html `
       <p>
         <iframe
           width="100%"
-          height="66"
+          height="100"
           scrolling="no"
           frameborder="no"
           allow="autoplay"
