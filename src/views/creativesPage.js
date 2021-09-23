@@ -15,7 +15,7 @@ const creativeCard = (item) => html `
 
     <div class="creativeImgWrapper">
         <img class="creativeArtistImg" src=${item[1].img} alt="creativeArtistImage" />  
-        <iframe width="100%" height="66" scrolling="no" frameborder="no" allow="autoplay"
+        <iframe width="100%" height="100" scrolling="no" frameborder="no" allow="autoplay"
         src=${item[1].embed}>
     </iframe> 
     </div>
