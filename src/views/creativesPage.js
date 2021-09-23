@@ -75,11 +75,12 @@ export async function creativesPage(ctx) {
 
     const delButton = document.getElementsByClassName('creativeWrapper')[0];
     delButton.addEventListener('click',(e)=>{
-        e.preventDefault();
         if(e.target.textContent === 'Delete'){
+            e.preventDefault();
             const id = e.target.previousElementSibling.id;
             onDelete(id);
         }else if(e.target.textContent === 'Edit'){
+            e.preventDefault();
            const id = e.target.id;
             ctx.page.redirect(`/edit/creatives/${id}`)
         }
