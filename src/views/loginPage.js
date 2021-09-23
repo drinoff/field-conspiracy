@@ -1,7 +1,7 @@
 import { html } from 'https://unpkg.com/lit-html?module';
 
 
-const loginTemplate = (onSubmit) => html`
+const loginTemplate = (onSubmit) => html `
     <section id="login">
         <form @submit=${onSubmit} id="login-form">
             <div class="emailWrapper">
@@ -46,20 +46,20 @@ export async function loginPage(ctx) {
                 body: JSON.stringify(data)
             })
 
-                .then(responce => responce.json())
+            .then(responce => responce.json())
                 .then(data => {
-                    if(data.detail.error){
+                    if (data.detail.error) {
                         window.alert('Wrong Credentials!')
                         ctx.page.redirect('/login')
-                    }else{
+                    } else {
                         window.sessionStorage.setItem("email", data.detail.email);
-                        window.sessionStorage.setItem("id", data.detail.localId);
+                        window.sessionStorage.setItem("id", data.detail.idToken);
                         ctx.setUserNav();
                         ctx.page.redirect('/');
                     }
                 })
-                
-            
+
+
 
         }
     }

@@ -12,9 +12,11 @@ const createShowTemplate = (onSubmit) => html `
 
       <div>
         <label for="description">Description:</label>
+        
         <textarea id="description" name="description">
-            
+             
         </textarea>
+        
       </div>
 
       <div>

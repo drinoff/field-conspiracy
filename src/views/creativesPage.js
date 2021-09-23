@@ -58,7 +58,7 @@ const creativeCard = (item) => html `
 
 const artworkCard = (art) => html`
 
-<div class="creatorImgsWrapper"><img class="creatorImg" src=${art} alt="creatorImgs" /></div>
+<div class="creatorImgsWrapper box"><img class="creatorImg" src=${art} alt="creatorImgs" /></div>
 
 `;
 

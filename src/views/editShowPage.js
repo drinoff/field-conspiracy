@@ -12,8 +12,8 @@ const editShowTemplate = (data, onSubmit) => html `
 
       <div>
         <label for="description">Description:</label>
-        <textarea id="description" name="description">
-            ${data.description} 
+        <textarea id="description" name="description"><pre>${data.description}</pre>
+             
         </textarea>
       </div>
 

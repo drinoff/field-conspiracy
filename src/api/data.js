@@ -66,7 +66,7 @@ export async function deleteCreative(id) {
 }
 
 export async function getInstaVideos() {
-    return await api.get(host + "instaVideos.json");
+    return await api.get(host + `instaVideos.json`);
 }
 
 // export async function getBlogArticles() {

@@ -41,8 +41,8 @@ export async function releasesPage(ctx) {
 
   const delButton = document.getElementsByClassName("releasesWrapper")[0];
   delButton.addEventListener("click", (e) => {
-    e.preventDefault();
     if (e.target.textContent === "Delete") {
+      e.preventDefault();
       const id = e.target.id;
       onDelete(id);
     }
