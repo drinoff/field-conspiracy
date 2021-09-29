@@ -21,6 +21,7 @@ import { createArtistPage } from "./views/createArtistPage.js";
 import { createCreativePage } from './views/createCreativePage.js';
 import { createBlogArticlePage } from './views/createBlogArticlePage.js';
 import { createShowPage } from "./views/createShowPage.js";
+import { editReleasePage } from './views/editReleasePage.js'
 
 window.api = api;
 
@@ -30,6 +31,7 @@ let logout = document.getElementById("logout");
 
 page("/", decorateContext, homePage);
 page("/releases", decorateContext, releasesPage);
+page("/releases/edit/:id", decorateContext, editReleasePage);
 page("/artists", decorateContext, artistsPage);
 page("/creatives", decorateContext, creativesPage);
 page("/contact", decorateContext, contactPage);

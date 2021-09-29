@@ -20,7 +20,7 @@ const releaseCard = (item) => html `
     <div class="creativesAdminButtons">
             ${(sessionStorage.getItem("email") === 'fieldconspiracy@gmail.com')
             ?
-            html`
+            html`<a class="editButton" href="/releases/edit/${item[0]}">Edit</a>
             <button  id = ${item[0]} href='javascript:void(0)' class="creativesDeleteButton">Delete</button>`
             : 
             html``}

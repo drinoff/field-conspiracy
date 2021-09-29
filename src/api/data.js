@@ -33,6 +33,14 @@ export async function deleteRelease(id) {
     return api.del(host + "releases/" + `${id}.json`);
 }
 
+export async function getReleaseById(id) {
+    return await api.get(`${host}/releases/${id}.json`);
+}
+
+export async function editRelease(id, data) {
+    return await api.put(host + `/releases/${id}.json`, data);
+}
+
 export async function getArtists() {
     return await api.get(host + "artists.json");
 }
