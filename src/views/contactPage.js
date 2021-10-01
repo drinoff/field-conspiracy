@@ -42,6 +42,8 @@ export async function contactPage(ctx) {
             editableCont.focus();
             editContact.textContent = "Save";
         }else if (e.target.textContent === 'Save'){
+            window.localStorage.setItem('contentCont',editableCont.textContent);
+            editableCont.textContent = window.localStorage.getItem('contentCont')
             editableCont.contentEditable = false;
             editableCont.blur();
             editContact.textContent = "Edit";
@@ -54,6 +56,8 @@ export async function contactPage(ctx) {
             editableAbout.focus();
             editAbout.textContent = "Save";
         }else if (e.target.textContent === 'Save'){
+            window.localStorage.setItem('contentAbout',editableAbout.textContent);
+            editableAbout.textContent = window.localStorage.getItem('contentAbout');
             editableAbout.contentEditable = false;
             editableAbout.blur();
             editAbout.textContent = "Edit";
