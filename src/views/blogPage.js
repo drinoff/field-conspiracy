@@ -2,7 +2,9 @@ import { html } from "https://unpkg.com/lit-html?module";
 import { getBlog } from "../api/data.js";
 
 const blogTemplate = (data) => html `
-  <div class="blogWrapper">${data.length!==0? data.map(blogCard): 'Currently No Articles'}</div>
+  <div class="blogWrapper">
+    ${data.length !== 0 ? data.map(blogCard) : "Currently No Articles"}
+  </div>
 `;
 
 const blogCard = (item) => html `
@@ -39,6 +41,7 @@ const blogCard = (item) => html `
             <p class="articleDescription">${item[1].description}</p>
             <p>${item[1].author}</p>
             <p>${item[1].date}</p>
+            
           </div>
         `}
   </article>
@@ -47,12 +50,12 @@ const blogCard = (item) => html `
 export async function blogPage(ctx) {
   let dataObj = await getBlog();
   let data;
-  if(dataObj===null){
+  if (dataObj === null) {
     data = [];
-  }else{
+  } else {
     data = Object.entries(dataObj).reverse();
   }
- 
+
   ctx.render(blogTemplate(data));
   document
     .getElementsByClassName("blogWrapper")[0]

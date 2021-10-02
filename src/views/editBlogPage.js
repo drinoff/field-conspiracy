@@ -33,6 +33,11 @@ const editBlogTemplate = (data, onSubmit) => html `
       </div>
 
       <div>
+        <label for="embed">Link</label>
+        <input type="text" name="embed" value=${data.embed} />
+      </div>
+
+      <div>
         <input type="submit" class="editArtistButton" value="Edit Article" />
       </div>
 
@@ -57,6 +62,7 @@ export async function editBlogPage(ctx) {
         let img = formData.get('img');
         let link = formData.get('link');
         let date = data.date;
+        let embed = formData.get('embed')
 
         const body = {
             author,
@@ -65,7 +71,8 @@ export async function editBlogPage(ctx) {
             img,
             link,
             date,
-            createDate
+            createDate,
+            embed
         }
         await editBlogArticle(ctx.params.id, body)
         ctx.setUserNav();

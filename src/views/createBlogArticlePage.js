@@ -33,6 +33,11 @@ const createBlogArticleTemplate = (onSubmit) => html `
       </div>
 
       <div>
+        <label for="embed">Embed</label>
+        <input type="text" name="embed" value='' />
+      </div>
+
+      <div>
         <input type="submit" class="editArtistButton" value="Create Article" />
       </div>
 
@@ -58,6 +63,7 @@ export async function createBlogArticlePage(ctx) {
         const [day, month, year] = [time.getDate(), time.getMonth(), time.getFullYear()]
         let date = `${day}.${month}.${year}`;
         let createDate = Date.now();
+        let embed = formData.get('embed');
 
         const body = {
             author,
@@ -66,7 +72,8 @@ export async function createBlogArticlePage(ctx) {
             img,
             link,
             date,
-            createDate
+            createDate,
+            embed
         }
         await createBlogArticle(body)
         ctx.setUserNav();

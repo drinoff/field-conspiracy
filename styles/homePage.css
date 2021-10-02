@@ -206,3 +206,15 @@ form #mc_embed_signup_scroll .clear .button:hover {
 #mce-FNAME {
     margin-left: 13%;
 }
+
+@media screen and (max-width:750px) {
+    main {
+        width: 100vw;
+    }
+    .newstler {
+        width: 100%;
+    }
+    .video {
+        display: none;
+    }
+}

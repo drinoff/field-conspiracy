@@ -112,3 +112,19 @@ export async function getShowById(id) {
 export async function editShow(id, data) {
     return await api.put(host + `/shows/${id}.json`, data);
 }
+
+export async function getContact() {
+    return await api.get(host + 'contact.json');
+}
+
+export async function getAbout() {
+    return await api.get(host + 'about.json');
+}
+
+export async function updateContact(data) {
+    return await api.put(host + 'contact.json', data);
+}
+
+export async function updateAbout(data) {
+    return await api.put(host + 'about.json', data);
+}

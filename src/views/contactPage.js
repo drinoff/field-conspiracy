@@ -1,10 +1,11 @@
 import { html } from 'https://unpkg.com/lit-html?module';
+import { getAbout, getContact, updateAbout, updateContact } from '../api/data.js';
 
-const contactTemplate = () => html `
+const contactTemplate = (contact, about) => html `
     <section  class="contatc">
         <article class="contactUS">
             <h1>Contact:</h1>
-            <p id = 'editableContact'>For demos, bookings or any inquiries, please contact <a class="mailto" href="mailto:fieldconspiracy@gmail.com">fieldconspiracy@gmail.com</a> 
+            <p id = 'editableContact'> ${contact} 
             </p>
             ${(sessionStorage.getItem("email") === 'fieldconspiracy@gmail.com')
             ?
@@ -14,8 +15,7 @@ const contactTemplate = () => html `
         </article>
         <article class="about">
             <h1>About:</h1>
-            <p id = 'editableAbout'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque cum non eum voluptates nulla corporis fuga
-                earum vitae facere? Est.
+            <p id = 'editableAbout'>${about}
             </p>
             ${(sessionStorage.getItem("email") === 'fieldconspiracy@gmail.com')
             ?
@@ -29,24 +29,24 @@ const contactTemplate = () => html `
 
 
 export async function contactPage(ctx) {
-    ctx.render(contactTemplate());
+    let contact = await getContact();
+    let about = await getAbout();
+    ctx.render(contactTemplate(contact, about));
 
     const editContact = document.getElementsByClassName('editContact')[0];
     const editAbout = document.getElementsByClassName('editAbout')[0];
     const editableCont = document.getElementById('editableContact');
     const editableAbout = document.getElementById('editableAbout');
-
     editContact.addEventListener('click', (e)=>{
         if(e.target.textContent === 'Edit'){
             editableCont.contentEditable = true;
             editableCont.focus();
             editContact.textContent = "Save";
         }else if (e.target.textContent === 'Save'){
-            window.localStorage.setItem('contentCont',editableCont.textContent);
-            editableCont.textContent = window.localStorage.getItem('contentCont')
             editableCont.contentEditable = false;
             editableCont.blur();
             editContact.textContent = "Edit";
+            updateContact(editableCont.textContent);
         }
     });
 
@@ -56,11 +56,10 @@ export async function contactPage(ctx) {
             editableAbout.focus();
             editAbout.textContent = "Save";
         }else if (e.target.textContent === 'Save'){
-            window.localStorage.setItem('contentAbout',editableAbout.textContent);
-            editableAbout.textContent = window.localStorage.getItem('contentAbout');
             editableAbout.contentEditable = false;
             editableAbout.blur();
             editAbout.textContent = "Edit";
+            updateAbout(editableAbout.textContent);
         }
     })
     

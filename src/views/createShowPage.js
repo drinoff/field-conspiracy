@@ -30,6 +30,11 @@ const createShowTemplate = (onSubmit) => html `
       </div>
 
       <div>
+        <label for="date">Date</label>
+        <input type="date" name="date" value='' />
+      </div>
+
+      <div>
         <input type="submit" class="editArtistButton" value="Create Show" />
       </div>
 
@@ -51,10 +56,11 @@ export async function createShowPage(ctx) {
         let description = formData.get('description');
         let img = formData.get('img');
         let embed = formData.get('embed');
-        const time = new Date();
+        const time = new Date(formData.get('date'));
         const [day, month, year] = [time.getDate(), time.getMonth(), time.getFullYear()]
         let date = `${day}.${month}.${year}`;
-        let createDate = Date.now();
+        let createDate = Date(time)
+
 
         const body = {
             title,

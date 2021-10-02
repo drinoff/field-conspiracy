@@ -50,7 +50,7 @@ export async function showsPage(ctx) {
   if(dataObj===null){
     data = [];
   }else{
-    data = Object.entries(dataObj).reverse();
+    data = Object.entries(dataObj);
   }
     ctx.render(showsTemplate(data, showsCard));
 

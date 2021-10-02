@@ -14,6 +14,18 @@ const detailsBlogTemplate = (data, ctx, onDelete) => html `
       <p>${data.author}</p>
       <p>${data.date}</p>
     </div>
+    ${data.embed? html`
+    <iframe
+              width="100%"
+              height="166"
+              scrolling="no"
+              frameborder="no"
+              allow="autoplay"
+              src=${data.embed}
+            >
+            </iframe>`
+            :''
+    }
   </article>
   <div class="adminButtons">
     ${sessionStorage.getItem("email") === "fieldconspiracy@gmail.com"

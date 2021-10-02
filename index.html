@@ -2,28 +2,33 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="/assets/logo.png" />
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/styles.css" />
     <script src="https://kit.fontawesome.com/3dfe3c4d20.js" crossorigin="anonymous"></script>
-    <title>Field Conspiracy</title>
 
+    <title>Field Conspiracy</title>
 </head>
 
 <body>
     <header>
         <div class="authButtons">
-            <a href="/createRelease"><button id="adminPanel">New Release</button></a>
-            <a href="/createArtist"><button id="adminPanel">New Artist</button></a>
-            <a href="/createCreative"><button id="adminPanel">New Creative</button></a>
-            <a href="/createBlogArticle"><button id="adminPanel">New Blog Article</button></a>
-            <a href="/createShow"><button id="adminPanel">New Show</button></a>
+            <a href="/createRelease"><button id="adminPanel">New Release</button></a
+        >
+        <a href="/createArtist"><button id="adminPanel">New Artist</button></a>
+            <a href="/createCreative"><button id="adminPanel">New Creative</button></a
+        >
+        <a href="/createBlogArticle"
+          ><button id="adminPanel">New Blog Article</button></a
+        >
+        <a href="/createShow"><button id="adminPanel">New Show</button></a>
             <button id="logout">Logout</button>
         </div>
         <nav class="headerNav">
             <h1>Field Conspiracy</h1>
+
             <div class="navWrapper">
                 <a href="/releases">
                     <li>Releases</li>
@@ -34,7 +39,8 @@
                 <a href="/creatives">
                     <li class="creatives">Creatives</li>
                 </a>
-                <a href="/"> <img class="logo" src="/assets/logo.png" alt="logo"></a>
+                <a href="/">
+                    <img class="logo" src="/assets/logo.png" alt="logo" /></a>
                 <a href="/blog">
                     <li>Blog</li>
                 </a>
@@ -45,31 +51,57 @@
                     <li class="contact">Contact</li>
                 </a>
             </div>
+            <!-- mobile -->
+
+            <a href="/">
+                <img class="mobileLogo" src="/assets/logo.png" alt="logo" /></a>
+
+            <div class="navWrapperMobile">
+                <a href="/releases">
+                    <li>Releases</li>
+                </a>
+                <a href="/artists">
+                    <li>Artists</li>
+                </a>
+                <a href="/creatives">
+                    <li class="creatives">Creatives</li>
+                </a>
+                <a href="/blog">
+                    <li>Blog</li>
+                </a>
+                <a href="/shows">
+                    <li>Shows</li>
+                </a>
+                <a href="/contact">
+                    <li>Contact</li>
+                </a>
+            </div>
         </nav>
     </header>
-    <main>
-
-
-    </main>
+    <main></main>
 
     <footer class="footer">
-        <img class="soundWeave" src="/assets/beforeFooter.png" alt="">
+        <img class="soundWeave" src="/assets/beforeFooter.png" alt="" />
         <p>Follow Us on:</p>
         <p class="social">
-            <a href="http://fieldconspiracy.bandcamp.com" target="_blank"><i class="fab fa-bandcamp"></i></a>
-            <a href="https://soundcloud.com/fieldconspiracy" target="_blank"><i class="fab fa-soundcloud"></i></a>
+            <a href="http://fieldconspiracy.bandcamp.com" target="_blank"><i class="fab fa-bandcamp"></i
+        ></a>
+            <a href="https://soundcloud.com/fieldconspiracy" target="_blank"><i class="fab fa-soundcloud"></i
+        ></a>
             <!-- <i class="fab fa-spotify"></i> -->
             <!-- <i class="fab fa-youtube"></i> -->
-            <a href="https://www.facebook.com/FieldConspiracy/" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.instagram.com/fieldconspiracy/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/FieldConspiracy/" target="_blank"><i class="fab fa-facebook"></i
+        ></a>
+            <a href="https://www.instagram.com/fieldconspiracy/" target="_blank"><i class="fab fa-instagram"></i
+        ></a>
             <!-- <img class="fab" src="/assets/raIcon.png" alt=""> -->
         </p>
-        <a class='admin' href="/login">Administration</a>
-        <p class="copyright">&copy; 2021 by Field Conspiracy. All rights reserved</p>
+        <a class="admin" href="/login">Administration</a>
+        <p class="copyright">
+            &copy; 2021 by Field Conspiracy. All rights reserved
+        </p>
     </footer>
     <script src="/src/app.js" type="module"></script>
-
-
 
 </body>
 
