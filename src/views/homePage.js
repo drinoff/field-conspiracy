@@ -3,7 +3,7 @@ import { getInstaVideos } from '../api/data.js';
 
 
 const homeTemplate = (data, onsubmit) => html `
-<video  src="../../assets/landingVideo.webm" autoplay loop muted playsinline>
+<video controls = 'true' src="../../assets/landingVideo.webm" autoplay loop muted playsinline>
     Your browser does not support the video tag.
 </video>
 <div class="description">
@@ -68,9 +68,9 @@ const homeTemplate = (data, onsubmit) => html `
 
 const cardTemplate = (item) => html `
 <a class = 'instaLink' href=${item.instaLink} target="blank">
-<article  class='instaVideosFetched'>
-    <img src=${item.URL} alt="" />
-    <p class="instaVideosPlay">${item.artist} - ${item.track}<i class="fas fa-play"></i></p>
+    <article  class='instaVideosFetched'>
+        <img src=${item.URL} alt="" />
+        <p class="instaVideosPlay">${item.artist} - ${item.track}<i class="fas fa-play"></i></p>
 
 </article></a>
 `;
