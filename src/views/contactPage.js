@@ -2,7 +2,7 @@ import { html } from 'https://unpkg.com/lit-html?module';
 import { getAbout, getContact, updateAbout, updateContact } from '../api/data.js';
 
 const contactTemplate = (contact, about) => html `
-    <section  class="contatc">
+    <section  class="contact">
         <article class="contactUS">
             <h1>Contact:</h1>
             <p id = 'editableContact'> ${contact} 

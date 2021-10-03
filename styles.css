@@ -16,7 +16,7 @@ html {
     box-sizing: border-box;
     color: rgb(156, 153, 153);
     font-family: 'Oswald', sans-serif;
-    width: 100vw;
+    width: 100%;
 }
 
 *,
@@ -167,7 +167,7 @@ main {
 
 .copyright {
     font-size: 10px;
-    font-weight: 500px;
+    font-weight: 500;
     text-transform: uppercase;
 }
 
@@ -191,12 +191,15 @@ main {
 }
 
 @media screen and (max-width:750px) {
+    html {
+        width: 100vw;
+    }
     body {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 100vw;
+        width: 100%;
     }
     .navWrapper a {
         display: none;
