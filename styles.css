@@ -190,9 +190,21 @@ main {
     color: white;
 }
 
+.mobileNav {
+    display: none;
+}
+
+.navWrapperMobile {
+    display: none;
+}
+
 @media screen and (max-width:750px) {
     html {
         width: 100vw;
+    }
+    header {
+        width: 100%;
+        position: relative;
     }
     body {
         display: flex;
@@ -201,27 +213,70 @@ main {
         justify-content: center;
         width: 100%;
     }
+    .headerNav {
+        display: none;
+    }
+    .mobileNav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        top: 0px;
+        width: 90%;
+        background: black;
+    }
     .navWrapper a {
         display: none;
     }
     .mobileLogo {
         display: block;
-        width: 100px;
-        height: 120px;
+        width: 70px;
+        height: 80px;
         transition: 0.6s;
     }
     .navWrapperMobile {
-        display: flex;
+        display: none;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-end;
         justify-content: center;
         width: 100%;
+        position: absolute;
+        top: 5px;
+        right: -610px;
+        background: black;
+    }
+    .fa-times {
+        position: relative;
+        top: -190px;
+        right: 10px;
+        font-size: 22px;
+    }
+    .fa-times:hover {
+        cursor: pointer;
     }
     .navWrapperMobile a {
         width: 100%;
         text-align: center;
+        text-decoration: none;
+    }
+    .navWrapperMobile a li {
+        list-style-type: none;
+        color: white;
+        font-size: 22px;
+        font-weight: 800;
+    }
+    .navWrapperMobile a li:hover {
+        background: white;
+        color: rgb(100, 23, 100);
     }
     .main {
         width: 100%;
+    }
+    .mobileNav .fa-bars {
+        font-size: 30px;
+        margin-top: 5px;
+    }
+    .fa-bars:hover {
+        cursor: pointer;
     }
 }

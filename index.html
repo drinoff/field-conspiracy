@@ -16,67 +16,78 @@
     <header>
         <div class="authButtons">
             <a href="/createRelease"><button id="adminPanel">New Release</button></a
-        >
-        <a href="/createArtist"><button id="adminPanel">New Artist</button></a>
-            <a href="/createCreative"><button id="adminPanel">New Creative</button></a
-        >
-        <a href="/createBlogArticle"
-          ><button id="adminPanel">New Blog Article</button></a
-        >
-        <a href="/createShow"><button id="adminPanel">New Show</button></a>
-            <button id="logout">Logout</button>
-        </div>
-        <nav class="headerNav">
-            <h1>Field Conspiracy</h1>
-
-            <div class="navWrapper">
-                <a href="/releases">
-                    <li>Releases</li>
-                </a>
-                <a href="/artists">
-                    <li>Artists</li>
-                </a>
-                <a href="/creatives">
-                    <li class="creatives">Creatives</li>
-                </a>
-                <a href="/">
-                    <img class="logo" src="/assets/logo.png" alt="logo" /></a>
-                <a href="/blog">
-                    <li>Blog</li>
-                </a>
-                <a href="/shows">
-                    <li>Shows</li>
-                </a>
-                <a href="/contact">
-                    <li class="contact">Contact</li>
-                </a>
+                >
+                <a href="/createArtist"
+                    ><button id="adminPanel">New Artist</button></a
+                >
+                <a href="/createCreative"
+                    ><button id="adminPanel">New Creative</button></a
+                >
+                <a href="/createBlogArticle"
+                    ><button id="adminPanel">New Blog Article</button></a
+                >
+                <a href="/createShow"
+                    ><button id="adminPanel">New Show</button></a
+                >
+                <button id="logout">Logout</button>
             </div>
-            <!-- mobile -->
+            <nav class="headerNav">
+                <h1>Field Conspiracy</h1>
 
+                <div class="navWrapper">
+                    <a href="/releases">
+                        <li>Releases</li>
+                    </a>
+            <a href="/artists">
+                <li>Artists</li>
+            </a>
+            <a href="/creatives">
+                <li class="creatives">Creatives</li>
+            </a>
             <a href="/">
-                <img class="mobileLogo" src="/assets/logo.png" alt="logo" /></a>
-
-            <div class="navWrapperMobile">
-                <a href="/releases">
-                    <li>Releases</li>
-                </a>
-                <a href="/artists">
-                    <li>Artists</li>
-                </a>
-                <a href="/creatives">
-                    <li class="creatives">Creatives</li>
-                </a>
-                <a href="/blog">
-                    <li>Blog</li>
-                </a>
-                <a href="/shows">
-                    <li>Shows</li>
-                </a>
-                <a href="/contact">
-                    <li>Contact</li>
-                </a>
-            </div>
+                <img class="logo" src="/assets/logo.png" alt="logo" /></a>
+            <a href="/blog">
+                <li>Blog</li>
+            </a>
+            <a href="/shows">
+                <li>Shows</li>
+            </a>
+            <a href="/contact">
+                <li class="contact">Contact</li>
+            </a>
+        </div>
         </nav>
+
+        <!-- mobile -->
+        <nav class="mobileNav">
+            <a href="/">
+                <img id='mobileLogo' class="mobileLogo" src="/assets/logo.png" alt="logo" /></a>
+            <h1>Field Conspiracy</h1>
+            <i class="fas fa-bars icon-2x"></i>
+
+
+        </nav>
+        <div class="navWrapperMobile">
+            <a href="/releases">
+                <li>Releases</li>
+            </a>
+            <a href="/artists">
+                <li>Artists</li>
+            </a>
+            <a href="/creatives">
+                <li class="creatives">Creatives</li>
+            </a>
+            <a href="/blog">
+                <li>Blog</li>
+            </a>
+            <a href="/shows">
+                <li>Shows</li>
+            </a>
+            <a href="/contact">
+                <li>Contact</li>
+            </a>
+            <i class="fas fa-times"></i>
+        </div>
     </header>
     <main></main>
 
@@ -85,15 +96,15 @@
         <p>Follow Us on:</p>
         <p class="social">
             <a href="http://fieldconspiracy.bandcamp.com" target="_blank"><i class="fab fa-bandcamp"></i
-        ></a>
+                ></a>
             <a href="https://soundcloud.com/fieldconspiracy" target="_blank"><i class="fab fa-soundcloud"></i
-        ></a>
+                ></a>
             <!-- <i class="fab fa-spotify"></i> -->
             <!-- <i class="fab fa-youtube"></i> -->
             <a href="https://www.facebook.com/FieldConspiracy/" target="_blank"><i class="fab fa-facebook"></i
-        ></a>
+                ></a>
             <a href="https://www.instagram.com/fieldconspiracy/" target="_blank"><i class="fab fa-instagram"></i
-        ></a>
+                ></a>
             <!-- <img class="fab" src="/assets/raIcon.png" alt=""> -->
         </p>
         <a class="admin" href="/login">Administration</a>
@@ -102,7 +113,6 @@
         </p>
     </footer>
     <script src="/src/app.js" type="module"></script>
-
 </body>
 
 </html>

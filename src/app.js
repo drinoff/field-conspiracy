@@ -18,10 +18,10 @@ import { editBlogPage } from "./views/editBlogPage.js";
 import { editShowPage } from "./views/editShowPage.js";
 import { createReleasePage } from "./views/createReleasePage.js";
 import { createArtistPage } from "./views/createArtistPage.js";
-import { createCreativePage } from './views/createCreativePage.js';
-import { createBlogArticlePage } from './views/createBlogArticlePage.js';
+import { createCreativePage } from "./views/createCreativePage.js";
+import { createBlogArticlePage } from "./views/createBlogArticlePage.js";
 import { createShowPage } from "./views/createShowPage.js";
-import { editReleasePage } from './views/editReleasePage.js'
+import { editReleasePage } from "./views/editReleasePage.js";
 
 window.api = api;
 
@@ -45,11 +45,11 @@ page("/blog", decorateContext, blogPage);
 page("/blog/:id", decorateContext, detailsBlogPage);
 page("/blog/edit/:id", decorateContext, editBlogPage);
 page("/shows/:id", decorateContext, editShowPage);
-page('/createRelease', decorateContext, createReleasePage);
-page('/createArtist', decorateContext, createArtistPage);
-page('/createCreative', decorateContext, createCreativePage);
-page('/createBlogArticle', decorateContext, createBlogArticlePage);
-page('/createShow', decorateContext, createShowPage)
+page("/createRelease", decorateContext, createReleasePage);
+page("/createArtist", decorateContext, createArtistPage);
+page("/createCreative", decorateContext, createCreativePage);
+page("/createBlogArticle", decorateContext, createBlogArticlePage);
+page("/createShow", decorateContext, createShowPage);
 
 setUserNav();
 page.start();
@@ -75,4 +75,39 @@ logout.addEventListener("click", function() {
         setUserNav();
         page.redirect("/");
     }
+});
+
+// Burger menu functionality
+
+let burgerMenuIcon = document.getElementsByClassName("fa-bars")[0];
+let closeBurgerMenuIcon = document.getElementsByClassName("fa-times")[0];
+let mobileNav = document.getElementsByClassName("navWrapperMobile")[0];
+let body = document.getElementsByTagName('body')[0];
+
+burgerMenuIcon.addEventListener("click", () => {
+    mobileNav.style.display = 'flex';
+    myMove();
+    burgerMenuIcon.style.opacity = 0;
+    var id = null;
+
+    function myMove() {
+        var pos = -610;
+        clearInterval(id);
+        id = setInterval(frame, 10);
+
+        function frame() {
+            if (pos == 5) {
+                clearInterval(id);
+            } else {
+                pos += 15;
+                mobileNav.style.right = pos + "px";
+            }
+        }
+    }
+});
+
+closeBurgerMenuIcon.addEventListener("click", () => {
+    mobileNav.style.right = -610 + 'px';
+    mobileNav.style.display = 'none';
+    burgerMenuIcon.style.opacity = 1;
 });
