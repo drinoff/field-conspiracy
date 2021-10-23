@@ -46,11 +46,16 @@ const showsCard = (item) => html `
 
 export async function showsPage(ctx) {
     let dataObj = await getShows();
+    
     let data;
-  if(dataObj===null){
-    data = [];
-  }else{
-    data = Object.entries(dataObj);
+    if(dataObj===null){
+        data = [];
+    }else{
+        data = Object.entries(dataObj);
+        data.sort((a,b)=>a[1].createDate-b[1].createDate).reverse();
+        
+        console.log(data)
+    
   }
     ctx.render(showsTemplate(data, showsCard));
 

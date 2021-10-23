@@ -2,7 +2,7 @@ import { html } from "https://unpkg.com/lit-html?module";
 import { getShowById } from "../api/data.js";
 import { editShow } from "../api/data.js";
 
-const editShowTemplate = (data, onSubmit) => html `
+const editShowTemplate = (data, onSubmit, day, month, year) => html `
   <div className="formWrapper">
     <form @submit=${onSubmit} id="edit-form">
       <div>
@@ -29,7 +29,7 @@ const editShowTemplate = (data, onSubmit) => html `
 
       <div>
         <label for="date">Date</label>
-        <input type="date" name="date" value=${data.date} />
+        <input type="date" name="date" value=${`${year}-${month<10?"0"+month:month}-${day<10?"0"+day:day}`} />
       </div>
 
       <div>
@@ -42,8 +42,11 @@ const editShowTemplate = (data, onSubmit) => html `
 
 export async function editShowPage(ctx) {
     const data = await getShowById(ctx.params.id);
-    let createDate = data.createDate;
-    ctx.render(editShowTemplate(data, onSubmit));
+    let createDate = new Date(data.createDate);
+
+    let [day, month, year] = [createDate.getDate(), createDate.getMonth(), createDate.getFullYear()]
+    ctx.render(editShowTemplate(data, onSubmit, day, month, year));
+    
 
     async function onSubmit(e) {
         e.preventDefault();
@@ -51,15 +54,15 @@ export async function editShowPage(ctx) {
         const editForm = document.getElementById('edit-form');
         let formData = new FormData(editForm);
 
-
         let title = formData.get('title');
         let description = formData.get('description');
         let img = formData.get('img');
         let embed = formData.get('embed');
         let time = new Date(formData.get('date'));
+        console.log(time)
         const [day, month, year] = [time.getDate(), time.getMonth(), time.getFullYear()]
         let date = `${day}.${month}.${year}`;
-        let createDate = Date(time)
+        
 
         const body = {
             title,

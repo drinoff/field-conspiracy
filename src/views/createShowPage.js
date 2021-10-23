@@ -57,9 +57,10 @@ export async function createShowPage(ctx) {
         let img = formData.get('img');
         let embed = formData.get('embed');
         const time = new Date(formData.get('date'));
-        const [day, month, year] = [time.getDate(), time.getMonth(), time.getFullYear()]
+        const [day, month, year] = [time.getDate(), time.getMonth() + 1, time.getFullYear()]
         let date = `${day}.${month}.${year}`;
-        let createDate = Date(time)
+        let createDate = Date.parse(time);
+        console.log(createDate)
 
 
         const body = {

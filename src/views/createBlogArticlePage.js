@@ -62,7 +62,7 @@ export async function createBlogArticlePage(ctx) {
         let time = new Date();
         const [day, month, year] = [time.getDate(), time.getMonth(), time.getFullYear()]
         let date = `${day}.${month}.${year}`;
-        let createDate = Date.now();
+        let createDate = Date.parse(time);
         let embed = formData.get('embed');
 
         const body = {
