@@ -101,13 +101,14 @@
     transition: .5s;
 }
 
-.box:hover {
-    flex: 1 1 50%;
-}
-
-.box:hover>img {
-    width: 100%;
-    height: 100%;
+@media screen and (min-width:750px) {
+    .box:hover {
+        flex: 1 1 50%;
+    }
+    .box:hover>img {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 .creativesAdminButtons {
@@ -136,4 +137,35 @@
 .creativesEditButton:hover,
 .creativesDeleteButton:hover {
     background: rgb(141, 132, 132);
+}
+
+@media screen and (max-width:750px) {
+    .singleCreative {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .creativeArtistrtistInfo {
+        width: 100%;
+    }
+    .artworkContainer {
+        width: 100%;
+    }
+    .creativeImgWrapper {
+        width: 100%;
+    }
+    .creatorImagesContainer {
+        width: 100%;
+    }
+    .box {
+        display: flex;
+    }
+    .box>img {
+        display: inline-block;
+        width: 100%;
+        height: auto;
+    }
+    .box:hover {
+        pointer-events: none;
+    }
 }

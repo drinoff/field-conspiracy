@@ -225,6 +225,7 @@ main {
         width: 90%;
         background: black;
         margin-top: 100px;
+        z-index: 3;
     }
     .navWrapper a {
         display: none;
@@ -245,6 +246,7 @@ main {
         top: 5px;
         right: -610px;
         background: black;
+        z-index: 100;
     }
     .fa-times {
         position: relative;
