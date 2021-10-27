@@ -111,3 +111,7 @@ closeBurgerMenuIcon.addEventListener("click", () => {
     mobileNav.style.display = 'none';
     burgerMenuIcon.style.opacity = 1;
 });
+mobileNav.addEventListener('click', () => {
+    mobileNav.style.display = 'none';
+    burgerMenuIcon.style.opacity = 1;
+})

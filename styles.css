@@ -221,9 +221,10 @@ main {
         align-items: center;
         justify-content: space-between;
         position: fixed;
-        top: 0px;
+        top: -100px;
         width: 90%;
         background: black;
+        margin-top: 100px;
     }
     .navWrapper a {
         display: none;
@@ -278,5 +279,17 @@ main {
     }
     .fa-bars:hover {
         cursor: pointer;
+    }
+    .authButtons {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 100px;
+    }
+    .authButtons a {
+        max-width: 100%;
+        margin: 0px;
+        padding: 0px;
     }
 }
