@@ -1,58 +1,77 @@
-.artistsWrapper{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    flex-wrap: wrap;
-}
-.singleArtist{
-    width: 30%;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-.singleArtist a{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.singleArtist a div p{
-    font-size: 32px;
-    font-family: inherit;
-}
-.artistImg{
-    width: 100%;
-}
-.artistInfo{
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    position: absolute;
-    top: 300px;
-    justify-content: center;
-    font-weight: 700;
-    z-index: 7;
-    
+    .artistsWrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
     }
-.artistImg:hover {
-    opacity: 0.2;
-    cursor: pointer;
     
+    .singleArtist {
+        width: 30%;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
     }
-.imgWrapper:hover + .artistInfo{
-    display: flex;
-    cursor: pointer;
-    transform: translateY(270px);
-    animation: moveUp 0.5s forwards;
-    pointer-events: none;
-
-}
-@keyframes moveUp{
-    form {top :1px;}
-    to {top: -140px;}
+    
+    .singleArtist a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .singleArtist a div p {
+        font-size: 32px;
+        font-family: inherit;
+    }
+    
+    .artistImg {
+        width: 100%;
+    }
+    
+    .artistInfo {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        position: absolute;
+        top: 300px;
+        justify-content: center;
+        font-weight: 700;
+        z-index: 7;
+    }
+    
+    @media screen and(min-width:750px) {
+        .artistImg:hover {
+            opacity: 0.2;
+            cursor: pointer;
+        }
+        .imgWrapper:hover+.artistInfo {
+            display: flex;
+            cursor: pointer;
+            transform: translateY(270px);
+            animation: moveUp 0.5s forwards;
+            pointer-events: none;
+        }
+    }
+    
+    @keyframes moveUp {
+        form {
+            top: 1px;
+        }
+        to {
+            top: -140px;
+        }
+    }
+    
+    @media screen and (max-width:750px) {
+        .artistsWrapper {
+            flex-direction: column;
+        }
+        .artistInfo {
+            display: block;
+        }
     }
