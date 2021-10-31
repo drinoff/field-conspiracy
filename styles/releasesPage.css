@@ -54,6 +54,10 @@
     cursor: pointer;
 }
 
+.mobileReleaseInfo {
+    opacity: 0;
+}
+
 @media screen and (min-width: 750px) {
     .imgWrapper:hover+.releaseInfo {
         display: flex;
@@ -82,17 +86,15 @@
     .releasesWrapper {
         flex-direction: column;
     }
-    .releaseInfo {
-        top: 100px;
+    .mobileReleaseInfo {
         opacity: 1;
-        flex-direction: column;
         font-size: 8px;
-        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        align-items: center;
     }
-    .beforeElement::before {
-        content: '';
-    }
-    .beforeElement {
-        margin-left: -30px;
+    .mobileTrack {
+        margin-top: -4px;
     }
 }

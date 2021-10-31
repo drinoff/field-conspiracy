@@ -16,6 +16,10 @@ const releaseCard = (item) => html `
         <p>${item[1].artist}</p>
         <p class="beforeElement">${item[1].track}</p>
       </div>
+      <div class="mobileReleaseInfo">
+        <p class="mobileArtist">${item[1].artist}</p>
+        <p class="mobileTrack">${item[1].track}</p>
+      </div>
     </a>
     <div class="creativesAdminButtons">
             ${(sessionStorage.getItem("email") === 'fieldconspiracy@gmail.com')
