@@ -3,7 +3,7 @@ import { getInstaVideos } from '../api/data.js';
 
 
 const homeTemplate = (data, onsubmit) => html `
-<video src="../../assets/landingVideo.webm" type="video/webm" playsinline autoplay loop muted controls>
+<video src="../../assets/landingVideo.webm" type="video/webm" playsinline autoplay loop muted >
     Your browser does not support the video tag.
 </video>
 <div class="description">

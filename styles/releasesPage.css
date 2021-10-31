@@ -54,16 +54,18 @@
     cursor: pointer;
 }
 
-.imgWrapper:hover+.releaseInfo {
-    display: flex;
-    cursor: pointer;
-    animation: appearSlowly 0.5s forwards;
-    pointer-events: none;
-    opacity: 1;
-    transition: 2s ease;
+@media screen and (min-width: 750px) {
+    .imgWrapper:hover+.releaseInfo {
+        display: flex;
+        cursor: pointer;
+        animation: appearSlowly 0.5s forwards;
+        pointer-events: none;
+        opacity: 1;
+        transition: 2s ease;
+    }
 }
 
-@media screen and (max-width:750px) {
+@media screen and (max-width: 750px) {
     html {
         width: 100vw;
     }
@@ -79,5 +81,18 @@
     }
     .releasesWrapper {
         flex-direction: column;
+    }
+    .releaseInfo {
+        top: 100px;
+        opacity: 1;
+        flex-direction: column;
+        font-size: 8px;
+        margin-top: 10px;
+    }
+    .beforeElement::before {
+        content: '';
+    }
+    .beforeElement {
+        margin-left: -30px;
     }
 }
