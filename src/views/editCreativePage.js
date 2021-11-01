@@ -2,7 +2,7 @@ import { html } from "https://unpkg.com/lit-html?module";
 import { getCreativeById } from "../api/data.js";
 import { editCreative } from "../api/data.js";
 
-const editCreativeTemplate = (data, onSubmit) => html `
+const editCreativeTemplate = (data, onSubmit, day, month, year) => html `
     <section id="editArtistSection">
         <form @submit=${onSubmit} id="edit-form">
             <h1>Edit Creative</h1>

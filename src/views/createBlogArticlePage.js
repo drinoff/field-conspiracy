@@ -36,6 +36,11 @@ const createBlogArticleTemplate = (onSubmit) => html `
         <label for="embed">Embed</label>
         <input type="text" name="embed" value='' />
       </div>
+      
+      <div>
+        <label for="date">Date</label>
+        <input type="date" name="date" value='' />
+      </div>
 
       <div>
         <input type="submit" class="editArtistButton" value="Create Article" />
