@@ -1,75 +1,102 @@
-#artistDetails{
+#artistDetails {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 100%;
 }
-.imgAndName{
+
+.imgAndName {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
     width: 40%;
 }
-.imgAndName h1{
+
+.imgAndName h1 {
     text-align: center;
     color: white;
 }
-.imgAndName img{
-    width: 60%;
+
+.imgAndName img {
+    width: 70%;
     border-radius: 6px;
 }
-.artistDescription{
+
+.artistDescription {
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.artistSocial{
+
+.artistSocial {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.artistSocial img{
+
+.artistSocial img {
     width: 14px;
     height: 14px;
-    
 }
-.artistSocial .fab{
+
+.artistSocial .fab {
     margin-right: 5px;
     color: white;
     transition: 0.5s;
 }
-.artistSocial .fab:hover{
+
+.artistSocial .fab:hover {
     cursor: pointer;
     transform: scale(1.3);
     transition: 0.5s;
-    
 }
-.adminButtons{
+
+.adminButtons {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 100px;
 }
+
 .editButton,
-.deleteButton{
-margin-left: 10px;
-margin-right: 10px;
-border: none;
-width: 100px;
-padding: 5px 10px 5px 10px;
-text-decoration: none;
-background-color: white;
-color: black;
-font-size: 14px;
-text-align: center;
-font-family: inherit;
-cursor: pointer;
+.deleteButton {
+    margin-left: 10px;
+    margin-right: 10px;
+    border: none;
+    width: 100px;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    text-align: center;
+    font-family: inherit;
+    cursor: pointer;
 }
 
 .editButton:hover,
-.deleteButton:hover{
-background: rgb(141, 132, 132);
+.deleteButton:hover {
+    background: rgb(141, 132, 132);
+}
+
+@media screen and (max-width:750px) {
+    #artistDetails {
+        flex-direction: column;
+    }
+    .imgAndName {
+        width: 70%;
+    }
+    .imgAndName img {
+        width: 100%;
+        border-radius: 6px;
+    }
+    .artistDescription {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }

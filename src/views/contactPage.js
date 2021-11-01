@@ -13,6 +13,7 @@ const contactTemplate = (contact, about) => html `
             :
             html``}
         </article>
+        <img class="soundWeave" src="/assets/beforeFooter.png" alt="" />
         <article class="about">
             <h1>About:</h1>
             <p id = 'editableAbout'>${about}

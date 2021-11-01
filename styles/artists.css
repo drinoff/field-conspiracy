@@ -8,7 +8,6 @@
     
     .singleArtist {
         width: 30%;
-        margin-top: 50px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -32,19 +31,7 @@
         width: 100%;
     }
     
-    .artistInfo {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        color: white;
-        position: absolute;
-        top: 300px;
-        justify-content: center;
-        font-weight: 700;
-        z-index: 7;
-    }
-    
-    @media screen and(min-width:750px) {
+    @media screen and (min-width:750px) {
         .artistImg:hover {
             opacity: 0.2;
             cursor: pointer;
@@ -56,14 +43,24 @@
             animation: moveUp 0.5s forwards;
             pointer-events: none;
         }
-    }
-    
-    @keyframes moveUp {
-        form {
-            top: 1px;
+        .artistInfo {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            position: absolute;
+            top: 300px;
+            justify-content: center;
+            font-weight: 700;
+            z-index: 7;
         }
-        to {
-            top: -140px;
+        @keyframes moveUp {
+            form {
+                top: 1px;
+            }
+            to {
+                top: -140px;
+            }
         }
     }
     
@@ -73,5 +70,20 @@
         }
         .artistInfo {
             display: block;
+            color: white;
+            text-decoration: none;
+        }
+        .singleArtist a {
+            text-decoration: none;
+        }
+        .singleArtist {
+            width: 70%;
+            margin-bottom: 50px;
+        }
+        .imgWrapper {
+            margin-bottom: 0px;
+        }
+        .artistInfo p {
+            margin: 0px;
         }
     }
