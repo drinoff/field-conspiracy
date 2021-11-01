@@ -3,8 +3,8 @@ import { getInstaVideos } from '../api/data.js';
 
 
 const homeTemplate = (data, onsubmit) => html `
-<video src="../../assets/landingVideo.webm" type="video/webm" playsinline autoplay loop muted >
-    Your browser does not support the video tag.
+<video  type="video/webm" playsinline autoplay loop muted preload="auto">
+<source src="../../assets/landingVideo.webm"/>
 </video>
 <div class="description">
     <p>Field Conspiracy is a social experiment & a record label, which nurtures community and creativity. It
