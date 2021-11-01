@@ -7,9 +7,13 @@
 }
 
 .detailsImgWrapper {
-    width: 40%;
+    width: 100%;
 }
 
 .detailsImgWrapper a img {
     width: 100%;
+}
+
+.detailsDescWrapper h1 {
+    text-align: center;
 }

@@ -70,6 +70,7 @@ export async function creativesPage(ctx) {
     data = [];
   }else{
     data = Object.entries(dataObj);
+    data.sort((a,b)=>a[1].createDate-b[1].createDate).reverse();
   }
     ctx.render(creativesTemplate(data, onDelete));
 
