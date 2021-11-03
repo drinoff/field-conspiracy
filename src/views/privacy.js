@@ -1,6 +1,7 @@
 import { html } from "https://unpkg.com/lit-html?module";
 
 const privacyTemplate = () => html `
+<div id ="privacyWrapper">
     <h2>Privacy Policy</h2>
     <p>
         Your privacy is important to us. It is Field Conspiracy&#39;s policy to
@@ -211,8 +212,9 @@ const privacyTemplate = () => html `
     </p>
     <p>
         Paula Hakkaja<br />
-        fieldconspiracy@gmail.com
+       <a href="mailto:fieldconspiracy@gmail.com">fieldconspiracy@gmail.com</a> 
     </p>
+    </div>
 `;
 
 export function privacyPage(ctx) {

@@ -11,6 +11,7 @@
 @import '/styles/detailsBlogPage.css';
 @import '/styles/editBlogPage.css';
 @import '/styles/showsPage.css';
+@import '/styles/privacy.css';
 html {
     background-color: black;
     box-sizing: border-box;

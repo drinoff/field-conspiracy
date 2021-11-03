@@ -1,0 +1,15 @@
+body main #privacyWrapper {
+    background: black;
+    color: white;
+    width: 80%;
+    padding: 10px;
+}
+
+body main #privacyWrapper a {
+    color: white;
+    font-style: italic;
+}
+
+body main #privacyWrapper p {
+    color: rgb(235, 232, 232);
+}
