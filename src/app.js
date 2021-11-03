@@ -22,7 +22,8 @@ import { createCreativePage } from "./views/createCreativePage.js";
 import { createBlogArticlePage } from "./views/createBlogArticlePage.js";
 import { createShowPage } from "./views/createShowPage.js";
 import { editReleasePage } from "./views/editReleasePage.js";
-import { notFoundPage } from "./views/notFound.js"
+import { notFoundPage } from "./views/notFound.js";
+import { privacyPage } from "./views/privacy.js";
 
 window.api = api;
 
@@ -51,6 +52,7 @@ page("/createArtist", decorateContext, createArtistPage);
 page("/createCreative", decorateContext, createCreativePage);
 page("/createBlogArticle", decorateContext, createBlogArticlePage);
 page("/createShow", decorateContext, createShowPage);
+page("/privacy", decorateContext, privacyPage);
 page("/*", decorateContext, notFoundPage);
 
 setUserNav();
