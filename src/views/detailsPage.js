@@ -9,8 +9,8 @@ const detailsTemplate = (data, onDelete, ctx) => html `
         <img src=${data.img} alt="artistImg" />
     </div>
     <article class="artistDescription">
-        <p id = 'descriptionToPaste'>
-            <!-- ${data.description} -->
+        <p id = 'description'>
+            ${data.description}
         </p>
 
         <div class="artistSocial">
@@ -43,8 +43,7 @@ export async function detailsPage(ctx) {
     
     const data = await getArtistById(ctx.params.id);
     ctx.render(detailsTemplate(data, onDelete,ctx));
-    document.getElementById('descriptionToPaste').innerHTML = data.description;
-    document.getElementById('descriptionToPaste').style.color='white';
+    
 
     async function onDelete() {
         const confirmed = confirm('Are you sure you want to delete the item?');

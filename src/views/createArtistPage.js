@@ -13,11 +13,11 @@ const createArtistTemplate = (onSubmit) => html `
 
                 <div>
                     <label for="description">Description:</label>
-                    <div contenteditable
+                    <textarea
                         id="description"
                         name="description"
                     >
-</div>
+</textarea>
             
                 </div>
                 <div>
@@ -95,7 +95,7 @@ export async function createArtistPage(ctx) {
         let formData = new FormData(editForm);
 
         let name = formData.get("name");
-        let description = document.getElementById('description').innerHTML;
+        let description = formData.get("description");
         console.log(description)
         let img = formData.get("imageUrl");
         let bandcamp = formData.get("bandcamp");
