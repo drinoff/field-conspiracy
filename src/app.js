@@ -104,7 +104,9 @@ burgerMenuIcon.addEventListener("click", () => {
                 clearInterval(id);
             } else {
                 pos += 15;
+                let verticalPos = window.scrollY;
                 mobileNav.style.right = pos + "px";
+                mobileNav.style.top = verticalPos + "PX";
             }
         }
     }
